@@ -6,7 +6,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
           <div class="flex items-center">
-            <span class="text-2xl font-bold text-gray-900">Yuna Portfolio</span>
+            <span class="text-2xl font-bold text-gray-900">Yuna's Portfolio</span>
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-9 text-gray-900 font-bold text-xl">
@@ -48,18 +48,18 @@
           <div class="flex justify-center">
             <div class="relative">
 
-              <div class="absolute -top-4 -left-4 w-24 h-24 bg-blue-200 rounded-full flex items-center justify-center">
+              <!-- <div class="absolute -top-4 -left-4 w-24 h-24 bg-blue-200 rounded-full flex items-center justify-center">
                 <img src="./assets/vue.svg"  alt="" class="w-25 h-25 rounded-full shadow-md" />
               </div>
 
               <div class="absolute -top-15 -left-2 w-24 h-24 bg-blue-200 rounded-full flex items-center justify-center">
                 <img src="./assets/vue.svg"  alt="" class="w-25 h-25 rounded-full shadow-md" />
-              </div>
+              </div> -->
 
-              <div class="w-80 h-98 bg-gradient-to-br from-yellow-400 to-yellow-400 rounded-full flex items-center justify-center">
+              <div class="w-98 h-102 bg-gradient-to-br from-yellow-400 to-yellow-400 rounded-full flex items-center justify-center">
                 <img src="./assets/me.JPG" 
                      alt="Yuna" 
-                     class="w-72 h-90 rounded-full object-cover shadow-xl" />
+                     class="w-90 h-95 rounded-full object-cover shadow-xl" />
               </div>
               <!-- <div class="absolute -top-4 -right-4 w-24 h-24 bg-yellow-400 rounded-full flex items-center justify-center">
                 <span class="text-2xl">💻</span>
@@ -73,7 +73,9 @@
               <span class="text-yellow-500">Yuna</span>
             </h1>
             <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-              畢業於台北科技大學資訊工程系，熱愛前端開發與使用者體驗設計，同時具備資安背景。擅長 RWD 響應式設計、互動式介面，以及 API 串接整合，能將需求轉化為 安全、直覺、流暢，且兼具美感與功能性的產品。
+              畢業於台北科技大學資訊工程系，熱愛前端開發與使用者體驗設計，同時具備資安背景。
+              熟悉 Vue.js、JavaScript、HTML、CSS 等核心技術，擅長 API 串接整合、 RWD 響應式設計、互動式介面開發。
+              能獨立完成專案規劃與實作，將需求轉化為 直覺、流暢、安全 的產品，並兼顧設計美感與技術穩定性。
             </p>
 
             <!-- <p class="text-xl text-gray-600 mb-8 leading-relaxed">
@@ -110,41 +112,28 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Me</h2>
-          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p class="text-xl text-gray-400 max-w-2xl mx-auto">
             關於我
           </p>
         </div>
         
-        <div class="grid lg:grid-cols-3 gap-8">
-          <div class="lg:col-span-2">
-            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-              <h3 class="text-2xl font-bold text-gray-900 mb-6">我的故事</h3>
-              <div class="space-y-4 text-gray-600 leading-relaxed">
-                <p>
-              在實習期間，參與 OAuth 2.0 認證實作、資安檢測與事件分析，累積細心與問題解決能力。後來投入前端學習與專題實作，獨立完成 JiaNice 智慧健康飲食平台，使用 Vue 與 Node.js 建構 MVC 架構，整合 OpenAI、健康署及政府開放資料平台 API，兼顧使用者體驗與系統安全性。
-            </p>
-            
-            <p>
-              目前持續精進 API 串接整合與前端互動設計能力，期望在前端領域發揮跨域優勢，打造兼具安全、美感與功能性的產品。
-            </p>
-              </div>
+        <div class="max-w-4xl mx-auto">
+          <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+            <!-- <h3 class="text-2xl font-bold text-gray-900 mb-6">我的故事</h3> -->
+            <div class="space-y-4 text-gray-600 leading-relaxed">
+              <p>
+            在實習期間，參與 OAuth 2.0 認證實作、資安檢測與事件分析，累積細心與問題解決能力。
+          </p>
+
+          <p>
+            後來投入前端學習與專題實作，獨立完成 JiaNice 智慧健康飲食平台，使用 Vue 與 Node.js 建構 MVC 架構，整合 OpenAI、健康署及政府開放資料平台 API，兼顧使用者體驗與系統安全性。
+          </p>
+          
+          <p>
+            目前持續精進 API 串接整合與前端互動設計能力，期望在前端領域發揮跨域優勢，打造兼具安全、美感與功能性的產品。
+          </p>
             </div>
           </div>
-          
-          <!-- <div class="space-y-6">
-            <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 text-center">
-              <div class="text-3xl font-bold text-blue-600 mb-2">3+</div>
-              <div class="text-gray-600">年開發經驗</div>
-            </div>
-            <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 text-center">
-              <div class="text-3xl font-bold text-green-600 mb-2">50+</div>
-              <div class="text-gray-600">專案完成</div>
-            </div>
-            <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 text-center">
-              <div class="text-3xl font-bold text-purple-600 mb-2">15+</div>
-              <div class="text-gray-600">技術棧掌握</div>
-            </div>
-          </div> -->
         </div>
       </div>
     </section>
@@ -153,8 +142,8 @@
     <section id="experience" class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">工作經歷</h2>
-          <p class="text-xl text-gray-600">豐富的工作經驗，持續成長與學習</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Experience</h2>
+          <p class="text-xl text-gray-400">工作經歷</p>
         </div>
         
         <div class="max-w-4xl mx-auto">
@@ -252,7 +241,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-7xl md:text-4xl font-bold text-gray-900 mb-4">Skills</h2>
-          <p class="text-xl text-gray-600">相關專業技能</p>
+          <p class="text-xl text-gray-400">相關專業技能</p>
         </div>
         
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -266,7 +255,27 @@
             </div>
             <div class="space-y-4">
               <div>
-                <div class="flex justify-between mb-1">
+              <img src="./assets/vue.png" alt="" class="w-20 h-20 inline-block mr-2">
+              
+              <img src="./assets/vite.png" alt="" class="w-20 h-20 inline-block mr-2">
+
+              <img src="./assets/vuetify.png" alt="" class="w-20 h-20 inline-block mr-2">
+
+              <img src="./assets/pinia.png" alt="" class="w-20 h-20 inline-block mr-2 mt-5">
+
+              <img src="./assets/swiper.png" alt="" class="w-20 h-20 inline-block mr-2 mt-5">
+
+              <img src="./assets/gsap.png" alt="" class="w-20 h-20 inline-block mr-2 mt-5">
+
+
+              <img src="./assets/html.png" alt="" class="w-20 h-20 inline-block mr-2 mt-5">
+
+              <img src="./assets/css.png" alt="" class="w-20 h-20 inline-block mr-2 mt-5">
+
+
+              <img src="./assets/js.png" alt="" class="w-20 h-20 inline-block mr-2 mt-5">
+
+                <!-- <div class="flex justify-between mb-1">
                   <span class="text-gray-700">Vue.js</span>
                   <span class="text-gray-500">90%</span>
                 </div>
@@ -299,8 +308,8 @@
                 </div>
                 <div class="w-full bg-gray-200 rounded-full h-2">
                   <div class="bg-blue-600 h-2 rounded-full" style="width: 95%"></div>
-                </div>
-              </div>
+                </div>-->
+              </div> 
             </div>
           </div>
 
@@ -310,44 +319,16 @@
               <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mr-4">
                 <span class="text-green-600 text-xl">🎨</span>
               </div>
-              <h3 class="text-xl font-bold text-gray-900">樣式設計</h3>
+              <h3 class="text-xl font-bold text-gray-900">後端技術</h3>
             </div>
             <div class="space-y-4">
               <div>
-                <div class="flex justify-between mb-1">
-                  <span class="text-gray-700">CSS3</span>
-                  <span class="text-gray-500">90%</span>
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-2">
-                  <div class="bg-green-600 h-2 rounded-full" style="width: 90%"></div>
-                </div>
-              </div>
-              <div>
-                <div class="flex justify-between mb-1">
-                  <span class="text-gray-700">Tailwind CSS</span>
-                  <span class="text-gray-500">85%</span>
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-2">
-                  <div class="bg-green-600 h-2 rounded-full" style="width: 85%"></div>
-                </div>
-              </div>
-              <div>
-                <div class="flex justify-between mb-1">
-                  <span class="text-gray-700">SCSS/Sass</span>
-                  <span class="text-gray-500">80%</span>
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-2">
-                  <div class="bg-green-600 h-2 rounded-full" style="width: 80%"></div>
-                </div>
-              </div>
-              <div>
-                <div class="flex justify-between mb-1">
-                  <span class="text-gray-700">UI/UX 設計</span>
-                  <span class="text-gray-500">75%</span>
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-2">
-                  <div class="bg-green-600 h-2 rounded-full" style="width: 75%"></div>
-                </div>
+                <div>
+                  <img src="./assets/nodeJS.png" alt="" class="w-20 h-20 inline-block mr-2">
+
+                  <img src="./assets/restfulAPI.png" alt="" class="w-20 h-20 inline-block mr-2">
+
+                </div>               
               </div>
             </div>
           </div>
@@ -358,44 +339,23 @@
               <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mr-4">
                 <span class="text-purple-600 text-xl">🛠️</span>
               </div>
-              <h3 class="text-xl font-bold text-gray-900">開發工具</h3>
+              <h3 class="text-xl font-bold text-gray-900">工具</h3>
             </div>
-            <div class="space-y-4">
+                       <div class="space-y-4">
               <div>
-                <div class="flex justify-between mb-1">
-                  <span class="text-gray-700">Git</span>
-                  <span class="text-gray-500">85%</span>
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-2">
-                  <div class="bg-purple-600 h-2 rounded-full" style="width: 85%"></div>
-                </div>
+                <div>
+                  <img src="./assets/eslint.png" alt="" class="w-20 h-20 inline-block mr-2">   
+
+                  <img src="./assets/GIT.png" alt="" class="w-20 h-20 inline-block mr-2">
+
+                  
+                  <img src="./assets/AXIOS.png" alt="" class="w-20 h-20 inline-block mr-2">
+
+
+
+
               </div>
-              <div>
-                <div class="flex justify-between mb-1">
-                  <span class="text-gray-700">Webpack</span>
-                  <span class="text-gray-500">80%</span>
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-2">
-                  <div class="bg-purple-600 h-2 rounded-full" style="width: 80%"></div>
-                </div>
-              </div>
-              <div>
-                <div class="flex justify-between mb-1">
-                  <span class="text-gray-700">Node.js</span>
-                  <span class="text-gray-500">75%</span>
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-2">
-                  <div class="bg-purple-600 h-2 rounded-full" style="width: 75%"></div>
-                </div>
-              </div>
-              <div>
-                <div class="flex justify-between mb-1">
-                  <span class="text-gray-700">Docker</span>
-                  <span class="text-gray-500">70%</span>
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-2">
-                  <div class="bg-purple-600 h-2 rounded-full" style="width: 70%"></div>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -413,53 +373,71 @@
         
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Project 1 -->
-          <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col">
             <div class="aspect-video bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
-              <img src="./assets/JiaNice.jpg" alt="">
+              <img src="./assets/JiaNice.jpg" alt="JiaNice 專案截圖" class="w-full h-full object-cover">
             </div>
-            <div class="p-6">
+            <div class="p-6 flex flex-col flex-grow">
               <h3 class="text-xl font-bold text-gray-900 mb-2">JiaNice</h3>
-              <p class="text-gray-600 mb-4">智慧健康飲食平台，整合 API 與 AI 提供個人化健康建議。</p>
+              <p class="text-gray-600 mb-4 flex-grow">智慧健康飲食平台，整合 API 與 AI 提供個人化健康建議。</p>
               <div class="flex flex-wrap gap-2 mb-4">
                 <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Vue.js</span>
-                <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">TypeScript</span>
-                <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Tailwind CSS</span>
+                <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Node.js</span>
+                <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">MongoDB</span>
+                <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm">Pinia</span>
+
               </div>
-              <button class="text-blue-600 hover:text-blue-700 font-medium">查看詳情 →</button>
+
+              <div class="text-right mt-auto">
+                <a class="inline-flex items-center px-6 py-3 bg-orange-500 to-teal-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:from-orange-600 hover:to-teal-700 transform hover:scale-105 transition-all duration-300 ease-in-out" href="https://yunahsuya.github.io/JIANICE-vuetify-project/">Live Demo →</a>
+              </div>
+
             </div>
           </div>
 
           <!-- Project 2 -->
-          <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col">
             <div class="aspect-video bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center">
-              <span class="text-4xl">��</span>
+              <img src="./assets/JQGame.jpg" alt="多益英文單字配對小遊戲" class="w-full h-full object-cover">
             </div>
-            <div class="p-6">
+            <div class="p-6 flex flex-col flex-grow">
               <h3 class="text-xl font-bold text-gray-900 mb-2">多益英文單字配對小遊戲</h3>
-              <p class="text-gray-600 mb-4">互動式學習遊戲，提高英文單字記憶效率。</p>
+              <p class="text-gray-600 mb-4 flex-grow">互動式學習遊戲，提高英文單字記憶效率。</p>
               <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">React</span>
-                <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-sm">D3.js</span>
-                <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm">Chart.js</span>
+                <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm">JQuery</span>
+                <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">HTML5</span>
+                <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-sm">CSS3</span>
+                <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm">JavaScript</span>
               </div>
-              <button class="text-blue-600 hover:text-blue-700 font-medium">查看詳情 →</button>
+
+
+              <div class="text-right mt-auto">
+                <a class="inline-flex items-center px-6 py-3 bg-orange-500 to-teal-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:from-orange-600 hover:to-teal-700 transform hover:scale-105 transition-all duration-300 ease-in-out" href="https://yunahsuya.github.io/JQ_English-Matching-Game/">Live Demo →</a>
+              </div>
+
             </div>
           </div>
 
           <!-- Project 3 -->
-          <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col">
             <div class="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
-              <span class="text-4xl">��</span>
+              <img src="./assets/bootstrap.jpg" alt="Bootstrap切版" class="w-full h-full object-cover">
             </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-900 mb-2">任務管理系統</h3>
-              <p class="text-gray-600 mb-4">Vue.js 開發的團隊協作工具，支援任務分配、進度追蹤、即時通知等功能。</p>
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">前端切版 + Bootstrap</h3>
+              <p class="text-gray-600 mb-4 flex-grow">這是一個以 Bootstrap 5 製作的響應式展示網站。整體設計模擬商業網站的常見功能，涵蓋完整的前端結構與互動效果。</p>
               <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Vue.js</span>
-                <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Socket.io</span>
-                <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm">Node.js</span>
+                <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm">Bootstrap</span>
+                <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">HTML5</span>
+                <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">CSS3</span>
+                <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">JavaScript</span>
               </div>
-              <button class="text-blue-600 hover:text-blue-700 font-medium">查看詳情 →</button>
+             
+
+              <div class="text-right mt-auto">
+                <a class="inline-flex items-center px-6 py-3 bg-orange-500 to-teal-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:from-orange-600 hover:to-teal-700 transform hover:scale-105 transition-all duration-300 ease-in-out" href="https://yunahsuya.github.io/Bootstrap/">Live Demo →</a>
+              </div>
+              
             </div>
           </div>
         </div>
@@ -470,19 +448,13 @@
     <section id="contact" class="py-20 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">聯絡我</h2>
-          <p class="text-xl text-gray-600">讓我們聊聊合作機會</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Contact Me</h2>
+          <p class="text-xl text-gray-600">聯絡我</p>
         </div>
         
-        <div class="grid lg:grid-cols-2 gap-12">
+        <div class="flex justify-center">
           <!-- Contact Info -->
-          <div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-6">讓我們聊聊吧！</h3>
-            <p class="text-gray-600 mb-8 leading-relaxed">
-              如果您對我的作品感興趣，或者有任何合作機會，歡迎隨時與我聯絡。
-              我很樂意與您討論如何幫助您實現想法。
-            </p>
-            
+          <div class="max-w-md w-full">
             <div class="space-y-4">
               <div class="flex items-center gap-4 p-4 bg-white rounded-xl border border-gray-100">
                 <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
@@ -500,7 +472,7 @@
                 </div>
                 <div>
                   <p class="font-semibold text-gray-900">電話</p>
-                  <p class="text-gray-600">+886 912 345 678</p>
+                  <p class="text-gray-600">0905 336 968</p>
                 </div>
               </div>
               
@@ -509,41 +481,11 @@
                   <span class="text-purple-600">📍</span>
                 </div>
                 <div>
-                  <p class="font-semibold text-gray-900">地址</p>
-                  <p class="text-gray-600">台北市信義區信義路五段7號</p>
+                  <p class="font-semibold text-gray-900">GitHub</p>
+                  <a class="text-blue-500" href="https://github.com/yunahsuya?tab=repositories">https://github.com/yunahsuya?tab=repositories</a>
                 </div>
               </div>
             </div>
-          </div>
-
-          <!-- Contact Form -->
-          <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-            <h3 class="text-2xl font-bold text-gray-900 mb-6">發送訊息</h3>
-            <form @submit.prevent="submitForm" class="space-y-6">
-              <div>
-                <label class="block text-sm font-medium text-gray-700 mb-2">姓名</label>
-                <input type="text" v-model="form.name" placeholder="請輸入您的姓名" 
-                       class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent" required />
-              </div>
-              <div>
-                <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                <input type="email" v-model="form.email" placeholder="請輸入您的Email" 
-                       class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent" required />
-              </div>
-              <div>
-                <label class="block text-sm font-medium text-gray-700 mb-2">主旨</label>
-                <input type="text" v-model="form.subject" placeholder="請輸入主旨" 
-                       class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent" required />
-              </div>
-              <div>
-                <label class="block text-sm font-medium text-gray-700 mb-2">訊息內容</label>
-                <textarea v-model="form.message" rows="4" placeholder="請輸入您的訊息" 
-                          class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent" required></textarea>
-              </div>
-              <button type="submit" class="w-full bg-blue-600 text-white py-3 px-6 rounded-xl hover:bg-blue-700 transition-colors duration-300 font-medium">
-                發送訊息
-              </button>
-            </form>
           </div>
         </div>
       </div>
@@ -559,7 +501,7 @@
             <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">LinkedIn</a>
             <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Email</a>
           </div>
-          <p class="text-gray-500 mt-8">© 2024 Tess. 版權所有</p>
+          <p class="text-gray-500 mt-8">© 2025 Yuna. 版權所有</p>
         </div>
       </div>
     </footer>
