@@ -73,9 +73,11 @@
               <span class="text-yellow-500">Yuna</span>
             </h1>
             <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-              畢業於台北科技大學資訊工程系，熱愛前端開發與使用者體驗設計，同時具備資安背景。
-              熟悉 Vue.js、JavaScript、HTML、CSS 等核心技術，擅長 API 串接整合、 RWD 響應式設計、互動式介面開發。
-              能獨立完成專案規劃與實作，將需求轉化為 直覺、流暢、安全 的產品，並兼顧設計美感與技術穩定性。
+              畢業於台北科技大學資訊工程系，熱愛前端開發與使用者體驗設計，並具備資訊安全背景。<br>
+              擅長 Vue 3、RWD 響應式設計、互動式介面 與 API 串接整合包括 OpenData、健康署 API、第三方服務與 OpenAI API。<br>
+              
+              熟悉 Pinia、Vuetify、Vite、Axios、表單驗證 等工具，並具備 OAuth 2.0、資安檢測 等實務經驗，能將需求轉化為 安全、直覺、流暢，同時兼顧美感與功能性的產品。
+              
             </p>
 
             <!-- <p class="text-xl text-gray-600 mb-8 leading-relaxed">
@@ -121,17 +123,27 @@
           <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
             <!-- <h3 class="text-2xl font-bold text-gray-900 mb-6">我的故事</h3> -->
             <div class="space-y-4 text-gray-600 leading-relaxed">
-              <p>
-            在實習期間，參與 OAuth 2.0 認證實作、資安檢測與事件分析，累積細心與問題解決能力。
+              <h1 class="text-xl font-bold text-gray-900 mt-6">『關於我』</h1>
+              <p class="text-xl">
+                我叫許庭瑋，畢業於台北科技大學資訊工程系，對前端開發充滿熱情。近期專注於 Vue 3、Pinia 與 Vuetify 技術，並透過專題「JiaNice」實作完整前端平台，涵蓋 SPA 架構、UI 設計、前後端資料串接，以及健康署與 OpenData API 的整合。我熟悉 MVC 架構下前後端協作流程。專題核心功能包括餐廳隨機抽選、營養提醒與回憶錄系統，我從規劃頁面互動流程到優化使用者體驗都有實作經驗，具備快速學習與問題拆解能力，能有效應對前端專案中的技術與設計挑戰。
           </p>
 
-          <p>
-            後來投入前端學習與專題實作，獨立完成 JiaNice 智慧健康飲食平台，使用 Vue 與 Node.js 建構 MVC 架構，整合 OpenAI、健康署及政府開放資料平台 API，兼顧使用者體驗與系統安全性。
+          <h1 class="text-xl font-bold text-gray-900 mt-6">『工作經驗』</h1>
+          <p class="text-xl">
+            在過去的實習中，我協助公司處理資安事件與專案開發，參與系統漏洞測試與風險分析，並參與大型社交工程演練，涵蓋超過 5000 名員工，成功揭露受影響人員。在此過程中，我養成了系統化思考能力，並將分析與測試成果應用於實際專案中，累積了規劃、協作與解決問題的經驗。這些經驗雖屬資安領域，但也強化了我對流程管理與前端開發中資料串接與介面設計的敏銳度，為轉型前端工程師奠定了堅實基礎。
           </p>
           
-          <p>
-            目前持續精進 API 串接整合與前端互動設計能力，期望在前端領域發揮跨域優勢，打造兼具安全、美感與功能性的產品。
+          <h1 class="text-xl font-bold text-gray-900 mt-6">『自我進修』</h1>
+          <p class="text-xl">
+            我曾參加職訓局前端課程，透過專題實作深化 Vue 3、Pinia 與 Vuetify 的實務應用，並練習設計使用者介面、串接後端 API 與整合第三方資料源。我同時透過撰寫教學文章與專題紀錄，整理學習成果，提升技術理解與團隊溝通能力。
           </p>
+
+          <h1 class="text-xl font-bold text-gray-900 mt-6">『未來展望』</h1>
+          <p class="text-xl">
+            未來，希望持續精進前端與互動式產品設計能力，透過 SIDE PROJECT 的實作，例如 AI 互動履歷網站、LINEBOT 智能記帳系統，以及詐騙防治網站等，累積前、後端整合、API 串接與資料視覺化能力。期望將創意思維與技術能力結合，打造兼具實用性與趣味性的產品，並為公司提供具有差異化的用戶體驗與技術解決方案。
+          </p>
+
+
             </div>
           </div>
         </div>
@@ -255,60 +267,20 @@
             </div>
             <div class="space-y-4">
               <div>
-              <img src="./assets/vue.png" alt="" class="w-20 h-20 inline-block mr-2">
-              
-              <img src="./assets/Vite.png" alt="" class="w-20 h-20 inline-block mr-2">
+                <ul class="list-disc list-inside text-gray-600">
+                  <li class="text-gray-900">vue</li>
+                  <li class="text-gray-900">Vite</li>
+                  <li class="text-gray-900">vuetify</li>
+                  
+                  <li class="text-gray-900">pinia</li>
+                  <li class="text-gray-900">swiper</li>
+                  <li class="text-gray-900">gsap</li>
 
-              <img src="./assets/vuetify.png" alt="" class="w-20 h-20 inline-block mr-2">
-
-              <img src="./assets/pinia.png" alt="" class="w-20 h-20 inline-block mr-2 mt-5">
-
-              <img src="./assets/swiper.png" alt="" class="w-20 h-20 inline-block mr-2 mt-5">
-
-              <img src="./assets/gsap.png" alt="" class="w-20 h-20 inline-block mr-2 mt-5">
-
-
-              <img src="./assets/html.png" alt="" class="w-20 h-20 inline-block mr-2 mt-5">
-
-              <img src="./assets/css.png" alt="" class="w-20 h-20 inline-block mr-2 mt-5">
-
-
-              <img src="./assets/js.png" alt="" class="w-20 h-20 inline-block mr-2 mt-5">
-
-                <!-- <div class="flex justify-between mb-1">
-                  <span class="text-gray-700">Vue.js</span>
-                  <span class="text-gray-500">90%</span>
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-2">
-                  <div class="bg-blue-600 h-2 rounded-full" style="width: 90%"></div>
-                </div>
-              </div>
-              <div>
-                <div class="flex justify-between mb-1">
-                  <span class="text-gray-700">React</span>
-                  <span class="text-gray-500">85%</span>
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-2">
-                  <div class="bg-blue-600 h-2 rounded-full" style="width: 85%"></div>
-                </div>
-              </div>
-              <div>
-                <div class="flex justify-between mb-1">
-                  <span class="text-gray-700">TypeScript</span>
-                  <span class="text-gray-500">80%</span>
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-2">
-                  <div class="bg-blue-600 h-2 rounded-full" style="width: 80%"></div>
-                </div>
-              </div>
-              <div>
-                <div class="flex justify-between mb-1">
-                  <span class="text-gray-700">JavaScript</span>
-                  <span class="text-gray-500">95%</span>
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-2">
-                  <div class="bg-blue-600 h-2 rounded-full" style="width: 95%"></div>
-                </div>-->
+                  <li class="text-gray-900">html</li>
+                  <li class="text-gray-900">css</li>
+                  <li class="text-gray-900">JavaScript</li>
+                </ul>
+             
               </div> 
             </div>
           </div>
@@ -324,9 +296,13 @@
             <div class="space-y-4">
               <div>
                 <div>
-                  <img src="./assets/nodeJS.png" alt="" class="w-20 h-20 inline-block mr-2">
+                   <ul class="list-disc list-inside text-gray-600">
+                  <li class="text-gray-900">node.js</li>
+                  <li class="text-gray-900">restfulAPI</li>
+            
+                </ul>
 
-                  <img src="./assets/restfulAPI.png" alt="" class="w-20 h-20 inline-block mr-2">
+               
 
                 </div>               
               </div>
@@ -341,15 +317,15 @@
               </div>
               <h3 class="text-xl font-bold text-gray-900">工具</h3>
             </div>
-                       <div class="space-y-4">
+              <div class="space-y-4">
               <div>
                 <div>
-                  <img src="./assets/eslint.png" alt="" class="w-20 h-20 inline-block mr-2">   
 
-                  <img src="./assets/GIT.png" alt="" class="w-20 h-20 inline-block mr-2">
-
-                  
-                  <img src="./assets/AXIOS.png" alt="" class="w-20 h-20 inline-block mr-2">
+                <ul class="list-disc list-inside text-gray-600">
+                  <li class="text-gray-900">GIT</li>
+                  <li class="text-gray-900">eslint</li>
+                  <li class="text-gray-900">axios</li>
+                </ul>
 
 
 
