@@ -1004,15 +1004,16 @@ const currentImageIndex = ref(0)
 const activeSection = ref('home') // 追蹤當前選中的區塊
 const showBackToTop = ref(false) // 控制回到頂部按鈕的顯示
 
-// 添加圖片陣列
+// 添加圖片陣列 (使用 Vite 的動態導入)
 const jianiceImages = ref([
-  './assets/JiaNice.jpg',
-  './assets/JIANICE-restaurant.jpg',
-  './assets/JIANICE-news.jpg',
-  './assets/JIANICE-diary.jpg',
-  './assets/JIANICE-Manager.jpg',
-  './assets/JIANICE-users.jpg',
+  new URL('./assets/JiaNice.jpg', import.meta.url).href,
+  new URL('./assets/JIANICE-restaurant.jpg', import.meta.url).href,
+  new URL('./assets/JIANICE-news.jpg', import.meta.url).href,
+  new URL('./assets/JIANICE-diary.jpg', import.meta.url).href,
+  new URL('./assets/JIANICE-Manager.jpg', import.meta.url).href,
+  new URL('./assets/JIANICE-users.jpg', import.meta.url).href,
 ])
+
 
 // 自動輪播
 let autoPlayInterval = null
