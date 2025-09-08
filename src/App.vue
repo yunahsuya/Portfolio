@@ -1006,12 +1006,12 @@ const showBackToTop = ref(false) // 控制回到頂部按鈕的顯示
 
 // 添加圖片陣列
 const jianiceImages = ref([
-  '/src/assets/JiaNice.jpg',
-  '/src/assets/JIANICE餐廳.jpg',
-  '/src/assets/JIANICE新聞.jpg',
-  '/src/assets/JIANICE回憶牆.jpg',
-  '/src/assets/JIANICE使用者後台管理.jpg',
-  '/src/assets/JIANICE管理者後台管理.jpg',
+  './assets/JiaNice.jpg',
+  './assets/JIANICE-restaurant.jpg',
+  './assets/JIANICE-news.jpg',
+  './assets/JIANICE-diary.jpg',
+  './assets/JIANICE-Manager.jpg',
+  './assets/JIANICE-users.jpg',
 ])
 
 // 自動輪播
