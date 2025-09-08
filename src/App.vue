@@ -257,7 +257,7 @@
               <div>
               <img src="./assets/vue.png" alt="" class="w-20 h-20 inline-block mr-2">
               
-              <img src="./assets/vite.png" alt="" class="w-20 h-20 inline-block mr-2">
+              <img src="./assets/Vite.png" alt="" class="w-20 h-20 inline-block mr-2">
 
               <img src="./assets/vuetify.png" alt="" class="w-20 h-20 inline-block mr-2">
 
