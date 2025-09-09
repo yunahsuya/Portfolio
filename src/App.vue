@@ -158,70 +158,44 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="pt-2 bg-white">
-      <div class=" mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
-          <div class="flex justify-center">
+        <!-- Hero Section -->
+        <section id="home" class="pt-2 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <!-- 圖片區域 -->
+          <div class="flex justify-center  lg:order-1">
             <div class="relative">
-              <!-- <div class="absolute -top-4 -left-4 w-24 h-24 bg-blue-200 rounded-full flex items-center justify-center">
-                <img src="./assets/vue.svg"  alt="" class="w-25 h-25 rounded-full shadow-md" />
-              </div>
-
-              <div class="absolute -top-15 -left-2 w-24 h-24 bg-blue-200 rounded-full flex items-center justify-center">
-                <img src="./assets/vue.svg"  alt="" class="w-25 h-25 rounded-full shadow-md" />
-              </div> -->
-
               <div
-                class="w-96 h-[30rem] sm:w-[27rem] sm:h-[32rem] lg:w-[27rem] lg:h-[32rem] bg-gradient-to-br from-yellow-400 to-yellow-400 rounded-full flex items-center justify-center"
+                class="w-64 h-80 sm:w-80 sm:h-96 lg:w-96 lg:h-[30rem] xl:w-[27rem] xl:h-[32rem] bg-gradient-to-br from-yellow-400 to-yellow-400 rounded-full flex items-center justify-center"
               >
                 <img
                   src="./assets/me.JPG"
                   alt="Yuna"
-                  class="w-92 h-[28rem] sm:w-[25rem] sm:h-[30rem] lg:w-[25rem] lg:h-[30rem] rounded-full object-cover shadow-xl"
+                  class="w-60 h-76 sm:w-76 sm:h-92 lg:w-92 lg:h-[28rem] xl:w-[25rem] xl:h-[30rem] rounded-full object-cover shadow-xl"
                 />
               </div>
-              <!-- <div class="absolute -top-4 -right-4 w-24 h-24 bg-yellow-400 rounded-full flex items-center justify-center">
-                <span class="text-2xl">💻</span>
-              </div> -->
             </div>
           </div>
 
-          <div>
-            <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+          <!-- 文字內容區域 -->
+          <div class="order-1 lg:order-2 text-center lg:text-left">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6">
               Hello~我是
               <span class="text-yellow-500">Yuna</span>
             </h1>
-            <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-              畢業於台北科技大學資訊工程系，熱愛前端開發與使用者體驗設計，並具備資訊安全背景。<br />
+            <p class="text-base sm:text-lg lg:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed">
+              畢業於台北科技大學資訊工程系，熱愛前端開發與使用者體驗設計，並具備資訊安全背景。<br class="hidden sm:block" />
               擅長 Vue 3、RWD 響應式設計、互動式介面 與 API 串接整合包括 OpenData、健康署
-              API、第三方服務與 OpenAI API。<br />
+              API、第三方服務與 OpenAI API。<br class="hidden sm:block" />
 
               熟悉 Pinia、Vuetify、Vite、Axios、表單驗證 等工具，並具備 OAuth 2.0、資安檢測
               等實務經驗，能將需求轉化為 安全、直覺、流暢，同時兼顧美感與功能性的產品。
             </p>
-
-            <!-- <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-              前端開發工程師，專精於 Vue.js、React 和現代前端技術。
-              致力於創造美觀且功能豐富的用戶體驗，讓技術與設計完美結合。
-            </p> -->
-            <div class="flex flex-col sm:flex-row gap-4">
+            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
               <button @click="scrollTo('projects')" class="btn-primary">查看作品</button>
               <button @click="scrollTo('contact')" class="btn-secondary">聯絡我</button>
             </div>
           </div>
-          <!-- <div class="flex justify-center">
-            <div class="relative">
-              <div class="w-80 h-98 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-full flex items-center justify-center">
-                <img src="./assets/me.JPG" 
-                     alt="Yuna" 
-                     class="w-72 h-90 rounded-full object-cover shadow-xl" />
-              </div>
-              <div class="absolute -top-4 -right-4 w-24 h-24 bg-yellow-400 rounded-full flex items-center justify-center">
-                <span class="text-2xl">💻</span>
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
     </section>
