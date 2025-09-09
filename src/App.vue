@@ -963,7 +963,7 @@
                   <div>
                     <p class="font-semibold text-gray-900">履歷</p>
                     <a
-                      href="../許庭瑋_前端履歷.pdf"
+                      href="https://drive.google.com/file/d/108odCkyNMuu4_pu0VKbeOlljNyrCGfmf/view?usp=drive_link"
                       class="text-blue-500 hover:text-blue-700 transition-colors"
                       target="_blank"
                     >
@@ -1012,7 +1012,7 @@
             <div class="flex items-center mb-6">
               <div class="w-12 h-12 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center mr-4">
                 <!-- <span class="text-2xl">👩‍💻</span> -->
-                <img src="https://cdn0.iconfinder.com/data/icons/find-a-job-and-interview-flat/512/business_employee_female_woman_businesswoman_office_work_manager_worker-512.png" alt="Vue.js" class="w-10 h-10"></img>
+                <img src="https://cdn-icons-png.flaticon.com/128/2423/2423917.png" alt="Vue.js" class="w-10 h-10"></img>
               </div>
               <h3 class="text-2xl font-bold">Yuna's Portfolio</h3>
             </div>
