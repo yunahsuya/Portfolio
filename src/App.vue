@@ -159,7 +159,7 @@
     </nav>
 
         <!-- Hero Section -->
-        <section id="home" class="pt-2 bg-white">
+        <section id="home" class="pt-16 sm:pt-20 md:pt-24 lg:pt-2 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <!-- 圖片區域 -->
@@ -191,9 +191,13 @@
               熟悉 Pinia、Vuetify、Vite、Axios、表單驗證 等工具，並具備 OAuth 2.0、資安檢測
               等實務經驗，能將需求轉化為 安全、直覺、流暢，同時兼顧美感與功能性的產品。
             </p>
-            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
-              <button @click="scrollTo('projects')" class="btn-primary">查看作品</button>
-              <button @click="scrollTo('contact')" class="btn-secondary">聯絡我</button>
+            <div class="flex flex-col-reverse sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
+              <button @click="scrollTo('contact')" class="px-8 py-4 bg-gray-700 hover:bg-gray-800 text-white font-bold text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out">
+                聯絡我
+              </button>
+              <button @click="scrollTo('projects')" class="px-8 py-4 bg-yellow-500 hover:bg-yellow-600 text-white font-bold text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out">
+                查看作品
+              </button>
             </div>
           </div>
         </div>
