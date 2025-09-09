@@ -1,21 +1,21 @@
 <template>
-  <div class="min-h-screen bg-gray-50">
+  <div class="min-h-screen bg-white">
     <!-- 導航欄 -->
     <nav
       class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 border-b border-gray-100"
     >
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class=" mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
           <div class="flex items-center">
             <span class="text-2xl font-bold text-gray-900">Yuna's Portfolio</span>
           </div>
           <div class="hidden md:block">
-            <div class="ml-10 flex items-baseline space-x-9 text-gray-900 font-bold text-xl">
+            <div class="ml-10 flex items-baseline space-x-4 lg:space-x-6 xl:space-x-8 text-gray-900 font-bold text-lg lg:text-xl">
               <a
                 href="#home"
                 @click="scrollTo('home')"
                 :class="[
-                  'relative transition-all duration-300 hover:text-yellow-500 pb-1',
+                  'relative transition-all duration-300 hover:text-yellow-500 pb-1 whitespace-nowrap',
                   activeSection === 'home' ? 'text-yellow-500 border-b-2 border-yellow-500' : '',
                 ]"
                 >首頁</a
@@ -24,7 +24,7 @@
                 href="#about"
                 @click="scrollTo('about')"
                 :class="[
-                  'relative transition-all duration-300 hover:text-yellow-500 pb-1',
+                  'relative transition-all duration-300 hover:text-yellow-500 pb-1 whitespace-nowrap',
                   activeSection === 'about' ? 'text-yellow-500 border-b-2 border-yellow-500' : '',
                 ]"
                 >關於我</a
@@ -33,7 +33,7 @@
                 href="#skills"
                 @click="scrollTo('skills')"
                 :class="[
-                  'relative transition-all duration-300 hover:text-yellow-500 pb-1',
+                  'relative transition-all duration-300 hover:text-yellow-500 pb-1 whitespace-nowrap',
                   activeSection === 'skills' ? 'text-yellow-500 border-b-2 border-yellow-500' : '',
                 ]"
                 >技能</a
@@ -42,7 +42,7 @@
                 href="#experience"
                 @click="scrollTo('experience')"
                 :class="[
-                  'relative transition-all duration-300 hover:text-yellow-500 pb-1',
+                  'relative transition-all duration-300 hover:text-yellow-500 pb-1 whitespace-nowrap',
                   activeSection === 'experience'
                     ? 'text-yellow-500 border-b-2 border-yellow-500'
                     : '',
@@ -53,7 +53,7 @@
                 href="#jianice"
                 @click="scrollTo('projects')"
                 :class="[
-                  'relative transition-all duration-300 hover:text-yellow-500 pb-1',
+                  'relative transition-all duration-300 hover:text-yellow-500 pb-1 whitespace-nowrap',
                   activeSection === 'projects'
                     ? 'text-yellow-500 border-b-2 border-yellow-500'
                     : '',
@@ -64,7 +64,7 @@
                 href="#contact"
                 @click="scrollTo('contact')"
                 :class="[
-                  'relative transition-all duration-300 hover:text-yellow-500 pb-1',
+                  'relative transition-all duration-300 hover:text-yellow-500 pb-1 whitespace-nowrap',
                   activeSection === 'contact' ? 'text-yellow-500 border-b-2 border-yellow-500' : '',
                 ]"
                 >聯絡我</a
@@ -94,7 +94,7 @@
             :class="[
               'block px-3 py-2 text-base font-medium rounded-md transition-all duration-300',
               activeSection === 'home'
-                ? 'text-yellow-500 bg-yellow-50 border-l-4 border-yellow-500'
+                ? 'text-yellow-700 bg-yellow-100 border-l-4 border-yellow-500'
                 : 'text-gray-600 hover:text-yellow-500 hover:bg-gray-50',
             ]"
             >首頁</a
@@ -105,7 +105,7 @@
             :class="[
               'block px-3 py-2 text-base font-medium rounded-md transition-all duration-300',
               activeSection === 'about'
-                ? 'text-yellow-500 bg-yellow-50 border-l-4 border-yellow-500'
+                ? 'text-yellow-700 bg-yellow-100 border-l-4 border-yellow-500'
                 : 'text-gray-600 hover:text-yellow-500 hover:bg-gray-50',
             ]"
             >關於我</a
@@ -116,7 +116,7 @@
             :class="[
               'block px-3 py-2 text-base font-medium rounded-md transition-all duration-300',
               activeSection === 'experience'
-                ? 'text-yellow-500 bg-yellow-50 border-l-4 border-yellow-500'
+                ? 'text-yellow-700 bg-yellow-100 border-l-4 border-yellow-500'
                 : 'text-gray-600 hover:text-yellow-500 hover:bg-gray-50',
             ]"
             >經歷</a
@@ -127,7 +127,7 @@
             :class="[
               'block px-3 py-2 text-base font-medium rounded-md transition-all duration-300',
               activeSection === 'skills'
-                ? 'text-yellow-500 bg-yellow-50 border-l-4 border-yellow-500'
+                ? 'text-yellow-700 bg-yellow-100 border-l-4 border-yellow-500'
                 : 'text-gray-600 hover:text-yellow-500 hover:bg-gray-50',
             ]"
             >技能</a
@@ -138,7 +138,7 @@
             :class="[
               'block px-3 py-2 text-base font-medium rounded-md transition-all duration-300',
               activeSection === 'projects'
-                ? 'text-yellow-500 bg-yellow-50 border-l-4 border-yellow-500'
+                ? 'text-yellow-700 bg-yellow-100 border-l-4 border-yellow-500'
                 : 'text-gray-600 hover:text-yellow-500 hover:bg-gray-50',
             ]"
             >作品</a
@@ -149,7 +149,7 @@
             :class="[
               'block px-3 py-2 text-base font-medium rounded-md transition-all duration-300',
               activeSection === 'contact'
-                ? 'text-yellow-500 bg-yellow-50 border-l-4 border-yellow-500'
+                ? 'text-yellow-700 bg-yellow-100 border-l-4 border-yellow-500'
                 : 'text-gray-600 hover:text-yellow-500 hover:bg-gray-50',
             ]"
             >聯絡我</a
@@ -159,8 +159,8 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="pt-16 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <section id="home" class="pt-2 bg-white">
+      <div class=" mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <div class="flex justify-center">
             <div class="relative">
@@ -173,12 +173,12 @@
               </div> -->
 
               <div
-                class="w-98 h-108 bg-gradient-to-br from-yellow-400 to-yellow-400 rounded-full flex items-center justify-center"
+                class="w-96 h-[30rem] sm:w-[27rem] sm:h-[32rem] lg:w-[27rem] lg:h-[32rem] bg-gradient-to-br from-yellow-400 to-yellow-400 rounded-full flex items-center justify-center"
               >
                 <img
                   src="./assets/me.JPG"
                   alt="Yuna"
-                  class="w-90 h-100 rounded-full object-cover shadow-xl"
+                  class="w-92 h-[28rem] sm:w-[25rem] sm:h-[30rem] lg:w-[25rem] lg:h-[30rem] rounded-full object-cover shadow-xl"
                 />
               </div>
               <!-- <div class="absolute -top-4 -right-4 w-24 h-24 bg-yellow-400 rounded-full flex items-center justify-center">
@@ -228,13 +228,13 @@
 
     <!-- About Section -->
     <section id="about" class="py-20 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class=" mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Me</h2>
           <p class="text-xl text-gray-400 max-w-2xl mx-auto">關於我</p>
         </div>
 
-        <div class="max-w-4xl mx-auto">
+        <div class=" mx-auto">
           <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
             <!-- <h3 class="text-2xl font-bold text-gray-900 mb-6">我的故事</h3> -->
             <div class="space-y-4 text-gray-600 leading-relaxed">
@@ -274,13 +274,13 @@
 
     <!-- Experience Section -->
     <section id="experience" class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Experience</h2>
           <p class="text-xl text-gray-400">工作經歷</p>
         </div>
 
-        <div class="max-w-4xl mx-auto">
+        <div class=" mx-auto">
           <div class="space-y-8">
             <!-- Experience 1 -->
             <div class="timeline flex gap-6">
@@ -391,9 +391,9 @@
 
     <!-- Skills Section -->
     <section id="skills" class="py-20 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class=" mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-7xl md:text-4xl font-bold text-gray-900 mb-4">Skills</h2>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Skills</h2>
           <p class="text-xl text-gray-400">相關專業技能</p>
         </div>
 
@@ -408,7 +408,7 @@
             </div>
             <div class="space-y-4">
               <div>
-                <ul class="list-disc list-inside text-gray-600">
+                <ul class="list-disc list-inside text-gray-600 text-lg">
                   <li class="text-gray-900">vue</li>
                   <li class="text-gray-900">Vite</li>
                   <li class="text-gray-900">vuetify</li>
@@ -436,7 +436,7 @@
             <div class="space-y-4">
               <div>
                 <div>
-                  <ul class="list-disc list-inside text-gray-600">
+                  <ul class="list-disc list-inside text-gray-600 text-lg">
                     <li class="text-gray-900">node.js</li>
                     <li class="text-gray-900">restfulAPI</li>
                   </ul>
@@ -456,7 +456,7 @@
             <div class="space-y-4">
               <div>
                 <div>
-                  <ul class="list-disc list-inside text-gray-600">
+                  <ul class="list-disc list-inside text-gray-600 text-lg">
                     <li class="text-gray-900">GIT</li>
                     <li class="text-gray-900">eslint</li>
                     <li class="text-gray-900">axios</li>
@@ -471,13 +471,13 @@
 
     <!-- JiaNice Featured Project Section -->
     <section id="jianice" class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class=" mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">專題作品</h2>
           <p class="text-xl text-gray-600">JiaNice - 智慧健康飲食平台</p>
         </div>
 
-        <div class="max-gray w-6xl mx-auto">
+        <div class="max-w-6xl mx-auto">
           <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
             <div class="grid lg:grid-cols-2 gap-0">
               <!-- 左側：專案截圖 -->
@@ -620,7 +620,7 @@
 
     <!-- Projects Section -->
     <section id="projects" class="py-20 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class=" mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Demo</h2>
           <p class="text-xl text-gray-600">作品展示</p>
@@ -780,7 +780,7 @@
 
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-white-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class=" mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-5">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Contact Me</h2>
           <p class="text-xl text-gray-600 mb-10">聯絡我</p>
@@ -853,10 +853,10 @@
                 </div>
               </div>
 
-              <!-- 社交媒體 -->
+              <!-- 相關連結 -->
               <div class="space-y-4">
                 <h3 class="text-xl font-bold text-gray-900 mb-4 text-center md:text-left">
-                  社交媒體
+                  相關連結
                 </h3>
 
                 <div
@@ -942,26 +942,201 @@
       </div>
     </section>
 
+
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center">
-          <h3 class="text-2xl font-bold mb-4">Yuna</h3>
-          <div class="flex justify-center space-x-6">
-            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"
-              >GitHub</a
-            >
-            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"
-              >LinkedIn</a
-            >
-            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"
-              >Email</a
-            >
+    <footer class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+      <!-- 主要內容區域 -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- 個人資訊 -->
+          <div class="lg:col-span-2">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center mr-4">
+                <!-- <span class="text-2xl">👩‍💻</span> -->
+                <img src="https://cdn0.iconfinder.com/data/icons/find-a-job-and-interview-flat/512/business_employee_female_woman_businesswoman_office_work_manager_worker-512.png" alt="Vue.js" class="w-10 h-10"></img>
+              </div>
+              <h3 class="text-2xl font-bold">Yuna's Portfolio</h3>
+            </div>
+            <p class="text-gray-300 mb-6 leading-relaxed">
+              前端開發工程師，專精於 Vue.js、React 和現代前端技術。
+              致力於創造美觀且功能豐富的用戶體驗，讓技術與設計完美結合。
+            </p>
+            <div class="flex space-x-4">
+              <a href="https://github.com/yunahsuya?tab=repositories" target="_blank" 
+                 class="w-10 h-10 bg-gray-700 hover:bg-gray-600 rounded-full flex items-center justify-center transition-colors duration-300 group">
+                <svg class="w-5 h-5 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+              <a href="mailto:yunahsuya@gmail.com" 
+                 class="w-10 h-10 bg-gray-700 hover:bg-gray-600 rounded-full flex items-center justify-center transition-colors duration-300 group">
+                <svg class="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+              </a>
+              <a href="tel:0905336968" 
+                 class="w-10 h-10 bg-gray-700 hover:bg-gray-600 rounded-full flex items-center justify-center transition-colors duration-300 group">
+                <svg class="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+              </a>
+              <a href="https://vocus.cc/salon/6647b6a6fd89780001f99044" target="_blank" 
+                 class="w-10 h-10 bg-gray-700 hover:bg-gray-600 rounded-full flex items-center justify-center transition-colors duration-300 group">
+                <svg class="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/>
+                </svg>
+              </a>
+            </div>
           </div>
-          <p class="text-gray-500 mt-8">© 2025 Yuna. 版權所有</p>
+
+          <!-- 快速導航 -->
+          <div>
+            <h4 class="text-lg font-semibold mb-6 text-yellow-400 ml-10">快速導航</h4>
+            <ul class="space-y-3 ml-6" >
+              <li>
+                <a href="#home" @click="scrollTo('home')" 
+                   class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center group">
+                  <span class="w-2 h-2 bg-yellow-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  首頁
+                </a>
+              </li>
+              <li>
+                <a href="#about" @click="scrollTo('about')" 
+                   class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center group">
+                  <span class="w-2 h-2 bg-yellow-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  關於我
+                </a>
+              </li>
+              <li>
+                <a href="#skills" @click="scrollTo('skills')" 
+                   class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center group">
+                  <span class="w-2 h-2 bg-yellow-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  技能
+                </a>
+              </li>
+              <li>
+                <a href="#experience" @click="scrollTo('experience')" 
+                   class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center group">
+                  <span class="w-2 h-2 bg-yellow-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  工作經驗
+                </a>
+              </li>
+              <li>
+                <a href="#projects" @click="scrollTo('projects')" 
+                   class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center group">
+                  <span class="w-2 h-2 bg-yellow-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  作品展示
+                </a>
+              </li>
+              <li>
+                <a href="#contact" @click="scrollTo('contact')" 
+                   class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center group">
+                  <span class="w-2 h-2 bg-yellow-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  聯絡我
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 技術專長 -->
+          <div>
+            <h4 class="text-lg font-semibold mb-6 text-yellow-400">技術專長</h4>
+            <div class="space-y-4">
+              <div>
+                <h5 class="text-sm font-medium text-gray-400 mb-2">前端技術</h5>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Vue.js</span>
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Vite</span>
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">HTML</span>
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">CSS</span>
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">JavaScript</span>
+                </div>
+              </div>
+              <div>
+                <h5 class="text-sm font-medium text-gray-400 mb-2">工具框架</h5>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Vite</span>
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Pinia</span>
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Vuetify</span>
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Tailwind</span>
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Daisyui</span>
+                </div>
+              </div>
+              <div>
+                <h5 class="text-sm font-medium text-gray-400 mb-2">其他技能</h5>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">RWD</span>
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">API</span>
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Axios</span>
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Git</span>
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Node.js</span>
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">RESTfulAPI</span>
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Swiper</span>
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Gsap</span>
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Eslint</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 分隔線 -->
+        <div class="border-t border-gray-700 mt-12 pt-8">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <!-- 版權資訊 -->
+            <div class="text-center md:text-left mb-4 md:mb-0">
+              <p class="text-gray-400 text-sm">
+                © 2025 許庭瑋 (Yuna). 版權所有 | 
+                <span class="text-yellow-400">Made with ❤️ in Taiwan</span>
+              </p>
+            </div>
+
+            <!-- 聯絡資訊 -->
+            <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-sm text-gray-400">
+              <div class="flex items-center">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+                <a href="mailto:yunahsuya@gmail.com" class="hover:text-yellow-400 transition-colors">yunahsuya@gmail.com</a>
+              </div>
+              <div class="flex items-center">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+                <a href="tel:0905336968" class="hover:text-yellow-400 transition-colors">0905-336-968</a>
+              </div>
+              <div class="flex items-center">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                <span>台北市</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 額外資訊 -->
+        <div class="mt-8 text-center">
+          <div class="inline-flex items-center space-x-4 text-sm text-gray-500">
+            <span class="flex items-center">
+              <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              最佳聯絡時間：週一至週五 9:00-18:00
+            </span>
+            
+            <span class="flex items-center">
+              <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+              通常會在 24 小時內回覆
+            </span>
+          </div>
         </div>
       </div>
     </footer>
+
 
     <!-- 回到最上面按鈕 -->
     <Transition
