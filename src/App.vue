@@ -4,13 +4,15 @@
     <nav
       class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 border-b border-gray-100"
     >
-      <div class=" mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
           <div class="flex items-center">
             <span class="text-2xl font-bold text-gray-900">Yuna's Portfolio</span>
           </div>
           <div class="hidden md:block">
-            <div class="ml-10 flex items-baseline space-x-4 lg:space-x-6 xl:space-x-8 text-gray-900 font-bold text-lg lg:text-xl">
+            <div
+              class="ml-10 flex items-baseline space-x-4 lg:space-x-6 xl:space-x-8 text-gray-900 font-bold text-lg lg:text-xl"
+            >
               <a
                 href="#home"
                 @click="scrollTo('home')"
@@ -158,12 +160,12 @@
       </div>
     </nav>
 
-        <!-- Hero Section -->
-        <section id="home" class="pt-16 sm:pt-20 md:pt-24 lg:pt-2 bg-white">
+    <!-- Hero Section -->
+    <section id="home" class="pt-16 sm:pt-20 md:pt-24 lg:pt-2 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <!-- 圖片區域 -->
-          <div class="flex justify-center  lg:order-1">
+          <div class="flex justify-center lg:order-1">
             <div class="relative">
               <div
                 class="w-64 h-80 sm:w-80 sm:h-96 lg:w-96 lg:h-[30rem] xl:w-[27rem] xl:h-[32rem] bg-gradient-to-br from-yellow-400 to-yellow-400 rounded-full flex items-center justify-center"
@@ -179,23 +181,35 @@
 
           <!-- 文字內容區域 -->
           <div class="order-1 lg:order-2 text-center lg:text-left">
-            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6">
+            <h1
+              class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6"
+            >
               Hello~我是
               <span class="text-yellow-500">Yuna</span>
             </h1>
             <p class="text-base sm:text-lg lg:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed">
-              畢業於台北科技大學資訊工程系，熱愛前端開發與使用者體驗設計，並具備資訊安全背景。<br class="hidden sm:block" />
+              畢業於台北科技大學資訊工程系，熱愛前端開發與使用者體驗設計，並具備資訊安全背景。<br
+                class="hidden sm:block"
+              />
               擅長 Vue 3、RWD 響應式設計、互動式介面 與 API 串接整合包括 OpenData、健康署
               API、第三方服務與 OpenAI API。<br class="hidden sm:block" />
 
               熟悉 Pinia、Vuetify、Vite、Axios、表單驗證 等工具，並具備 OAuth 2.0、資安檢測
               等實務經驗，能將需求轉化為 安全、直覺、流暢，同時兼顧美感與功能性的產品。
             </p>
-            <div class="flex flex-col-reverse sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
-              <button @click="scrollTo('contact')" class="px-8 py-4 bg-gray-700 hover:bg-gray-800 text-white font-bold text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out">
+            <div
+              class="flex flex-col-reverse sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start"
+            >
+              <button
+                @click="scrollTo('contact')"
+                class="px-8 py-4 bg-gray-700 hover:bg-gray-800 text-white font-bold text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out"
+              >
                 聯絡我
               </button>
-              <button @click="scrollTo('projects')" class="px-8 py-4 bg-yellow-500 hover:bg-yellow-600 text-white font-bold text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out">
+              <button
+                @click="scrollTo('projects')"
+                class="px-8 py-4 bg-yellow-500 hover:bg-yellow-600 text-white font-bold text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out"
+              >
                 查看作品
               </button>
             </div>
@@ -206,13 +220,13 @@
 
     <!-- About Section -->
     <section id="about" class="py-20 bg-gray-50">
-      <div class=" mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Me</h2>
           <p class="text-xl text-gray-400 max-w-2xl mx-auto">關於我</p>
         </div>
 
-        <div class=" mx-auto">
+        <div class="mx-auto">
           <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
             <!-- <h3 class="text-2xl font-bold text-gray-900 mb-6">我的故事</h3> -->
             <div class="space-y-4 text-gray-600 leading-relaxed">
@@ -250,8 +264,8 @@
       </div>
     </section>
 
-          <!-- Experience Section -->
-          <section id="experience" class="py-20 bg-white">
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Experience</h2>
@@ -262,27 +276,37 @@
           <!-- Timeline Container -->
           <div class="relative">
             <!-- Timeline Line -->
-            <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 via-orange-500 to-purple-500"></div>
-            
+            <div
+              class="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 via-orange-500 to-purple-500"
+            ></div>
+
             <div class="space-y-12">
               <!-- Experience 1 - 2024 -->
               <div class="relative flex items-start">
                 <!-- Timeline Node -->
                 <div class="relative z-10 flex-shrink-0">
                   <!-- 發光效果 - 在背景層 -->
-                  <div class="absolute inset-0 w-16 h-16 bg-blue-500 rounded-full opacity-20 animate-pulse"></div>
+                  <div
+                    class="absolute inset-0 w-16 h-16 bg-blue-500 rounded-full opacity-20 animate-pulse"
+                  ></div>
                   <!-- 主圓圈 - 在發光效果之上 -->
-                  <div class="relative w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center shadow-lg border-4 border-white">
+                  <div
+                    class="relative w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center shadow-lg border-4 border-white"
+                  >
                     <span class="text-white font-bold text-sm relative z-10">2024</span>
                   </div>
                 </div>
-                
+
                 <!-- Content Card -->
                 <div class="ml-8 flex-1">
-                  <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 relative">
+                  <div
+                    class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 relative"
+                  >
                     <!-- Card Decoration -->
-                    <div class="absolute -left-4 top-8 w-0 h-0 border-t-8 border-b-8 border-r-8 border-transparent border-r-white"></div>
-                    
+                    <div
+                      class="absolute -left-4 top-8 w-0 h-0 border-t-8 border-b-8 border-r-8 border-transparent border-r-white"
+                    ></div>
+
                     <!-- Header -->
                     <div class="flex items-center justify-between mb-4">
                       <div>
@@ -291,17 +315,25 @@
                         <p class="text-gray-500 text-sm">2024年7月 - 2024年8月</p>
                       </div>
                       <div class="hidden md:block">
-                        <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">資安實習</span>
+                        <span
+                          class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium"
+                          >資安實習</span
+                        >
                       </div>
                     </div>
-                    
+
                     <!-- Content -->
                     <div class="space-y-4">
                       <div class="flex items-start space-x-3">
                         <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
                         <div>
-                          <h4 class="font-semibold text-gray-900 mb-1">OAuth 2.0 認證與授權流程演練</h4>
-                          <p class="text-gray-600">研究並演練 OAuth 2.0 認證與授權流程，並應用於專案模擬測試，累積實務經驗。</p>
+                          <h4 class="font-semibold text-gray-900 mb-1">
+                            OAuth 2.0 認證與授權流程演練
+                          </h4>
+                          <p class="text-gray-600">
+                            研究並演練 OAuth 2.0
+                            認證與授權流程，並應用於專案模擬測試，累積實務經驗。
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -314,19 +346,27 @@
                 <!-- Timeline Node -->
                 <div class="relative z-10 flex-shrink-0">
                   <!-- 發光效果 - 在背景層 -->
-                  <div class="absolute inset-0 w-16 h-16 bg-orange-500 rounded-full opacity-20 animate-pulse"></div>
+                  <div
+                    class="absolute inset-0 w-16 h-16 bg-orange-500 rounded-full opacity-20 animate-pulse"
+                  ></div>
                   <!-- 主圓圈 - 在發光效果之上 -->
-                  <div class="relative w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center shadow-lg border-4 border-white">
+                  <div
+                    class="relative w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center shadow-lg border-4 border-white"
+                  >
                     <span class="text-white font-bold text-sm relative z-10">2023</span>
                   </div>
                 </div>
-                
+
                 <!-- Content Card -->
                 <div class="ml-8 flex-1">
-                  <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 relative">
+                  <div
+                    class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 relative"
+                  >
                     <!-- Card Decoration -->
-                    <div class="absolute -left-4 top-8 w-0 h-0 border-t-8 border-b-8 border-r-8 border-transparent border-r-white"></div>
-                    
+                    <div
+                      class="absolute -left-4 top-8 w-0 h-0 border-t-8 border-b-8 border-r-8 border-transparent border-r-white"
+                    ></div>
+
                     <!-- Header -->
                     <div class="flex items-center justify-between mb-4">
                       <div>
@@ -335,33 +375,43 @@
                         <p class="text-gray-500 text-sm">2023年5月 - 2023年9月</p>
                       </div>
                       <div class="hidden md:block">
-                        <span class="px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">資安管理</span>
+                        <span
+                          class="px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm font-medium"
+                          >資安管理</span
+                        >
                       </div>
                     </div>
-                    
+
                     <!-- Content -->
                     <div class="space-y-4">
                       <div class="flex items-start space-x-3">
                         <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
                         <div>
                           <h4 class="font-semibold text-gray-900 mb-1">專案協作與使用者體驗改善</h4>
-                          <p class="text-gray-600">參與專案流程與功能驗證，追蹤 176 項系統漏洞並提出優化建議，提升操作便利性。</p>
+                          <p class="text-gray-600">
+                            參與專案流程與功能驗證，追蹤 176
+                            項系統漏洞並提出優化建議，提升操作便利性。
+                          </p>
                         </div>
                       </div>
-                      
+
                       <div class="flex items-start space-x-3">
                         <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
                         <div>
                           <h4 class="font-semibold text-gray-900 mb-1">社交工程模擬協作</h4>
-                          <p class="text-gray-600">參與大規模模擬（5343 名員工），揭露 242 位受影響人員，強化專案協作能力。</p>
+                          <p class="text-gray-600">
+                            參與大規模模擬（5343 名員工），揭露 242 位受影響人員，強化專案協作能力。
+                          </p>
                         </div>
                       </div>
-                      
+
                       <div class="flex items-start space-x-3">
                         <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
                         <div>
                           <h4 class="font-semibold text-gray-900 mb-1">產品分析與策略建議</h4>
-                          <p class="text-gray-600">進行競品分析，提出改善方案，增強產品功能規劃與前端設計思維。</p>
+                          <p class="text-gray-600">
+                            進行競品分析，提出改善方案，增強產品功能規劃與前端設計思維。
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -374,41 +424,56 @@
                 <!-- Timeline Node -->
                 <div class="relative z-10 flex-shrink-0">
                   <!-- 發光效果 - 在背景層 -->
-                  <div class="absolute inset-0 w-16 h-16 bg-purple-500 rounded-full opacity-20 animate-pulse"></div>
+                  <div
+                    class="absolute inset-0 w-16 h-16 bg-purple-500 rounded-full opacity-20 animate-pulse"
+                  ></div>
                   <!-- 主圓圈 - 在發光效果之上 -->
-                  <div class="relative w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center shadow-lg border-4 border-white">
+                  <div
+                    class="relative w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center shadow-lg border-4 border-white"
+                  >
                     <span class="text-white font-bold text-sm relative z-10">2022</span>
                   </div>
                 </div>
-                
+
                 <!-- Content Card -->
                 <div class="ml-8 flex-1">
-                  <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 relative">
+                  <div
+                    class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 relative"
+                  >
                     <!-- Card Decoration -->
-                    <div class="absolute -left-4 top-8 w-0 h-0 border-t-8 border-b-8 border-r-8 border-transparent border-r-white"></div>
-                    
+                    <div
+                      class="absolute -left-4 top-8 w-0 h-0 border-t-8 border-b-8 border-r-8 border-transparent border-r-white"
+                    ></div>
+
                     <!-- Header -->
                     <div class="flex items-center justify-between mb-4">
                       <div>
                         <h3 class="text-2xl font-bold text-gray-900 mb-1">資訊工讀生</h3>
-                        <p class="text-purple-600 font-semibold text-lg">新光合成纖維股份有限公司</p>
+                        <p class="text-purple-600 font-semibold text-lg">
+                          新光合成纖維股份有限公司
+                        </p>
                         <p class="text-gray-500 text-sm">2022年7月 - 2022年9月</p>
                       </div>
                       <div class="hidden md:block">
-                        <span class="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">資訊工讀</span>
+                        <span
+                          class="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-medium"
+                          >資訊工讀</span
+                        >
                       </div>
                     </div>
-                    
+
                     <!-- Content -->
                     <div class="space-y-4">
                       <div class="flex items-start space-x-3">
                         <div class="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
                         <div>
                           <h4 class="font-semibold text-gray-900 mb-1">報表排版與資料整理</h4>
-                          <p class="text-gray-600">整理 ERP 系統報表，確保格式清晰易讀，提升資料呈現的專業性。</p>
+                          <p class="text-gray-600">
+                            整理 ERP 系統報表，確保格式清晰易讀，提升資料呈現的專業性。
+                          </p>
                         </div>
                       </div>
-                      
+
                       <div class="flex items-start space-x-3">
                         <div class="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
                         <div>
@@ -428,7 +493,7 @@
 
     <!-- Skills Section -->
     <section id="skills" class="py-20 bg-gray-50">
-      <div class=" mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Skills</h2>
           <p class="text-xl text-gray-400">相關專業技能</p>
@@ -508,7 +573,7 @@
 
     <!-- JiaNice Featured Project Section -->
     <section id="jianice" class="py-20 bg-white">
-      <div class=" mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">專題作品</h2>
           <p class="text-xl text-gray-600">JiaNice - 智慧健康飲食平台</p>
@@ -657,7 +722,7 @@
 
     <!-- Projects Section -->
     <section id="projects" class="py-20 bg-gray-50">
-      <div class=" mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Demo</h2>
           <p class="text-xl text-gray-600">作品展示</p>
@@ -817,7 +882,7 @@
 
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-white-50">
-      <div class=" mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-5">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Contact Me</h2>
           <p class="text-xl text-gray-600 mb-10">聯絡我</p>
@@ -979,7 +1044,6 @@
       </div>
     </section>
 
-
     <!-- Footer -->
     <footer class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
       <!-- 主要內容區域 -->
@@ -988,9 +1052,15 @@
           <!-- 個人資訊 -->
           <div class="lg:col-span-2">
             <div class="flex items-center mb-6">
-              <div class="w-12 h-12 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center mr-4">
+              <div
+                class="w-12 h-12 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center mr-4"
+              >
                 <!-- <span class="text-2xl">👩‍💻</span> -->
-                <img src="https://cdn-icons-png.flaticon.com/128/2423/2423917.png" alt="Vue.js" class="w-10 h-10"></img>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/2423/2423917.png"
+                  alt="Vue.js"
+                  class="w-10 h-10"
+                />
               </div>
               <h3 class="text-2xl font-bold">Yuna's Portfolio</h3>
             </div>
@@ -999,76 +1069,192 @@
               致力於創造美觀且功能豐富的用戶體驗，讓技術與設計完美結合。
             </p>
             <div class="flex space-x-4">
-              <a href="https://github.com/yunahsuya?tab=repositories" target="_blank" 
-                 class="w-10 h-10 bg-gray-700 hover:bg-gray-600 rounded-full flex items-center justify-center transition-colors duration-300 group">
-                <svg class="w-5 h-5 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              <a
+                href="https://github.com/yunahsuya?tab=repositories"
+                target="_blank"
+                class="w-10 h-10 bg-gray-700 hover:bg-gray-600 rounded-full flex items-center justify-center transition-colors duration-300 group"
+              >
+                <svg
+                  class="w-5 h-5 group-hover:scale-110 transition-transform"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  />
                 </svg>
               </a>
-              <a href="mailto:yunahsuya@gmail.com" 
-                 class="w-10 h-10 bg-gray-700 hover:bg-gray-600 rounded-full flex items-center justify-center transition-colors duration-300 group">
-                <svg class="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              <a
+                href="mailto:yunahsuya@gmail.com"
+                class="w-10 h-10 bg-gray-700 hover:bg-gray-600 rounded-full flex items-center justify-center transition-colors duration-300 group"
+              >
+                <svg
+                  class="w-5 h-5 group-hover:scale-110 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
                 </svg>
               </a>
-              <a href="tel:0905336968" 
-                 class="w-10 h-10 bg-gray-700 hover:bg-gray-600 rounded-full flex items-center justify-center transition-colors duration-300 group">
-                <svg class="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+              <a
+                href="tel:0905336968"
+                class="w-10 h-10 bg-gray-700 hover:bg-gray-600 rounded-full flex items-center justify-center transition-colors duration-300 group"
+              >
+                <svg
+                  class="w-5 h-5 group-hover:scale-110 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
                 </svg>
               </a>
-              <a href="https://vocus.cc/salon/6647b6a6fd89780001f99044" target="_blank" 
-                 class="w-10 h-10 bg-gray-700 hover:bg-gray-600 rounded-full flex items-center justify-center transition-colors duration-300 group">
-                <svg class="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/>
+              <a
+                href="https://vocus.cc/salon/6647b6a6fd89780001f99044"
+                target="_blank"
+                class="w-10 h-10 bg-gray-700 hover:bg-gray-600 rounded-full flex items-center justify-center transition-colors duration-300 group"
+              >
+                <svg
+                  class="w-5 h-5 group-hover:scale-110 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
+                  />
                 </svg>
               </a>
+            </div>
+
+            <!-- Yuna's Portfolio 採用的技術 -->
+            <div class="mt-8">
+              <h4 class="text-lg font-semibold mb-4 text-yellow-400">
+                Yuna's Portfolio 採用的技術
+              </h4>
+              <div class="space-y-3">
+                <div>
+                  <h5 class="text-sm font-medium text-gray-400 mb-2">前端框架</h5>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-blue-600 text-white rounded-full text-xs font-medium"
+                      >Vue 3</span
+                    >
+                    <span class="px-3 py-1 bg-blue-600 text-white rounded-full text-xs font-medium"
+                      >Vite</span
+                    >
+                  </div>
+                </div>
+                <div>
+                  <h5 class="text-sm font-medium text-gray-400 mb-2">樣式與工具</h5>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-cyan-600 text-white rounded-full text-xs font-medium"
+                      >Tailwind CSS</span
+                    >
+                    <span class="px-3 py-1 bg-cyan-600 text-white rounded-full text-xs font-medium"
+                      >DaisyUI</span
+                    >
+                    <span class="px-3 py-1 bg-cyan-600 text-white rounded-full text-xs font-medium"
+                      >ESLint</span
+                    >
+                    <span class="px-3 py-1 bg-cyan-600 text-white rounded-full text-xs font-medium"
+                      >Prettier</span
+                    >
+                    <span class="px-3 py-1 bg-cyan-600 text-white rounded-full text-xs font-medium"
+                      >Git</span
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- 快速導航 -->
           <div>
-            <h4 class="text-lg font-semibold mb-6 text-yellow-400 ml-1 ">快速導航</h4>
-            <ul class="space-y-3 " >
+            <h4 class="text-lg font-semibold mb-6 text-yellow-400 ml-1">快速導航</h4>
+            <ul class="space-y-3">
               <li>
-                <a href="#home" @click="scrollTo('home')" 
-                   class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center group">
-                  <span class="w-2 h-2 bg-yellow-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                <a
+                  href="#home"
+                  @click="scrollTo('home')"
+                  class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center group"
+                >
+                  <span
+                    class="w-2 h-2 bg-yellow-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></span>
                   首頁
                 </a>
               </li>
               <li>
-                <a href="#about" @click="scrollTo('about')" 
-                   class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center group">
-                  <span class="w-2 h-2 bg-yellow-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                <a
+                  href="#about"
+                  @click="scrollTo('about')"
+                  class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center group"
+                >
+                  <span
+                    class="w-2 h-2 bg-yellow-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></span>
                   關於我
                 </a>
               </li>
               <li>
-                <a href="#skills" @click="scrollTo('skills')" 
-                   class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center group">
-                  <span class="w-2 h-2 bg-yellow-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                <a
+                  href="#skills"
+                  @click="scrollTo('skills')"
+                  class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center group"
+                >
+                  <span
+                    class="w-2 h-2 bg-yellow-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></span>
                   技能
                 </a>
               </li>
               <li>
-                <a href="#experience" @click="scrollTo('experience')" 
-                   class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center group">
-                  <span class="w-2 h-2 bg-yellow-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                <a
+                  href="#experience"
+                  @click="scrollTo('experience')"
+                  class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center group"
+                >
+                  <span
+                    class="w-2 h-2 bg-yellow-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></span>
                   工作經驗
                 </a>
               </li>
               <li>
-                <a href="#projects" @click="scrollTo('projects')" 
-                   class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center group">
-                  <span class="w-2 h-2 bg-yellow-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                <a
+                  href="#projects"
+                  @click="scrollTo('projects')"
+                  class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center group"
+                >
+                  <span
+                    class="w-2 h-2 bg-yellow-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></span>
                   作品展示
                 </a>
               </li>
               <li>
-                <a href="#contact" @click="scrollTo('contact')" 
-                   class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center group">
-                  <span class="w-2 h-2 bg-yellow-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                <a
+                  href="#contact"
+                  @click="scrollTo('contact')"
+                  class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center group"
+                >
+                  <span
+                    class="w-2 h-2 bg-yellow-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                  ></span>
                   聯絡我
                 </a>
               </li>
@@ -1086,7 +1272,9 @@
                   <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Vite</span>
                   <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">HTML</span>
                   <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">CSS</span>
-                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">JavaScript</span>
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs"
+                    >JavaScript</span
+                  >
                 </div>
               </div>
               <div>
@@ -1107,7 +1295,9 @@
                   <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Axios</span>
                   <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Git</span>
                   <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Node.js</span>
-                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">RESTfulAPI</span>
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs"
+                    >RESTfulAPI</span
+                  >
                   <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Swiper</span>
                   <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Gsap</span>
                   <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Eslint</span>
@@ -1123,29 +1313,55 @@
             <!-- 版權資訊 -->
             <div class="text-center md:text-left mb-4 md:mb-0">
               <p class="text-gray-400 text-sm">
-                © 2025 許庭瑋 (Yuna). 版權所有 | 
+                © 2025 許庭瑋 (Yuna). 版權所有 |
                 <span class="text-yellow-400">Made with ❤️ in Taiwan</span>
               </p>
             </div>
 
             <!-- 聯絡資訊 -->
-            <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-sm text-gray-400">
+            <div
+              class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-sm text-gray-400"
+            >
               <div class="flex items-center">
                 <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
                 </svg>
-                <a href="mailto:yunahsuya@gmail.com" class="hover:text-yellow-400 transition-colors">yunahsuya@gmail.com</a>
+                <a href="mailto:yunahsuya@gmail.com" class="hover:text-yellow-400 transition-colors"
+                  >yunahsuya@gmail.com</a
+                >
               </div>
               <div class="flex items-center">
                 <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
                 </svg>
-                <a href="tel:0905336968" class="hover:text-yellow-400 transition-colors">0905-336-968</a>
+                <a href="tel:0905336968" class="hover:text-yellow-400 transition-colors"
+                  >0905-336-968</a
+                >
               </div>
               <div class="flex items-center">
                 <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
                 </svg>
                 <span>台北市</span>
               </div>
@@ -1158,14 +1374,24 @@
           <div class="inline-flex items-center space-x-4 text-sm text-gray-500">
             <span class="flex items-center">
               <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
               </svg>
               最佳聯絡時間：週一至週五 9:00-18:00
             </span>
-            
+
             <span class="flex items-center">
               <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                />
               </svg>
               通常會在 24 小時內回覆
             </span>
@@ -1173,7 +1399,6 @@
         </div>
       </div>
     </footer>
-
 
     <!-- 回到最上面按鈕 -->
     <Transition
@@ -1225,7 +1450,6 @@ const jianiceImages = ref([
   new URL('./assets/JIANICE-Manager.jpg', import.meta.url).href,
   new URL('./assets/JIANICE-users.jpg', import.meta.url).href,
 ])
-
 
 // 自動輪播
 let autoPlayInterval = null
