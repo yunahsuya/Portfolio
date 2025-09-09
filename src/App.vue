@@ -611,7 +611,7 @@
                 </div>
 
                 <!-- 按鈕 -->
-                <div class="flex flex-col sm:flex-row gap-4">
+                <div class="flex flex-col-reverse sm:flex-row gap-4">
                   <!-- 更多作品 -->
                   <button
                     @click="scrollTo('projects')"
@@ -1028,47 +1028,47 @@
 
           <!-- 快速導航 -->
           <div>
-            <h4 class="text-lg font-semibold mb-6 text-yellow-400 ml-10">快速導航</h4>
-            <ul class="space-y-3 ml-6" >
+            <h4 class="text-lg font-semibold mb-6 text-yellow-400 ml-1 ">快速導航</h4>
+            <ul class="space-y-3 " >
               <li>
                 <a href="#home" @click="scrollTo('home')" 
                    class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center group">
-                  <span class="w-2 h-2 bg-yellow-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  <span class="w-2 h-2 bg-yellow-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   首頁
                 </a>
               </li>
               <li>
                 <a href="#about" @click="scrollTo('about')" 
                    class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center group">
-                  <span class="w-2 h-2 bg-yellow-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  <span class="w-2 h-2 bg-yellow-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   關於我
                 </a>
               </li>
               <li>
                 <a href="#skills" @click="scrollTo('skills')" 
                    class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center group">
-                  <span class="w-2 h-2 bg-yellow-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  <span class="w-2 h-2 bg-yellow-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   技能
                 </a>
               </li>
               <li>
                 <a href="#experience" @click="scrollTo('experience')" 
                    class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center group">
-                  <span class="w-2 h-2 bg-yellow-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  <span class="w-2 h-2 bg-yellow-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   工作經驗
                 </a>
               </li>
               <li>
                 <a href="#projects" @click="scrollTo('projects')" 
                    class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center group">
-                  <span class="w-2 h-2 bg-yellow-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  <span class="w-2 h-2 bg-yellow-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   作品展示
                 </a>
               </li>
               <li>
                 <a href="#contact" @click="scrollTo('contact')" 
                    class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center group">
-                  <span class="w-2 h-2 bg-yellow-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  <span class="w-2 h-2 bg-yellow-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   聯絡我
                 </a>
               </li>
