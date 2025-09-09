@@ -218,45 +218,65 @@
       </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-gray-50">
+     <!-- About Section -->
+     <section id="about" class="py-20 bg-gray-100">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Me</h2>
           <p class="text-xl text-gray-400 max-w-2xl mx-auto">關於我</p>
         </div>
 
-        <div class="mx-auto">
-          <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-            <!-- <h3 class="text-2xl font-bold text-gray-900 mb-6">我的故事</h3> -->
-            <div class="space-y-4 text-gray-600 leading-relaxed">
-              <h1 class="text-xl font-bold text-gray-900 mt-6">『關於我』</h1>
-              <p class="text-xl">
-                我叫許庭瑋，畢業於台北科技大學資訊工程系，對前端開發充滿熱情。近期專注於 Vue
-                3、Pinia 與 Vuetify 技術，並透過專題「JiaNice」實作完整前端平台，涵蓋 SPA 架構、UI
-                設計、前後端資料串接，以及健康署與 OpenData API 的整合。我熟悉 MVC
-                架構下前後端協作流程。專題核心功能包括餐廳隨機抽選、營養提醒與回憶錄系統，我從規劃頁面互動流程到優化使用者體驗都有實作經驗，具備快速學習與問題拆解能力，能有效應對前端專案中的技術與設計挑戰。
+        <div class="max-w-7xl mx-auto">
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- 卡片 1: 關於我 -->
+            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mr-4">
+                  <span class="text-blue-600 text-2xl">👋</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900">關於我</h3>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                我叫許庭瑋，畢業於台北科技大學資訊工程系，對前端開發充滿熱情。專精於 Vue 3、Pinia 與 Vuetify 技術，具備快速學習與問題拆解能力。
               </p>
+            </div>
 
-              <h1 class="text-xl font-bold text-gray-900 mt-6">『工作經驗』</h1>
-              <p class="text-xl">
-                在過去的實習中，我協助公司處理資安事件與專案開發，參與系統漏洞測試與風險分析，並參與大型社交工程演練，涵蓋超過
-                5000
-                名員工，成功揭露受影響人員。在此過程中，我養成了系統化思考能力，並將分析與測試成果應用於實際專案中，累積了規劃、協作與解決問題的經驗。這些經驗雖屬資安領域，但也強化了我對流程管理與前端開發中資料串接與介面設計的敏銳度，為轉型前端工程師奠定了堅實基礎。
+            <!-- 卡片 2: 工作經驗 -->
+            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mr-4">
+                  <span class="text-green-600 text-2xl">💼</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900">工作經驗</h3>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                具備資安實習經驗，參與系統漏洞測試與大型社交工程演練，涵蓋超過 5000 名員工。養成系統化思考能力，為轉型前端工程師奠定堅實基礎。
               </p>
+            </div>
 
-              <h1 class="text-xl font-bold text-gray-900 mt-6">『自我進修』</h1>
-              <p class="text-xl">
-                我曾參加職訓局前端課程，透過專題實作深化 Vue 3、Pinia 與 Vuetify
-                的實務應用，並練習設計使用者介面、串接後端 API
-                與整合第三方資料源。我同時透過撰寫教學文章與專題紀錄，整理學習成果，提升技術理解與團隊溝通能力。
+            <!-- 卡片 3: 自我進修 -->
+            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mr-4">
+                  <span class="text-purple-600 text-2xl">📚</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900">自我進修</h3>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                參加職訓局前端課程，透過專題實作深化技術應用。透過撰寫教學文章與專題紀錄，提升技術理解與團隊溝通能力。
               </p>
+            </div>
 
-              <h1 class="text-xl font-bold text-gray-900 mt-6">『未來展望』</h1>
-              <p class="text-xl">
-                未來，希望持續精進前端與互動式產品設計能力，透過 SIDE PROJECT 的實作，例如 AI
-                互動履歷網站、LINEBOT 智能記帳系統，以及詐騙防治網站等，累積前、後端整合、API
-                串接與資料視覺化能力。期望將創意思維與技術能力結合，打造兼具實用性與趣味性的產品，並為公司提供具有差異化的用戶體驗與技術解決方案。
+            <!-- 卡片 4: 未來展望 -->
+            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mr-4">
+                  <span class="text-orange-600 text-2xl">🚀</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900">未來展望</h3>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                持續精進前端與互動式產品設計能力，透過 SIDE PROJECT 實作，累積前後端整合、API 串接與資料視覺化能力，打造兼具實用性與趣味性的產品。
               </p>
             </div>
           </div>
@@ -492,7 +512,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-gray-50">
+    <section id="skills" class="py-20 bg-gray-100">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Skills</h2>
@@ -582,34 +602,7 @@
         <div class="max-w-6xl mx-auto">
           <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
             <div class="grid lg:grid-cols-2 gap-0">
-              <!-- 左側：專案截圖 -->
-              <div class="aspect-video lg:aspect-square flex items-center justify-center relative">
-                <img
-                  :src="jianiceImages[currentImageIndex]"
-                  alt="JiaNice 專案截圖"
-                  class="w-11/12 h-11/12 object-contain transition-opacity duration-500"
-                  @error="console.log('圖片載入錯誤:', jianiceImages[currentImageIndex])"
-                  @load="console.log('圖片載入成功:', jianiceImages[currentImageIndex])"
-                />
-
-                <!-- 調試信息 -->
-                <div class="absolute top-2 left-2 bg-black/50 text-white p-2 rounded text-xs">
-                  當前索引: {{ currentImageIndex }} / {{ jianiceImages.length - 1 }}
-                </div>
-
-                <!-- 圖片指示器 -->
-                <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-                  <button
-                    v-for="(image, index) in jianiceImages"
-                    :key="index"
-                    @click="currentImageIndex = index"
-                    :class="[
-                      'w-3 h-3 rounded-full transition-all duration-300',
-                      currentImageIndex === index ? 'bg-white' : 'bg-white/50',
-                    ]"
-                  ></button>
-                </div>
-              </div>
+              
 
               <!-- 右側：專案詳情 -->
               <div class="p-8 lg:p-12 flex flex-col justify-center">
@@ -714,6 +707,36 @@
                   </a>
                 </div>
               </div>
+
+              <!-- 左側：專案截圖 -->
+              <div class="aspect-video lg:aspect-square flex items-center justify-center relative">
+                <img
+                  :src="jianiceImages[currentImageIndex]"
+                  alt="JiaNice 專案截圖"
+                  class="w-11/12 h-11/12 object-contain transition-opacity duration-500"
+                  @error="console.log('圖片載入錯誤:', jianiceImages[currentImageIndex])"
+                  @load="console.log('圖片載入成功:', jianiceImages[currentImageIndex])"
+                />
+
+                <!-- 調試信息 -->
+                <!-- <div class="absolute top-2 left-2 bg-black/50 text-white p-2 rounded text-xs">
+                  當前索引: {{ currentImageIndex }} / {{ jianiceImages.length - 1 }}
+                </div> -->
+
+                <!-- 圖片指示器 -->
+                <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                  <button
+                    v-for="(image, index) in jianiceImages"
+                    :key="index"
+                    @click="currentImageIndex = index"
+                    :class="[
+                      'w-3 h-3 rounded-full transition-all duration-300',
+                      currentImageIndex === index ? 'bg-white' : 'bg-white/50',
+                    ]"
+                  ></button>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -721,7 +744,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-gray-50">
+    <section id="projects" class="py-20 bg-gray-100">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Demo</h2>
@@ -1160,7 +1183,7 @@
                 </div>
                 <div>
                   <h5 class="text-sm font-medium text-gray-400 mb-2">樣式與工具</h5>
-                  <div class="flex flex-wrap gap-2">
+                  <div class="flex flex-wrap gap-2 ">
                     <span class="px-3 py-1 bg-cyan-600 text-white rounded-full text-xs font-medium"
                       >Tailwind CSS</span
                     >
@@ -1434,6 +1457,7 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+
 
 // 響應式數據
 const mobileMenuOpen = ref(false)
