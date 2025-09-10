@@ -161,7 +161,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="pt-16 sm:pt-20 md:pt-24 lg:pt-2 bg-white">
+    <section id="home" class="pt-16 pb-3 sm:pt-20 md:pt-24 lg:pt-2 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <!-- 圖片區域 -->
@@ -191,35 +191,90 @@
               畢業於台北科技大學資訊工程系，熱愛前端開發與使用者體驗設計，並具備資訊安全背景。<br
                 class="hidden sm:block"
               />
-              擅長 Vue 3、RWD 響應式設計、互動式介面 與 API 串接整合包括 OpenData、健康署
-              API、第三方服務與 OpenAI API。<br class="hidden sm:block" />
-
-              熟悉 Pinia、Vuetify、Vite、Axios、表單驗證 等工具，並具備 OAuth 2.0、資安檢測
-              等實務經驗，能將需求轉化為 安全、直覺、流暢，同時兼顧美感與功能性的產品。
+              擅長 Vue 3 與 RWD 響應式設計，熟悉 Pinia、Vuetify、API
+              串接與表單驗證，能將需求轉化為直覺、流暢又兼具安全性的產品。
             </p>
             <div
               class="flex flex-col-reverse sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start"
             >
-              <button
-                @click="scrollTo('contact')"
-                class="px-8 py-4 bg-gray-700 hover:bg-gray-800 text-white font-bold text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out"
+              <div
+                class="flex flex-col-reverse sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start"
               >
-                聯絡我
-              </button>
-              <button
-                @click="scrollTo('projects')"
-                class="px-8 py-4 bg-yellow-500 hover:bg-yellow-600 text-white font-bold text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out"
-              >
-                查看作品
-              </button>
+                <!-- 查看作品按鈕 -->
+                <div
+                  class="flex flex-col mt-1 sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start"
+                >
+                  <!-- 查看作品按鈕 - 手機版第一個，桌面版第一個 -->
+                  <button
+                    @click="scrollTo('projects')"
+                    class="px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-white font-bold text-base rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out flex items-center justify-center order-1 sm:order-1"
+                  >
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                      ></path>
+                    </svg>
+                    查看作品
+                  </button>
+
+                  <!-- GitHub 按鈕 - 手機版第二個，桌面版第二個 -->
+                  <a
+                    href="https://github.com/yunahsuya?tab=repositories"
+                    target="_blank"
+                    class="px-6 py-3 bg-gray-700 hover:bg-gray-800 text-white font-bold text-base rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out flex items-center justify-center order-2 sm:order-2"
+                  >
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                      <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                      ></path>
+                    </svg>
+                    GitHub
+                  </a>
+
+                  <!-- 信箱按鈕 - 手機版第三個，桌面版第三個 -->
+                  <a
+                    href="mailto:yunahsuya@gmail.com"
+                    class="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-bold text-base rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out flex items-center justify-center order-3 sm:order-3"
+                  >
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      ></path>
+                    </svg>
+                    信箱
+                  </a>
+
+                  <!-- 電話按鈕 - 手機版第四個，桌面版第四個 -->
+                  <a
+                    href="tel:0905336968"
+                    class="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-bold text-base rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out flex items-center justify-center order-4 sm:order-4"
+                  >
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      ></path>
+                    </svg>
+                    電話
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-     <!-- About Section -->
-     <section id="about" class="py-20 bg-gray-100">
+    <!-- About Section -->
+    <section id="about" class="pt-20 pb-40 bg-gray-100">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Me</h2>
@@ -229,54 +284,493 @@
         <div class="max-w-7xl mx-auto">
           <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <!-- 卡片 1: 關於我 -->
-            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div
+              class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+            >
               <div class="flex items-center mb-4">
                 <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mr-4">
                   <span class="text-blue-600 text-2xl">👋</span>
                 </div>
                 <h3 class="text-xl font-bold text-gray-900">關於我</h3>
               </div>
-              <p class="text-gray-600 leading-relaxed">
-                我叫許庭瑋，畢業於台北科技大學資訊工程系，對前端開發充滿熱情。專精於 Vue 3、Pinia 與 Vuetify 技術，具備快速學習與問題拆解能力。
-              </p>
+              <!-- 核心價值主張 -->
+              <div class="mb-6">
+                <h4 class="text-lg font-bold text-gray-900 mb-2">我的使命</h4>
+                <p class="text-gray-700 font-medium">
+                  將複雜的技術轉化為直覺、流暢的用戶體驗，並融入資安思維，打造既美觀又安全的產品
+                </p>
+              </div>
+
+              <!-- 專業背景 -->
+              <div class="space-y-4">
+                <div class="flex items-start space-x-3">
+                  <div
+                    class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1"
+                  >
+                    <span class="text-blue-600 text-sm">🛡️</span>
+                  </div>
+                  <div>
+                    <h5 class="font-semibold text-gray-900 mb-1">資安背景</h5>
+                    <p class="text-gray-600 text-sm">
+                      大學期間專注資安實習，培養嚴謹的風險分析與問題解決能力
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start space-x-3">
+                  <div
+                    class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1"
+                  >
+                    <span class="text-green-600 text-sm">��</span>
+                  </div>
+                  <div>
+                    <h5 class="font-semibold text-gray-900 mb-1">前端轉型</h5>
+                    <p class="text-gray-600 text-sm">
+                      發現對介面設計的熱情，系統性學習前端技術，結合創意與嚴謹思維
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start space-x-3">
+                  <div
+                    class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1"
+                  >
+                    <span class="text-purple-600 text-sm">✨</span>
+                  </div>
+                  <div>
+                    <h5 class="font-semibold text-gray-900 mb-1">價值創造</h5>
+                    <p class="text-gray-600 text-sm">
+                      程式是讓設計與價值被具體看見的語言，致力為用戶帶來實際價值與感受
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <!-- 卡片 2: 工作經驗 -->
-            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div
+              class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+            >
               <div class="flex items-center mb-4">
-                <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mr-4">
+                <div
+                  class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mr-4"
+                >
                   <span class="text-green-600 text-2xl">💼</span>
                 </div>
                 <h3 class="text-xl font-bold text-gray-900">工作經驗</h3>
               </div>
-              <p class="text-gray-600 leading-relaxed">
-                具備資安實習經驗，參與系統漏洞測試與大型社交工程演練，涵蓋超過 5000 名員工。養成系統化思考能力，為轉型前端工程師奠定堅實基礎。
-              </p>
+
+              <!-- 核心成就數據 -->
+              <div class="grid grid-cols-2 gap-4 mb-6">
+                <div class="text-center p-4 bg-blue-50 rounded-xl">
+                  <div class="text-2xl font-bold text-blue-600 mb-1">176</div>
+                  <div class="text-sm text-gray-600">系統漏洞處理</div>
+                </div>
+                <div class="text-center p-4 bg-orange-50 rounded-xl">
+                  <div class="text-2xl font-bold text-orange-600 mb-1">5,343</div>
+                  <div class="text-sm text-gray-600">員工模擬測試</div>
+                </div>
+                <div class="text-center p-4 bg-red-50 rounded-xl">
+                  <div class="text-2xl font-bold text-red-600 mb-1">242</div>
+                  <div class="text-sm text-gray-600">風險人員識別</div>
+                </div>
+                <div class="text-center p-4 bg-purple-50 rounded-xl">
+                  <div class="text-2xl font-bold text-purple-600 mb-1">100%</div>
+                  <div class="text-sm text-gray-600">專案完成率</div>
+                </div>
+              </div>
+
+              <!-- 經驗亮點 -->
+              <div class="space-y-4">
+                <div class="flex items-start space-x-3">
+                  <div
+                    class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1"
+                  >
+                    <span class="text-blue-600 text-sm">��</span>
+                  </div>
+                  <div>
+                    <h5 class="font-semibold text-gray-900 mb-1">系統漏洞管理</h5>
+                    <p class="text-gray-600 text-sm">
+                      處理 176 項系統漏洞，提出優化建議，提升使用者操作便利性
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start space-x-3">
+                  <div
+                    class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1"
+                  >
+                    <span class="text-orange-600 text-sm">��</span>
+                  </div>
+                  <div>
+                    <h5 class="font-semibold text-gray-900 mb-1">社交工程演練</h5>
+                    <p class="text-gray-600 text-sm">
+                      設計釣魚測試範本，參與 5,343 名員工大規模模擬，揭露 242 位受影響人員
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start space-x-3">
+                  <div
+                    class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1"
+                  >
+                    <span class="text-purple-600 text-sm">��</span>
+                  </div>
+                  <div>
+                    <h5 class="font-semibold text-gray-900 mb-1">OAuth 2.0 研究</h5>
+                    <p class="text-gray-600 text-sm">
+                      專注研究認證與授權流程，應用於專案模擬測試，累積紮實實務經驗
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <!-- 卡片 3: 自我進修 -->
-            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <!-- 卡片 3: 轉職過程 -->
+            <div
+              class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+            >
               <div class="flex items-center mb-4">
-                <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mr-4">
+                <div
+                  class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mr-4"
+                >
                   <span class="text-purple-600 text-2xl">📚</span>
                 </div>
-                <h3 class="text-xl font-bold text-gray-900">自我進修</h3>
+                <h3 class="text-xl font-bold text-gray-900">轉職過程</h3>
               </div>
-              <p class="text-gray-600 leading-relaxed">
-                參加職訓局前端課程，透過專題實作深化技術應用。透過撰寫教學文章與專題紀錄，提升技術理解與團隊溝通能力。
+              <p class="text-gray-600 leading-relaxed text-lg">
+                在半年的前端職訓課程中，我獨立開發「JiaNice」智慧生活飲食健康管理平台，採用 MVC
+                架構實現前後端分離，成功串接健康署、OpenAI API
+                以及政府開放資料平台，提供回憶記錄、餐廳隨機推薦、健康新聞與 AI
+                智慧助理營養分析，為用戶打造全方位的健康體驗。這個專題讓我實踐 SPA 架構設計與第三方
+                API
+                整合，並將使用者體驗與技術能力充分結合，呈現兼具功能性與互動順暢性的產品。同時，透過撰寫教學文章，深化了技術應用、提升了技術理解與整理能力，為未來在前端領域持續創造價值奠定了基礎。
               </p>
             </div>
 
-            <!-- 卡片 4: 未來展望 -->
-            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <!--  -->
+            <!--  -->
+            <div
+              class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+            >
+              <div class="flex items-center mb-6">
+                <div
+                  class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mr-4"
+                >
+                  <span class="text-purple-600 text-2xl">��</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900">轉職過程</h3>
+              </div>
+
+              <!-- 轉職過程描述 -->
+              <div class="mb-3">
+                <p class="text-gray-600 leading-relaxed text-sm mb-3">
+                  在半年的前端職訓課程中，我獨立開發「JiaNice」智慧生活飲食健康管理平台。
+                </p>
+              </div>
+
+              <!-- 專案概覽 -->
+              <div class="mb-6 p-4 bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl">
+                <div class="flex items-center mb-2">
+                  <span class="text-purple-600 text-lg mr-2">🏆</span>
+                  <h4 class="font-semibold text-gray-900">JiaNice 智慧健康平台</h4>
+                </div>
+                <p class="text-gray-600 text-sm mb-3">
+                  6個月獨立開發，整合多項 API 與 AI 技術的全方位健康管理平台
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-white text-purple-600 rounded text-xs">MVC架構</span>
+                  <span class="px-2 py-1 bg-white text-blue-600 rounded text-xs">SPA設計</span>
+                  <span class="px-2 py-1 bg-white text-green-600 rounded text-xs">API整合</span>
+                </div>
+              </div>
+
+              <!-- 核心功能 -->
+              <div class="mb-6">
+                <h4 class="font-semibold text-gray-900 mb-3">�� 核心功能</h4>
+                <div class="grid grid-cols-2 gap-3">
+                  <div class="p-3 bg-blue-50 rounded-lg">
+                    <div class="flex items-center mb-1">
+                      <span class="text-blue-600 text-sm mr-1">��</span>
+                      <span class="text-sm font-medium text-gray-900">回憶記錄</span>
+                    </div>
+                    <p class="text-xs text-gray-600">個人健康記錄管理</p>
+                  </div>
+                  <div class="p-3 bg-green-50 rounded-lg">
+                    <div class="flex items-center mb-1">
+                      <span class="text-green-600 text-sm mr-1">🍽️</span>
+                      <span class="text-sm font-medium text-gray-900">餐廳推薦</span>
+                    </div>
+                    <p class="text-xs text-gray-600">隨機推薦健康餐廳</p>
+                  </div>
+                  <div class="p-3 bg-orange-50 rounded-lg">
+                    <div class="flex items-center mb-1">
+                      <span class="text-orange-600 text-sm mr-1">��</span>
+                      <span class="text-sm font-medium text-gray-900">健康新聞</span>
+                    </div>
+                    <p class="text-xs text-gray-600">整合最新健康資訊</p>
+                  </div>
+                  <div class="p-3 bg-purple-50 rounded-lg">
+                    <div class="flex items-center mb-1">
+                      <span class="text-purple-600 text-sm mr-1">��</span>
+                      <span class="text-sm font-medium text-gray-900">AI助理</span>
+                    </div>
+                    <p class="text-xs text-gray-600">智慧營養分析</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- API整合 -->
+              <div class="mb-6">
+                <h4 class="font-semibold text-gray-900 mb-3">🔗 API 整合</h4>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs"
+                    >健康署 API</span
+                  >
+                  <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs"
+                    >OpenAI API</span
+                  >
+                  <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs"
+                    >政府開放資料</span
+                  >
+                  <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs"
+                    >第三方 API</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- 在 About Section 的卡片3中替換現有內容 -->
+            <div
+              class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+            >
               <div class="flex items-center mb-4">
-                <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mr-4">
+                <div
+                  class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mr-4"
+                >
+                  <span class="text-purple-600 text-2xl">��</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900">轉職過程</h3>
+              </div>
+
+              <!-- 轉職過程描述 -->
+              <div class="mb-6">
+                <p class="text-gray-600 leading-relaxed text-sm mb-3">
+                  在半年的前端職訓課程中，我獨立開發「JiaNice」智慧生活飲食健康管理平台，採用 MVC
+                  架構實現前後端分離，成功串接健康署、OpenAI API 以及政府開放資料平台。
+                </p>
+                <p class="text-gray-600 leading-relaxed text-sm">
+                  這個專題讓我實踐 SPA 架構設計與第三方 API
+                  整合，並將使用者體驗與技術能力充分結合，呈現兼具功能性與互動順暢性的產品。同時，透過撰寫教學文章，深化了技術應用、提升了技術理解與整理能力。
+                </p>
+              </div>
+
+              <!-- 核心專案展示 -->
+              <div
+                class="mb-6 p-4 bg-gradient-to-r from-blue-50 to-green-50 rounded-xl border-l-4 border-blue-400"
+              >
+                <div class="flex items-center mb-3">
+                  <span class="text-blue-600 text-xl mr-2">🏆</span>
+                  <h4 class="text-lg font-bold text-gray-900">JiaNice 智慧健康平台</h4>
+                </div>
+                <p class="text-gray-700 font-medium mb-3">
+                  獨立開發的全方位健康管理平台，整合多項 API 與 AI 技術
+                </p>
+
+                <!-- 專案數據 -->
+                <div class="grid grid-cols-2 gap-3">
+                  <div class="text-center p-2 bg-white rounded-lg">
+                    <div class="text-lg font-bold text-purple-600">6個月</div>
+                    <div class="text-xs text-gray-600">開發週期</div>
+                  </div>
+                  <div class="text-center p-2 bg-white rounded-lg">
+                    <div class="text-lg font-bold text-blue-600">4+</div>
+                    <div class="text-xs text-gray-600">API整合</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 技術架構 -->
+              <div class="mb-6">
+                <h4 class="font-semibold text-gray-900 mb-3">🏗️ 技術架構</h4>
+                <div class="grid grid-cols-2 gap-3">
+                  <div class="p-3 bg-blue-50 rounded-lg">
+                    <div class="flex items-center mb-1">
+                      <span class="text-blue-600 text-sm mr-1">⚡</span>
+                      <span class="text-sm font-medium text-gray-900">MVC架構</span>
+                    </div>
+                    <p class="text-xs text-gray-600">前後端分離設計</p>
+                  </div>
+                  <div class="p-3 bg-green-50 rounded-lg">
+                    <div class="flex items-center mb-1">
+                      <span class="text-green-600 text-sm mr-1">��</span>
+                      <span class="text-sm font-medium text-gray-900">SPA設計</span>
+                    </div>
+                    <p class="text-xs text-gray-600">單頁應用架構</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 功能特色 -->
+              <div class="mb-6">
+                <h4 class="font-semibold text-gray-900 mb-3">✨ 核心功能</h4>
+                <div class="space-y-2">
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                    <span class="text-gray-600 text-sm">回憶記錄系統</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                    <span class="text-gray-600 text-sm">餐廳隨機推薦</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                    <span class="text-gray-600 text-sm">健康新聞整合</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-orange-500 rounded-full"></span>
+                    <span class="text-gray-600 text-sm">AI 智慧助理營養分析</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- API整合 -->
+              <div class="mb-6">
+                <h4 class="font-semibold text-gray-900 mb-3">🔗 API 整合</h4>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs"
+                    >健康署 API</span
+                  >
+                  <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs"
+                    >OpenAI API</span
+                  >
+                  <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs"
+                    >政府開放資料</span
+                  >
+                  <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs"
+                    >第三方 API</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- 在 About Section 的卡片4中替換現有內容 -->
+<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+  <div class="flex items-center mb-4">
+    <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mr-4">
+      <span class="text-orange-600 text-2xl">��</span>
+    </div>
+    <h3 class="text-xl font-bold text-gray-900">未來展望</h3>
+  </div>
+
+  <!-- 核心願景 -->
+  <div class="mb-6 p-4 bg-gradient-to-r from-orange-50 to-yellow-50 rounded-xl border-l-4 border-orange-400">
+    <h4 class="font-semibold text-gray-900 mb-3">🎯 我的願景</h4>
+    <p class="text-gray-700 font-medium mb-3">
+      持續精進前端與互動式產品設計能力，將創意思維與技術能力結合
+    </p>
+    <div class="grid grid-cols-2 gap-3">
+      <div class="text-center p-2 bg-white rounded-lg">
+        <div class="text-lg font-bold text-orange-600">∞</div>
+        <div class="text-xs text-gray-600">持續學習</div>
+      </div>
+      <div class="text-center p-2 bg-white rounded-lg">
+        <div class="text-lg font-bold text-yellow-600">��</div>
+        <div class="text-xs text-gray-600">創意結合</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Side Projects 規劃 -->
+  <div class="mb-6">
+    <h4 class="font-semibold text-gray-900 mb-3">🛠️ Side Projects 規劃</h4>
+    <div class="space-y-3">
+      <div class="p-3 bg-blue-50 rounded-lg border-l-4 border-blue-400">
+        <div class="flex items-center mb-1">
+          <span class="text-blue-600 text-sm mr-2">��</span>
+          <span class="text-sm font-medium text-gray-900">AI 互動履歷網站</span>
+        </div>
+        <p class="text-xs text-gray-600">結合 AI 技術的創新履歷展示</p>
+      </div>
+      
+      <div class="p-3 bg-green-50 rounded-lg border-l-4 border-green-400">
+        <div class="flex items-center mb-1">
+          <span class="text-green-600 text-sm mr-2">��</span>
+          <span class="text-sm font-medium text-gray-900">LINEBOT 智能記帳系統</span>
+        </div>
+        <p class="text-xs text-gray-600">智能化的個人財務管理工具</p>
+      </div>
+      
+      <div class="p-3 bg-red-50 rounded-lg border-l-4 border-red-400">
+        <div class="flex items-center mb-1">
+          <span class="text-red-600 text-sm mr-2">🛡️</span>
+          <span class="text-sm font-medium text-gray-900">詐騙防治網站</span>
+        </div>
+        <p class="text-xs text-gray-600">結合資安背景的專案</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 技術能力提升 -->
+  <div class="mb-6">
+    <h4 class="font-semibold text-gray-900 mb-3">⚡ 技術能力提升</h4>
+    <div class="grid grid-cols-2 gap-3">
+      <div class="p-3 bg-purple-50 rounded-lg">
+        <div class="flex items-center mb-1">
+          <span class="text-purple-600 text-sm mr-1">��</span>
+          <span class="text-sm font-medium text-gray-900">前後端整合</span>
+        </div>
+        <p class="text-xs text-gray-600">全端開發能力</p>
+      </div>
+      <div class="p-3 bg-indigo-50 rounded-lg">
+        <div class="flex items-center mb-1">
+          <span class="text-indigo-600 text-sm mr-1">��</span>
+          <span class="text-sm font-medium text-gray-900">資料視覺化</span>
+        </div>
+        <p class="text-xs text-gray-600">數據呈現與分析</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 核心價值 -->
+  <div class="mb-6">
+    <h4 class="font-semibold text-gray-900 mb-3">✨ 核心價值</h4>
+    <div class="space-y-2">
+      <div class="flex items-center space-x-2">
+        <span class="w-2 h-2 bg-orange-500 rounded-full"></span>
+        <span class="text-gray-600 text-sm">兼具實用性與趣味性的產品</span>
+      </div>
+      <div class="flex items-center space-x-2">
+        <span class="w-2 h-2 bg-yellow-500 rounded-full"></span>
+        <span class="text-gray-600 text-sm">具有差異化的用戶體驗</span>
+      </div>
+      <div class="flex items-center space-x-2">
+        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+        <span class="text-gray-600 text-sm">創新的技術解決方案</span>
+      </div>
+    </div>
+  </div>
+
+ 
+
+</div>
+
+            <!-- 卡片 4: 未來展望 -->
+            <div
+              class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+            >
+              <div class="flex items-center mb-4">
+                <div
+                  class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mr-4"
+                >
                   <span class="text-orange-600 text-2xl">🚀</span>
                 </div>
                 <h3 class="text-xl font-bold text-gray-900">未來展望</h3>
               </div>
-              <p class="text-gray-600 leading-relaxed">
-                持續精進前端與互動式產品設計能力，透過 SIDE PROJECT 實作，累積前後端整合、API 串接與資料視覺化能力，打造兼具實用性與趣味性的產品。
+              <p class="text-gray-600 leading-relaxed text-lg">
+                未來，希望持續精進前端與互動式產品設計能力，透過 SIDE PROJECT 的實作，例如 AI
+                互動履歷網站、LINEBOT 智能記帳系統，以及詐騙防治網站等，累積前、後端整合、API
+                串接與資料視覺化能力。期望將創意思維與技術能力結合，打造兼具實用性與趣味性的產品，並為公司提供具有差異化的用戶體驗與技術解決方案。
               </p>
             </div>
           </div>
@@ -602,8 +1096,6 @@
         <div class="max-w-6xl mx-auto">
           <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
             <div class="grid lg:grid-cols-2 gap-0">
-              
-
               <!-- 右側：專案詳情 -->
               <div class="p-8 lg:p-12 flex flex-col justify-center">
                 <div class="mb-6">
@@ -736,7 +1228,6 @@
                   ></button>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
@@ -752,7 +1243,7 @@
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Project 1 -->
+          <!-- Project 1 (多益英文單字配對小遊戲) -->
           <div
             class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col"
           >
@@ -801,7 +1292,161 @@
             </div>
           </div>
 
-          <!-- Project 2 -->
+          <!-- Project 2 (Yuna's Portfolio 履歷網站) -->
+          <div
+            class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col"
+          >
+            <div
+              class="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center"
+            >
+              <img
+                src="./assets/Yuna's Portfolio.jpg"
+                alt="Yuna's Portfolio 履歷網站"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Yuna's Portfolio 履歷網站</h3>
+              <p class="text-gray-600 mb-4 flex-grow">
+                以 Bootstrap 5
+                製作的響應式展示網站。能自動依照螢幕大小調整版面，模擬一般商業網站的基本排版。
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Vue 3</span>
+                <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Vite</span>
+                <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm"
+                  >Tailwind CSS</span
+                >
+                <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm"
+                  >DaisyUI</span
+                >
+
+                <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">ESLint</span>
+
+                <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm"
+                  >Prettier</span
+                >
+              </div>
+
+              <div class="flex justify-between items-center mt-auto">
+                <!-- GitHub -->
+                <a
+                  class="inline-flex items-center px-6 py-3 bg-gray-700 to-teal-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:from-orange-600 hover:to-teal-700 transform hover:scale-105 transition-all duration-300 ease-in-out"
+                  href="https://github.com/yunahsuya/Portfolio"
+                  target="_blank"
+                >
+                  GitHub
+                  <span class="mdi mdi-github ml-2"></span>
+                </a>
+
+                <!-- Demo -->
+                <a
+                  class="inline-flex items-center px-6 py-3 bg-orange-500 to-teal-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:from-orange-600 hover:to-teal-700 transform hover:scale-105 transition-all duration-300 ease-in-out"
+                  href="https://yunahsuya.github.io/Portfolio/"
+                  target="_blank"
+                  >Demo →</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 (環保餐廳 LineBot 機器人) -->
+          <div
+            class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col"
+          >
+            <div
+              class="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center"
+            >
+              <img
+                src="https://camo.githubusercontent.com/25172a16fba260cbf771132dee40ab4ed9a0401700acde9d4c7956f6e7838fec/68747470733a2f2f6861636b6d642e696f2f5f75706c6f6164732f4279687a4663644778672e706e67"
+                alt="環保餐廳 LineBot 機器人"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">環保餐廳 LineBot 機器人</h3>
+              <p class="text-gray-600 mb-4 flex-grow">
+                以 Bootstrap 5
+                製作的響應式展示網站。能自動依照螢幕大小調整版面，模擬一般商業網站的基本排版。
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">HTML5</span>
+                <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">CSS3</span>
+                <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm"
+                  >JavaScript</span
+                >
+                <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm"
+                  >Bootstrap</span
+                >
+              </div>
+
+              <div class="flex justify-between items-center mt-auto">
+                <!-- GitHub -->
+                <a
+                  class="inline-flex items-center px-6 py-3 bg-gray-700 to-teal-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:from-orange-600 hover:to-teal-700 transform hover:scale-105 transition-all duration-300 ease-in-out"
+                  href="https://github.com/yunahsuya/LineBot_ECO-FRIENDLY-RESTAURANT_HW"
+                  target="_blank"
+                >
+                  GitHub
+                  <span class="mdi mdi-github ml-2"></span>
+                </a>
+
+                <!-- Demo -->
+                <a
+                  class="inline-flex items-center px-6 py-3 bg-orange-500 to-teal-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:from-orange-600 hover:to-teal-700 transform hover:scale-105 transition-all duration-300 ease-in-out"
+                  href="https://yunahsuya.github.io/Bootstrap/"
+                  target="_blank"
+                  >Demo →</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 (CLOCK時鐘) -->
+          <div
+            class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col"
+          >
+            <div
+              class="aspect-video bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center"
+            >
+              <img src="./assets/CLOCK.jpg" alt="CLOCK時鐘" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">CLOCK</h3>
+              <p class="text-gray-600 mb-4 flex-grow">
+                用 HTML、CSS 與 JavaScript 製作的動態時鐘，結合指針與數字顯示，能即時同步系統時間。
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">HTML5</span>
+                <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">CSS3</span>
+                <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm"
+                  >JavaScript</span
+                >
+              </div>
+
+              <div class="flex justify-between items-center mt-auto">
+                <!-- GitHub -->
+                <a
+                  class="inline-flex items-center px-6 py-3 bg-gray-700 to-teal-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:from-orange-600 hover:to-teal-700 transform hover:scale-105 transition-all duration-300 ease-in-out"
+                  href="https://github.com/yunahsuya/JS_CLOCK"
+                  target="_blank"
+                >
+                  GitHub
+                  <span class="mdi mdi-github ml-2"></span>
+                </a>
+
+                <!-- Demo -->
+                <a
+                  class="inline-flex items-center px-6 py-3 bg-orange-500 to-teal-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:from-orange-600 hover:to-teal-700 transform hover:scale-105 transition-all duration-300 ease-in-out"
+                  href="https://yunahsuya.github.io/JS_CLOCK/"
+                  target="_blank"
+                  >Demo →</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 (Bootstrap) -->
           <div
             class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col"
           >
@@ -852,29 +1497,39 @@
               </div>
             </div>
           </div>
-          <!-- Project 3 -->
+
+          <!-- Project 6 (文章介紹) -->
           <div
             class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col"
           >
             <div
-              class="aspect-video bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center"
+              class="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center"
             >
               <img
-                src="./assets/CLOCK.jpg"
-                alt="JiaNice 專案截圖"
+                src="./assets/ArticleIntroduction.jpg"
+                alt="文章介紹"
                 class="w-full h-full object-cover"
               />
             </div>
             <div class="p-6 flex flex-col flex-grow">
-              <h3 class="text-xl font-bold text-gray-900 mb-2">CLOCK</h3>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">文章介紹</h3>
               <p class="text-gray-600 mb-4 flex-grow">
-                用 HTML、CSS 與 JavaScript 製作的動態時鐘，結合指針與數字顯示，能即時同步系統時間。
+                以 Bootstrap 5
+                製作的響應式展示網站。能自動依照螢幕大小調整版面，模擬一般商業網站的基本排版。
               </p>
               <div class="flex flex-wrap gap-2 mb-6">
-                <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">HTML5</span>
-                <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">CSS3</span>
+                <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">HTML</span>
+                <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">CSS</span>
                 <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm"
-                  >JavaScript</span
+                  >Linux</span
+                >
+
+                <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm"
+                  >GitHub</span
+                >
+
+                <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm"
+                  >Unity</span
                 >
               </div>
 
@@ -882,7 +1537,7 @@
                 <!-- GitHub -->
                 <a
                   class="inline-flex items-center px-6 py-3 bg-gray-700 to-teal-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:from-orange-600 hover:to-teal-700 transform hover:scale-105 transition-all duration-300 ease-in-out"
-                  href="https://github.com/yunahsuya/JS_CLOCK"
+                  href="https://github.com/yunahsuya/Bootstrap"
                   target="_blank"
                 >
                   GitHub
@@ -892,39 +1547,41 @@
                 <!-- Demo -->
                 <a
                   class="inline-flex items-center px-6 py-3 bg-orange-500 to-teal-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:from-orange-600 hover:to-teal-700 transform hover:scale-105 transition-all duration-300 ease-in-out"
-                  href="https://yunahsuya.github.io/JS_CLOCK/"
+                  href="https://vocus.cc/salon/6647b6a6fd89780001f99044"
                   target="_blank"
                   >Demo →</a
                 >
               </div>
             </div>
           </div>
+
+          <!--  -->
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-white-50">
+    <!-- <section id="contact" class="py-20 bg-white-50">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-5">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Contact Me</h2>
           <p class="text-xl text-gray-600 mb-10">聯絡我</p>
-        </div>
+        </div> -->
 
-        <!-- 歡迎訊息 -->
-        <!-- <div class="max-w-3xl mx-auto text-center mb-12">
+    <!-- 歡迎訊息 -->
+    <!-- <div class="max-w-3xl mx-auto text-center mb-12">
       <p class="text-lg text-gray-600 leading-relaxed">
         很高興認識你！如果你對我的作品感興趣，或是有任何合作機會，歡迎隨時與我聯繫。
         我通常在 <span class="font-semibold text-yellow-600">週一至週五 9:00-18:00</span> 比較容易聯絡到。
       </p>
-    </div> -->
+    </div>
 
-        <div class="flex justify-center">
-          <!-- Contact Info -->
-          <div class="max-w-2xl w-full">
-            <div class="grid md:grid-cols-2 gap-6">
-              <!-- 聯絡方式 -->
-              <div class="space-y-4">
+        <div class="flex justify-center"> -->
+    <!-- Contact Info -->
+    <!-- <div class="max-w-2xl w-full">
+            <div class="grid md:grid-cols-2 gap-6"> -->
+    <!-- 聯絡方式 -->
+    <!-- <div class="space-y-4">
                 <h3 class="text-xl font-bold text-gray-900 mb-4 text-center md:text-left">
                   聯絡方式
                 </h3>
@@ -976,10 +1633,10 @@
                     <p class="text-gray-600">台北市</p>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
-              <!-- 相關連結 -->
-              <div class="space-y-4">
+    <!-- 相關連結 -->
+    <!-- <div class="space-y-4">
                 <h3 class="text-xl font-bold text-gray-900 mb-4 text-center md:text-left">
                   相關連結
                 </h3>
@@ -1038,10 +1695,10 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
 
-            <!-- 聯絡時間說明 -->
-            <!-- <div class="mt-8 p-6 bg-yellow-50 rounded-xl border border-yellow-200">
+    <!-- 聯絡時間說明 -->
+    <!-- <div class="mt-8 p-6 bg-yellow-50 rounded-xl border border-yellow-200">
           <div class="flex items-center justify-center gap-3">
             <span class="text-yellow-600 text-xl">⏰</span>
             <div class="text-center">
@@ -1051,8 +1708,8 @@
           </div>
         </div> -->
 
-            <!-- 快速聯絡按鈕 -->
-            <!-- <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+    <!-- 快速聯絡按鈕 -->
+    <!-- <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
           <a href="mailto:yunahsuya@gmail.com" class="inline-flex items-center justify-center px-8 py-4 bg-blue-500 text-white font-semibold rounded-full hover:bg-blue-600 transition-colors duration-300">
             <span class="mr-2">📧</span>
             發送 Email
@@ -1061,33 +1718,33 @@
             <span class="mr-2">📱</span>
             撥打電話
           </a>
-        </div> -->
+        </div>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
-    <footer class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+    <footer class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white pt-30 pb-15">
       <!-- 主要內容區域 -->
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <!-- 個人資訊 -->
           <div class="lg:col-span-2">
             <div class="flex items-center mb-6">
               <div
-                class="w-12 h-12 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center mr-4"
+                class="w-20 h-20 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center mr-4"
               >
                 <!-- <span class="text-2xl">👩‍💻</span> -->
                 <img
                   src="https://cdn-icons-png.flaticon.com/128/2423/2423917.png"
                   alt="Vue.js"
-                  class="w-10 h-10"
+                  class="w-18 h-18"
                 />
               </div>
-              <h3 class="text-2xl font-bold">Yuna's Portfolio</h3>
+              <h3 class="text-5xl font-bold">Yuna's Portfolio</h3>
             </div>
-            <p class="text-gray-300 mb-6 leading-relaxed">
+            <p class="text-gray-300 mb-6 leading-relaxed text-lg">
               前端開發工程師，專精於 Vue.js、React 和現代前端技術。
               致力於創造美觀且功能豐富的用戶體驗，讓技術與設計完美結合。
             </p>
@@ -1095,7 +1752,7 @@
               <a
                 href="https://github.com/yunahsuya?tab=repositories"
                 target="_blank"
-                class="w-10 h-10 bg-gray-700 hover:bg-gray-600 rounded-full flex items-center justify-center transition-colors duration-300 group"
+                class="w-15 h-15 bg-gray-700 hover:bg-gray-600 rounded-full flex items-center justify-center transition-colors duration-300 group"
               >
                 <svg
                   class="w-5 h-5 group-hover:scale-110 transition-transform"
@@ -1109,7 +1766,7 @@
               </a>
               <a
                 href="mailto:yunahsuya@gmail.com"
-                class="w-10 h-10 bg-gray-700 hover:bg-gray-600 rounded-full flex items-center justify-center transition-colors duration-300 group"
+                class="w-15 h-15 bg-gray-700 hover:bg-gray-600 rounded-full flex items-center justify-center transition-colors duration-300 group"
               >
                 <svg
                   class="w-5 h-5 group-hover:scale-110 transition-transform"
@@ -1127,7 +1784,7 @@
               </a>
               <a
                 href="tel:0905336968"
-                class="w-10 h-10 bg-gray-700 hover:bg-gray-600 rounded-full flex items-center justify-center transition-colors duration-300 group"
+                class="w-15 h-15 bg-gray-700 hover:bg-gray-600 rounded-full flex items-center justify-center transition-colors duration-300 group"
               >
                 <svg
                   class="w-5 h-5 group-hover:scale-110 transition-transform"
@@ -1146,7 +1803,7 @@
               <a
                 href="https://vocus.cc/salon/6647b6a6fd89780001f99044"
                 target="_blank"
-                class="w-10 h-10 bg-gray-700 hover:bg-gray-600 rounded-full flex items-center justify-center transition-colors duration-300 group"
+                class="w-15 h-15 bg-gray-700 hover:bg-gray-600 rounded-full flex items-center justify-center transition-colors duration-300 group"
               >
                 <svg
                   class="w-5 h-5 group-hover:scale-110 transition-transform"
@@ -1164,8 +1821,37 @@
               </a>
             </div>
 
+            <!-- 額外資訊 -->
+            <div class="mt-8 text-center">
+              <div class="text-sm text-gray-500">
+                <span class="flex">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  最佳聯絡時間：週一至週五 9:00-18:00
+                </span>
+
+                <span class="flex items-center mt-2">
+                  <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 10V3L4 14h7v7l9-11h-7z"
+                    />
+                  </svg>
+                  通常會在 24 小時內回覆
+                </span>
+              </div>
+            </div>
+
             <!-- Yuna's Portfolio 採用的技術 -->
-            <div class="mt-8">
+            <!-- <div class="mt-8">
               <h4 class="text-lg font-semibold mb-4 text-yellow-400">
                 Yuna's Portfolio 採用的技術
               </h4>
@@ -1202,13 +1888,13 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
 
           <!-- 快速導航 -->
           <div>
-            <h4 class="text-lg font-semibold mb-6 text-yellow-400 ml-1">快速導航</h4>
-            <ul class="space-y-3">
+            <h4 class="text-xl font-semibold mb-6 text-yellow-400 ml-1">快速導航</h4>
+            <ul class="space-y-3 text-lg">
               <li>
                 <a
                   href="#home"
@@ -1286,44 +1972,60 @@
 
           <!-- 技術專長 -->
           <div>
-            <h4 class="text-lg font-semibold mb-6 text-yellow-400">技術專長</h4>
+            <h4 class="text-xl font-semibold mb-4 text-yellow-400">技術專長</h4>
             <div class="space-y-4">
               <div>
-                <h5 class="text-sm font-medium text-gray-400 mb-2">前端技術</h5>
+                <h5 class="text-md font-medium text-gray-400 mb-2">前端技術</h5>
                 <div class="flex flex-wrap gap-2">
-                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Vue.js</span>
-                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Vite</span>
                   <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">HTML</span>
                   <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">CSS</span>
                   <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs"
                     >JavaScript</span
                   >
-                </div>
-              </div>
-              <div>
-                <h5 class="text-sm font-medium text-gray-400 mb-2">工具框架</h5>
-                <div class="flex flex-wrap gap-2">
-                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Vite</span>
-                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Pinia</span>
-                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Vuetify</span>
-                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Tailwind</span>
-                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Daisyui</span>
-                </div>
-              </div>
-              <div>
-                <h5 class="text-sm font-medium text-gray-400 mb-2">其他技能</h5>
-                <div class="flex flex-wrap gap-2">
                   <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">RWD</span>
-                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">API</span>
-                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Axios</span>
-                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Git</span>
+
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Vue.js</span>
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs"
+                    >Vue Router</span
+                  >
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Pinia</span>
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Vite</span>
+
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Tailwind</span>
+                </div>
+              </div>
+
+              <!--  -->
+
+              <div>
+                <h5 class="text-md font-medium text-gray-400 mb-2 mt-5">套件與框架</h5>
+                <div class="flex flex-wrap gap-2">
                   <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Node.js</span>
+
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Axios</span>
+
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Vuetify</span>
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Daisyui</span>
+
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Swiper</span>
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Gsap</span>
+                </div>
+              </div>
+
+              <div>
+                <h5 class="text-md font-medium text-gray-400 mb-2 mt-5">開發工具與其他</h5>
+                <div class="flex flex-wrap gap-2">
                   <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs"
                     >RESTfulAPI</span
                   >
-                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Swiper</span>
-                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Gsap</span>
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">API</span>
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Git</span>
                   <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Eslint</span>
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Prettier</span>
+
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Cursor</span>
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Chatgpt</span>
+                  <span class="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">Gemini</span>
                 </div>
               </div>
             </div>
@@ -1331,10 +2033,10 @@
         </div>
 
         <!-- 分隔線 -->
-        <div class="border-t border-gray-700 mt-12 pt-8">
+        <div class="border-t border-gray-700 mt-10 pt-8">
           <div class="flex flex-col md:flex-row justify-between items-center">
             <!-- 版權資訊 -->
-            <div class="text-center md:text-left mb-4 md:mb-0">
+            <div class="text-center md:text-left md:mb-0">
               <p class="text-gray-400 text-sm">
                 © 2025 許庭瑋 (Yuna). 版權所有 |
                 <span class="text-yellow-400">Made with ❤️ in Taiwan</span>
@@ -1391,35 +2093,6 @@
             </div>
           </div>
         </div>
-
-        <!-- 額外資訊 -->
-        <div class="mt-8 text-center">
-          <div class="inline-flex items-center space-x-4 text-sm text-gray-500">
-            <span class="flex items-center">
-              <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-              最佳聯絡時間：週一至週五 9:00-18:00
-            </span>
-
-            <span class="flex items-center">
-              <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M13 10V3L4 14h7v7l9-11h-7z"
-                />
-              </svg>
-              通常會在 24 小時內回覆
-            </span>
-          </div>
-        </div>
       </div>
     </footer>
 
@@ -1457,7 +2130,6 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
-
 
 // 響應式數據
 const mobileMenuOpen = ref(false)
