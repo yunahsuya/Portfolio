@@ -655,105 +655,108 @@
             </div>
 
             <!-- 在 About Section 的卡片4中替換現有內容 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-  <div class="flex items-center mb-4">
-    <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mr-4">
-      <span class="text-orange-600 text-2xl">��</span>
-    </div>
-    <h3 class="text-xl font-bold text-gray-900">未來展望</h3>
-  </div>
+            <div
+              class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+            >
+              <div class="flex items-center mb-4">
+                <div
+                  class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mr-4"
+                >
+                  <span class="text-orange-600 text-2xl">��</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900">未來展望</h3>
+              </div>
 
-  <!-- 核心願景 -->
-  <div class="mb-6 p-4 bg-gradient-to-r from-orange-50 to-yellow-50 rounded-xl border-l-4 border-orange-400">
-    <h4 class="font-semibold text-gray-900 mb-3">🎯 我的願景</h4>
-    <p class="text-gray-700 font-medium mb-3">
-      持續精進前端與互動式產品設計能力，將創意思維與技術能力結合
-    </p>
-    <div class="grid grid-cols-2 gap-3">
-      <div class="text-center p-2 bg-white rounded-lg">
-        <div class="text-lg font-bold text-orange-600">∞</div>
-        <div class="text-xs text-gray-600">持續學習</div>
-      </div>
-      <div class="text-center p-2 bg-white rounded-lg">
-        <div class="text-lg font-bold text-yellow-600">��</div>
-        <div class="text-xs text-gray-600">創意結合</div>
-      </div>
-    </div>
-  </div>
+              <!-- 核心願景 -->
+              <div
+                class="mb-6 p-4 bg-gradient-to-r from-orange-50 to-yellow-50 rounded-xl border-l-4 border-orange-400"
+              >
+                <h4 class="font-semibold text-gray-900 mb-3">🎯 我的願景</h4>
+                <p class="text-gray-700 font-medium mb-3">
+                  持續精進前端與互動式產品設計能力，將創意思維與技術能力結合
+                </p>
+                <div class="grid grid-cols-2 gap-3">
+                  <div class="text-center p-2 bg-white rounded-lg">
+                    <div class="text-lg font-bold text-orange-600">∞</div>
+                    <div class="text-xs text-gray-600">持續學習</div>
+                  </div>
+                  <div class="text-center p-2 bg-white rounded-lg">
+                    <div class="text-lg font-bold text-yellow-600">��</div>
+                    <div class="text-xs text-gray-600">創意結合</div>
+                  </div>
+                </div>
+              </div>
 
-  <!-- Side Projects 規劃 -->
-  <div class="mb-6">
-    <h4 class="font-semibold text-gray-900 mb-3">🛠️ Side Projects 規劃</h4>
-    <div class="space-y-3">
-      <div class="p-3 bg-blue-50 rounded-lg border-l-4 border-blue-400">
-        <div class="flex items-center mb-1">
-          <span class="text-blue-600 text-sm mr-2">��</span>
-          <span class="text-sm font-medium text-gray-900">AI 互動履歷網站</span>
-        </div>
-        <p class="text-xs text-gray-600">結合 AI 技術的創新履歷展示</p>
-      </div>
-      
-      <div class="p-3 bg-green-50 rounded-lg border-l-4 border-green-400">
-        <div class="flex items-center mb-1">
-          <span class="text-green-600 text-sm mr-2">��</span>
-          <span class="text-sm font-medium text-gray-900">LINEBOT 智能記帳系統</span>
-        </div>
-        <p class="text-xs text-gray-600">智能化的個人財務管理工具</p>
-      </div>
-      
-      <div class="p-3 bg-red-50 rounded-lg border-l-4 border-red-400">
-        <div class="flex items-center mb-1">
-          <span class="text-red-600 text-sm mr-2">🛡️</span>
-          <span class="text-sm font-medium text-gray-900">詐騙防治網站</span>
-        </div>
-        <p class="text-xs text-gray-600">結合資安背景的專案</p>
-      </div>
-    </div>
-  </div>
+              <!-- Side Projects 規劃 -->
+              <div class="mb-6">
+                <h4 class="font-semibold text-gray-900 mb-3">🛠️ Side Projects 規劃</h4>
+                <div class="space-y-3">
+                  <div class="p-3 bg-blue-50 rounded-lg border-l-4 border-blue-400">
+                    <div class="flex items-center mb-1">
+                      <span class="text-blue-600 text-sm mr-2">��</span>
+                      <span class="text-sm font-medium text-gray-900">AI 互動履歷網站</span>
+                    </div>
+                    <p class="text-xs text-gray-600">結合 AI 技術的創新履歷展示</p>
+                  </div>
 
-  <!-- 技術能力提升 -->
-  <div class="mb-6">
-    <h4 class="font-semibold text-gray-900 mb-3">⚡ 技術能力提升</h4>
-    <div class="grid grid-cols-2 gap-3">
-      <div class="p-3 bg-purple-50 rounded-lg">
-        <div class="flex items-center mb-1">
-          <span class="text-purple-600 text-sm mr-1">��</span>
-          <span class="text-sm font-medium text-gray-900">前後端整合</span>
-        </div>
-        <p class="text-xs text-gray-600">全端開發能力</p>
-      </div>
-      <div class="p-3 bg-indigo-50 rounded-lg">
-        <div class="flex items-center mb-1">
-          <span class="text-indigo-600 text-sm mr-1">��</span>
-          <span class="text-sm font-medium text-gray-900">資料視覺化</span>
-        </div>
-        <p class="text-xs text-gray-600">數據呈現與分析</p>
-      </div>
-    </div>
-  </div>
+                  <div class="p-3 bg-green-50 rounded-lg border-l-4 border-green-400">
+                    <div class="flex items-center mb-1">
+                      <span class="text-green-600 text-sm mr-2">��</span>
+                      <span class="text-sm font-medium text-gray-900">LINEBOT 智能記帳系統</span>
+                    </div>
+                    <p class="text-xs text-gray-600">智能化的個人財務管理工具</p>
+                  </div>
 
-  <!-- 核心價值 -->
-  <div class="mb-6">
-    <h4 class="font-semibold text-gray-900 mb-3">✨ 核心價值</h4>
-    <div class="space-y-2">
-      <div class="flex items-center space-x-2">
-        <span class="w-2 h-2 bg-orange-500 rounded-full"></span>
-        <span class="text-gray-600 text-sm">兼具實用性與趣味性的產品</span>
-      </div>
-      <div class="flex items-center space-x-2">
-        <span class="w-2 h-2 bg-yellow-500 rounded-full"></span>
-        <span class="text-gray-600 text-sm">具有差異化的用戶體驗</span>
-      </div>
-      <div class="flex items-center space-x-2">
-        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-        <span class="text-gray-600 text-sm">創新的技術解決方案</span>
-      </div>
-    </div>
-  </div>
+                  <div class="p-3 bg-red-50 rounded-lg border-l-4 border-red-400">
+                    <div class="flex items-center mb-1">
+                      <span class="text-red-600 text-sm mr-2">🛡️</span>
+                      <span class="text-sm font-medium text-gray-900">詐騙防治網站</span>
+                    </div>
+                    <p class="text-xs text-gray-600">結合資安背景的專案</p>
+                  </div>
+                </div>
+              </div>
 
- 
+              <!-- 技術能力提升 -->
+              <div class="mb-6">
+                <h4 class="font-semibold text-gray-900 mb-3">⚡ 技術能力提升</h4>
+                <div class="grid grid-cols-2 gap-3">
+                  <div class="p-3 bg-purple-50 rounded-lg">
+                    <div class="flex items-center mb-1">
+                      <span class="text-purple-600 text-sm mr-1">��</span>
+                      <span class="text-sm font-medium text-gray-900">前後端整合</span>
+                    </div>
+                    <p class="text-xs text-gray-600">全端開發能力</p>
+                  </div>
+                  <div class="p-3 bg-indigo-50 rounded-lg">
+                    <div class="flex items-center mb-1">
+                      <span class="text-indigo-600 text-sm mr-1">��</span>
+                      <span class="text-sm font-medium text-gray-900">資料視覺化</span>
+                    </div>
+                    <p class="text-xs text-gray-600">數據呈現與分析</p>
+                  </div>
+                </div>
+              </div>
 
-</div>
+              <!-- 核心價值 -->
+              <div class="mb-6">
+                <h4 class="font-semibold text-gray-900 mb-3">✨ 核心價值</h4>
+                <div class="space-y-2">
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-orange-500 rounded-full"></span>
+                    <span class="text-gray-600 text-sm">兼具實用性與趣味性的產品</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-yellow-500 rounded-full"></span>
+                    <span class="text-gray-600 text-sm">具有差異化的用戶體驗</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                    <span class="text-gray-600 text-sm">創新的技術解決方案</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <!-- 卡片 4: 未來展望 -->
             <div
@@ -1088,16 +1091,17 @@
     <!-- JiaNice Featured Project Section -->
     <section id="jianice" class="py-20 bg-white">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
+        <div class="text-center mb-8">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">專題作品</h2>
           <p class="text-xl text-gray-600">JiaNice - 智慧健康飲食平台</p>
         </div>
 
         <div class="max-w-6xl mx-auto">
           <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
-            <div class="grid lg:grid-cols-2 gap-0">
-              <!-- 右側：專案詳情 -->
-              <div class="p-8 lg:p-12 flex flex-col justify-center">
+            <!-- 桌面版：左右分欄 -->
+            <div class="hidden lg:grid lg:grid-cols-2">
+              <!-- 左側：專案詳情 -->
+              <div class="p-8 lg:p-12">
                 <div class="mb-6">
                   <h3 class="text-3xl font-bold text-gray-900 mb-4">JiaNice</h3>
                   <p class="text-lg text-gray-600 leading-relaxed mb-6">
@@ -1106,8 +1110,135 @@
                   </p>
                 </div>
 
-                <!-- 技術標籤 -->
+                <!-- 專題特色 -->
                 <div class="mb-8">
+                  <h4 class="text-lg font-semibold text-gray-900 mb-3">專題特色</h4>
+                  <ul class="space-y-2 text-gray-600">
+                    <li class="flex items-start">
+                      <span class="text-green-500 mr-2 mt-1">✓</span>
+                      <span>整合健康署 API 與 OpenData 資料平台</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-green-500 mr-2 mt-1">✓</span>
+                      <span>SPA 架構設計與響應式介面</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-green-500 mr-2 mt-1">✓</span>
+                      <span>個人化健康建議與營養分析</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-green-500 mr-2 mt-1">✓</span>
+                      <span>餐廳隨機抽選與回憶錄系統</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- 按鈕 -->
+                <div class="flex flex-col sm:flex-row gap-4 mt-15">
+                  <!-- GitHub -->
+                  <a
+                    class="inline-flex items-center justify-center px-8 py-4 bg-gray-700 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:bg-gray-800 transform hover:scale-105 transition-all duration-300 ease-in-out"
+                    href="https://github.com/yunahsuya/JIANICE-vuetify-project"
+                    target="_blank"
+                  >
+                    GitHub
+                    <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                      />
+                    </svg>
+                  </a>
+
+                  <!-- Demo -->
+                  <a
+                    class="inline-flex items-center justify-center px-8 py-4 bg-orange-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:bg-orange-600 transform hover:scale-105 transition-all duration-300 ease-in-out"
+                    href="https://yunahsuya.github.io/JIANICE-vuetify-project/"
+                    target="_blank"
+                  >
+                    <span>Demo</span>
+                    <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      ></path>
+                    </svg>
+                  </a>
+
+                  <!-- 更多作品 -->
+                  <!-- <button
+                @click="scrollTo('projects')"
+                class="inline-flex items-center justify-center px-8 py-4 bg-white text-gray-700 font-semibold rounded-full border-2 border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-all duration-300 ease-in-out"
+              >
+                更多作品
+                <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+              </button> -->
+                </div>
+              </div>
+
+              <!-- 右側：專案截圖和技術標籤 -->
+              <div class="bg-gray-50">
+                <!-- 專案截圖 -->
+                <div class="p-3 pb-0">
+                  <!-- 固定高度的圖片容器 -->
+                  <div class="relative w-full h-80 bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img
+                      :src="jianiceImages[currentImageIndex]"
+                      alt="JiaNice 專案截圖"
+                      class="absolute inset-0 w-full h-full object-contain transition-opacity duration-500"
+                      @error="console.log('圖片載入錯誤:', jianiceImages[currentImageIndex])"
+                      @load="console.log('圖片載入成功:', jianiceImages[currentImageIndex])"
+                    />
+
+                    <!-- 輪播控制按鈕 -->
+                    <button
+                      @click="previousImage"
+                      class="absolute top-1/2 transform -translate-y-1/2 w-10 h-10 hover:bg-opacity-70 text-black rounded-full flex items-center justify-center transition-all duration-300 z-10"
+                    >
+                      <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M15 19l-7-7 7-7"
+                        />
+                      </svg>
+                    </button>
+
+                    <button
+                      @click="nextImage"
+                      class="absolute right-2 top-1/2 transform -translate-y-1/2 w-10 h-10 hover:bg-opacity-70 text-black rounded-full flex items-center justify-center transition-all duration-300 z-10"
+                    >
+                      <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+
+                  <!-- 圖片指示器 -->
+                  <div class="flex justify-center mt-4 space-x-2">
+                    <button
+                      v-for="(image, index) in jianiceImages"
+                      :key="index"
+                      @click="currentImageIndex = index"
+                      :class="[
+                        'w-3 h-3 rounded-full transition-all duration-300',
+                        currentImageIndex === index ? 'bg-orange-500' : 'bg-gray-300',
+                      ]"
+                    ></button>
+                  </div>
+                </div>
+
+                <!-- 技術標籤 -->
+                <div class="px-8 lg:px-12 mt-10 pb-8">
                   <h4 class="text-lg font-semibold text-gray-900 mb-3">使用技術</h4>
                   <div class="flex flex-wrap gap-3">
                     <span
@@ -1136,59 +1267,139 @@
                     >
                   </div>
                 </div>
+              </div>
+            </div>
+
+            <!-- 手機版：上下排列 -->
+            <div class="lg:hidden">
+              <!-- 專案截圖 -->
+              <div class="p-6 bg-gray-50">
+                <div class="w-full max-w-md mx-auto">
+                  <!-- 固定高度的圖片容器 -->
+                  <div class="relative w-full h-64 bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img
+                      :src="jianiceImages[currentImageIndex]"
+                      alt="JiaNice 專案截圖"
+                      class="absolute inset-0 w-full h-full object-contain transition-opacity duration-500"
+                    />
+
+                    <!-- 輪播控制按鈕 -->
+                    <button
+                      @click="previousImage"
+                      class="absolute left-2 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-black bg-opacity-50 hover:bg-opacity-70 text-white rounded-full flex items-center justify-center transition-all duration-300 z-10"
+                    >
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M15 19l-7-7 7-7"
+                        />
+                      </svg>
+                    </button>
+
+                    <button
+                      @click="nextImage"
+                      class="absolute right-2 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-black bg-opacity-50 hover:bg-opacity-70 text-white rounded-full flex items-center justify-center transition-all duration-300 z-10"
+                    >
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+
+                  <!-- 圖片指示器 -->
+                  <div class="flex justify-center mt-4 space-x-2">
+                    <button
+                      v-for="(image, index) in jianiceImages"
+                      :key="index"
+                      @click="currentImageIndex = index"
+                      :class="[
+                        'w-3 h-3 rounded-full transition-all duration-300',
+                        currentImageIndex === index ? 'bg-orange-500' : 'bg-gray-300',
+                      ]"
+                    ></button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 技術標籤 -->
+              <div class="px-6 pb-6 bg-gray-50">
+                <h4 class="text-lg font-semibold text-gray-900 mb-3">使用技術</h4>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium"
+                    >Vue.js</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium"
+                    >Node.js</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium"
+                    >MongoDB</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-medium"
+                    >Pinia</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm font-medium"
+                    >Vuetify</span
+                  >
+                  <span class="px-3 py-1 bg-teal-100 text-teal-700 rounded-full text-sm font-medium"
+                    >RESTful API</span
+                  >
+                </div>
+              </div>
+
+              <!-- 專案詳情 -->
+              <div class="p-6">
+                <div class="mb-6">
+                  <h3 class="text-2xl font-bold text-gray-900 mb-4">JiaNice</h3>
+                  <p class="text-base text-gray-600 leading-relaxed mb-6">
+                    智慧健康飲食平台，整合 API 與 AI
+                    提供個人化健康建議。透過餐廳隨機抽選、營養提醒與回憶錄系統，為使用者打造完整的健康飲食體驗。
+                  </p>
+                </div>
 
                 <!-- 專題特色 -->
-                <div class="mb-8">
+                <div class="mb-6">
                   <h4 class="text-lg font-semibold text-gray-900 mb-3">專題特色</h4>
                   <ul class="space-y-2 text-gray-600">
                     <li class="flex items-start">
                       <span class="text-green-500 mr-2 mt-1">✓</span>
-                      <span>整合健康署 API 與 OpenData 資料平台</span>
+                      <span class="text-sm">整合健康署 API 與 OpenData 資料平台</span>
                     </li>
                     <li class="flex items-start">
                       <span class="text-green-500 mr-2 mt-1">✓</span>
-                      <span>SPA 架構設計與響應式介面</span>
+                      <span class="text-sm">SPA 架構設計與響應式介面</span>
                     </li>
                     <li class="flex items-start">
                       <span class="text-green-500 mr-2 mt-1">✓</span>
-                      <span>個人化健康建議與營養分析</span>
+                      <span class="text-sm">個人化健康建議與營養分析</span>
                     </li>
                     <li class="flex items-start">
                       <span class="text-green-500 mr-2 mt-1">✓</span>
-                      <span>餐廳隨機抽選與回憶錄系統</span>
+                      <span class="text-sm">餐廳隨機抽選與回憶錄系統</span>
                     </li>
                   </ul>
                 </div>
 
                 <!-- 按鈕 -->
-                <div class="flex flex-col-reverse sm:flex-row gap-4">
-                  <!-- 更多作品 -->
-                  <button
-                    @click="scrollTo('projects')"
-                    class="inline-flex items-center justify-center px-8 py-4 bg-white text-gray-700 font-semibold rounded-full border-2 border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-all duration-300 ease-in-out"
-                  >
-                    更多作品
-                    <span class="mdi mdi-chevron-down ml-2"></span>
-                  </button>
-
-                  <!-- GitHub -->
-                  <a
-                    class="inline-flex items-center justify-center px-8 py-4 bg-gray-700 to-teal-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:from-orange-600 hover:to-teal-700 transform hover:scale-105 transition-all duration-300 ease-in-out"
-                    href="https://github.com/yunahsuya/JIANICE-vuetify-project"
-                    target="_blank"
-                  >
-                    GitHub
-                    <span class="mdi mdi-github ml-2 text-2xl"></span>
-                  </a>
-
+                <div class="flex flex-col gap-3">
                   <!-- Demo -->
                   <a
-                    class="inline-flex items-center justify-center px-8 py-4 bg-orange-500 to-teal-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:from-orange-600 hover:to-teal-700 transform hover:scale-105 transition-all duration-300 ease-in-out"
+                    class="inline-flex items-center justify-center px-6 py-3 bg-orange-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:bg-orange-600 transform hover:scale-105 transition-all duration-300 ease-in-out"
                     href="https://yunahsuya.github.io/JIANICE-vuetify-project/"
                     target="_blank"
                   >
                     <span>Demo</span>
-                    <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path
                         stroke-linecap="round"
                         stroke-linejoin="round"
@@ -1197,35 +1408,36 @@
                       ></path>
                     </svg>
                   </a>
-                </div>
-              </div>
 
-              <!-- 左側：專案截圖 -->
-              <div class="aspect-video lg:aspect-square flex items-center justify-center relative">
-                <img
-                  :src="jianiceImages[currentImageIndex]"
-                  alt="JiaNice 專案截圖"
-                  class="w-11/12 h-11/12 object-contain transition-opacity duration-500"
-                  @error="console.log('圖片載入錯誤:', jianiceImages[currentImageIndex])"
-                  @load="console.log('圖片載入成功:', jianiceImages[currentImageIndex])"
-                />
+                  <!-- GitHub -->
+                  <a
+                    class="inline-flex items-center justify-center px-6 py-3 bg-gray-700 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:bg-gray-800 transform hover:scale-105 transition-all duration-300 ease-in-out"
+                    href="https://github.com/yunahsuya/JIANICE-vuetify-project"
+                    target="_blank"
+                  >
+                    GitHub
+                    <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                      />
+                    </svg>
+                  </a>
 
-                <!-- 調試信息 -->
-                <!-- <div class="absolute top-2 left-2 bg-black/50 text-white p-2 rounded text-xs">
-                  當前索引: {{ currentImageIndex }} / {{ jianiceImages.length - 1 }}
-                </div> -->
-
-                <!-- 圖片指示器 -->
-                <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                  <!-- 更多作品 -->
                   <button
-                    v-for="(image, index) in jianiceImages"
-                    :key="index"
-                    @click="currentImageIndex = index"
-                    :class="[
-                      'w-3 h-3 rounded-full transition-all duration-300',
-                      currentImageIndex === index ? 'bg-white' : 'bg-white/50',
-                    ]"
-                  ></button>
+                    @click="scrollTo('projects')"
+                    class="inline-flex items-center justify-center px-6 py-3 bg-white text-gray-700 font-semibold rounded-full border-2 border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-all duration-300 ease-in-out"
+                  >
+                    更多作品
+                    <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
@@ -1300,7 +1512,7 @@
               class="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center"
             >
               <img
-                src="./assets/Yuna's Portfolio.jpg"
+                src="./assets/YunaPortfolio.jpg"
                 alt="Yuna's Portfolio 履歷網站"
                 class="w-full h-full object-cover"
               />
@@ -2147,31 +2359,23 @@ const jianiceImages = ref([
   new URL('./assets/JIANICE-users.jpg', import.meta.url).href,
 ])
 
-// 自動輪播
-let autoPlayInterval = null
-
-const startAutoPlay = () => {
-  autoPlayInterval = setInterval(() => {
-    currentImageIndex.value = (currentImageIndex.value + 1) % jianiceImages.value.length
-  }, 3000) // 每3秒切換一次
+// 手動輪播控制
+const nextImage = () => {
+  currentImageIndex.value = (currentImageIndex.value + 1) % jianiceImages.value.length
 }
 
-const stopAutoPlay = () => {
-  if (autoPlayInterval) {
-    clearInterval(autoPlayInterval)
-    autoPlayInterval = null
-  }
+const previousImage = () => {
+  currentImageIndex.value =
+    currentImageIndex.value === 0 ? jianiceImages.value.length - 1 : currentImageIndex.value - 1
 }
 
-// 在組件掛載時開始自動播放和添加滾動監聽
+// 在組件掛載時添加滾動監聽
 onMounted(() => {
-  startAutoPlay()
   window.addEventListener('scroll', handleScroll)
 })
 
-// 在組件卸載時清理定時器和滾動監聽
+// 在組件卸載時清理滾動監聽
 onUnmounted(() => {
-  stopAutoPlay()
   window.removeEventListener('scroll', handleScroll)
 })
 
@@ -2203,23 +2407,4 @@ const handleScroll = () => {
   // 當滾動超過 300px 時顯示按鈕
   showBackToTop.value = window.scrollY > 300
 }
-
-// 表單相關
-// const form = ref({
-//   name: '',
-//   email: '',
-//   subject: '',
-//   message: '',
-// })
-
-// 提交表單
-// const submitForm = () => {
-//   alert('感謝您的訊息！我會盡快回覆您。')
-//   form.value = {
-//     name: '',
-//     email: '',
-//     subject: '',
-//     message: '',
-//   }
-// }
 </script>
