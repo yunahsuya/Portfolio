@@ -276,12 +276,12 @@
     <!-- About Section -->
     <section id="about" class="pt-20 pb-40 bg-gray-100">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
+        <div class="text-center mb-8">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Me</h2>
           <p class="text-xl text-gray-400 max-w-2xl mx-auto">關於我</p>
         </div>
 
-        <div class="max-w-7xl mx-auto">
+        <div class="max-w-8xl mx-auto">
           <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <!-- 卡片 1: 關於我 -->
             <div
@@ -567,7 +567,7 @@
     <!-- Experience Section -->
     <section id="experience" class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
+        <div class="text-center mb-8">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Experience</h2>
           <p class="text-xl text-gray-400">工作經歷</p>
         </div>
@@ -794,7 +794,7 @@
     <!-- Skills Section -->
     <section id="skills" class="py-20 bg-gray-100">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
+        <div class="text-center mb-8">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Skills</h2>
           <p class="text-xl text-gray-400">相關專業技能</p>
         </div>
@@ -1232,7 +1232,7 @@
     <!-- Projects Section -->
     <section id="projects" class="py-20 bg-gray-100">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
+        <div class="text-center mb-8">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Demo</h2>
           <p class="text-xl text-gray-600">作品展示</p>
         </div>
