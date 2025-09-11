@@ -11,7 +11,7 @@
           </div>
           <div class="hidden md:block">
             <div
-              class="ml-10 flex items-baseline space-x-4 lg:space-x-6 xl:space-x-8 text-gray-900 font-bold text-lg lg:text-xl"
+              class="mr-10 flex items-baseline space-x-4 lg:space-x-6 xl:space-x-8 text-gray-900 font-bold text-lg lg:text-xl"
             >
               <a
                 href="#home"
@@ -62,7 +62,7 @@
                 ]"
                 >作品展示</a
               >
-              <a
+              <!-- <a
                 href="#contact"
                 @click="scrollTo('contact')"
                 :class="[
@@ -70,7 +70,7 @@
                   activeSection === 'contact' ? 'text-yellow-500 border-b-2 border-yellow-500' : '',
                 ]"
                 >聯絡我</a
-              >
+              > -->
             </div>
           </div>
           <div class="md:hidden">
@@ -453,7 +453,7 @@
                   <h4 class="font-semibold text-gray-900">JiaNice 智慧健康平台</h4>
                 </div>
                 <p class="text-gray-600 text-sm mb-3">
-                  1個月獨立開發，整合多項 API 與 AI 技術的全方位健康管理平台
+                  1 個月獨立開發，整合多項 API 與 AI 技術的全方位健康管理平台
                 </p>
                 <div class="flex flex-wrap gap-2">
                   <span class="px-2 py-1 bg-white text-purple-600 rounded text-xs">MVC架構</span>
@@ -1950,7 +1950,7 @@
                   作品展示
                 </a>
               </li>
-              <li>
+              <!-- <li>
                 <a
                   href="#contact"
                   @click="scrollTo('contact')"
@@ -1961,7 +1961,7 @@
                   ></span>
                   聯絡我
                 </a>
-              </li>
+              </li> -->
             </ul>
           </div>
 
