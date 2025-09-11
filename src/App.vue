@@ -295,8 +295,8 @@
               </div>
               <!-- 核心價值主張 -->
               <div class="mb-6">
-                <h4 class="text-lg font-bold text-gray-900 mb-2">我的使命</h4>
-                <p class="text-gray-700 font-medium">
+                <!-- <h4 class="text-lg font-bold text-gray-900 mb-2">我的使命</h4> -->
+                <p class="text-gray-600 leading-relaxed text-lg">
                   將複雜的技術轉化為直覺、流暢的用戶體驗，並融入資安思維，打造既美觀又安全的產品
                 </p>
               </div>
@@ -310,8 +310,8 @@
                     <span class="text-blue-600 text-sm">🛡️</span>
                   </div>
                   <div>
-                    <h5 class="font-semibold text-gray-900 mb-1">資安背景</h5>
-                    <p class="text-gray-600 text-sm">
+                    <h5 class="font-semibold text-gray-900 mb-1 text-base ">資安背景</h5>
+                    <p class="text-gray-600 text-base">
                       大學期間專注資安實習，培養嚴謹的風險分析與問題解決能力
                     </p>
                   </div>
@@ -321,11 +321,11 @@
                   <div
                     class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1"
                   >
-                    <span class="text-green-600 text-sm">��</span>
+                    <span class="text-green-600 text-sm">🔄</span>
                   </div>
                   <div>
-                    <h5 class="font-semibold text-gray-900 mb-1">前端轉型</h5>
-                    <p class="text-gray-600 text-sm">
+                    <h4 class="font-semibold text-gray-900 mb-1 text-base ">前端轉型</h4>
+                    <p class="text-gray-600 text-base">
                       發現對介面設計的熱情，系統性學習前端技術，結合創意與嚴謹思維
                     </p>
                   </div>
@@ -338,8 +338,8 @@
                     <span class="text-purple-600 text-sm">✨</span>
                   </div>
                   <div>
-                    <h5 class="font-semibold text-gray-900 mb-1">價值創造</h5>
-                    <p class="text-gray-600 text-sm">
+                    <h5 class="font-semibold text-gray-900 mb-1 text-base">價值創造</h5>
+                    <p class="text-gray-600 text-base">
                       程式是讓設計與價值被具體看見的語言，致力為用戶帶來實際價值與感受
                     </p>
                   </div>
@@ -360,8 +360,8 @@
                 <h3 class="text-xl font-bold text-gray-900">工作經驗</h3>
               </div>
 
-              <!-- 核心成就數據 -->
-              <div class="grid grid-cols-2 gap-4 mb-6">
+               <!-- 核心成就數據 -->
+               <div class="grid grid-cols-2 gap-4 mb-6">
                 <div class="text-center p-4 bg-blue-50 rounded-xl">
                   <div class="text-2xl font-bold text-blue-600 mb-1">176</div>
                   <div class="text-sm text-gray-600">系統漏洞處理</div>
@@ -386,11 +386,11 @@
                   <div
                     class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1"
                   >
-                    <span class="text-blue-600 text-sm">��</span>
+                    <span class="text-blue-600 text-sm">🔧</span>
                   </div>
                   <div>
-                    <h5 class="font-semibold text-gray-900 mb-1">系統漏洞管理</h5>
-                    <p class="text-gray-600 text-sm">
+                    <h5 class="font-semibold text-gray-900 mb-1 text-base">系統漏洞管理</h5>
+                    <p class="text-gray-600 text-base">
                       處理 176 項系統漏洞，提出優化建議，提升使用者操作便利性
                     </p>
                   </div>
@@ -400,11 +400,11 @@
                   <div
                     class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1"
                   >
-                    <span class="text-orange-600 text-sm">��</span>
+                    <span class="text-orange-600 text-sm">🎯</span>
                   </div>
                   <div>
-                    <h5 class="font-semibold text-gray-900 mb-1">社交工程演練</h5>
-                    <p class="text-gray-600 text-sm">
+                    <h5 class="font-semibold text-gray-900 mb-1 text-base">社交工程演練</h5>
+                    <p class="text-gray-600 text-base">
                       設計釣魚測試範本，參與 5,343 名員工大規模模擬，揭露 242 位受影響人員
                     </p>
                   </div>
@@ -414,11 +414,11 @@
                   <div
                     class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1"
                   >
-                    <span class="text-purple-600 text-sm">��</span>
+                    <span class="text-purple-600 text-sm">🔐</span>
                   </div>
                   <div>
-                    <h5 class="font-semibold text-gray-900 mb-1">OAuth 2.0 研究</h5>
-                    <p class="text-gray-600 text-sm">
+                    <h5 class="font-semibold text-gray-900 mb-1 text-base">OAuth 2.0 研究</h5>
+                    <p class="text-gray-600 text-base">
                       專注研究認證與授權流程，應用於專案模擬測試，累積紮實實務經驗
                     </p>
                   </div>
@@ -430,7 +430,7 @@
             <div
               class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
             >
-              <div class="flex items-center mb-4">
+              <div class="flex items-center mb-3">
                 <div
                   class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mr-4"
                 >
@@ -438,39 +438,16 @@
                 </div>
                 <h3 class="text-xl font-bold text-gray-900">轉職過程</h3>
               </div>
-              <p class="text-gray-600 leading-relaxed text-lg">
-                在半年的前端職訓課程中，我獨立開發「JiaNice」智慧生活飲食健康管理平台，採用 MVC
-                架構實現前後端分離，成功串接健康署、OpenAI API
-                以及政府開放資料平台，提供回憶記錄、餐廳隨機推薦、健康新聞與 AI
-                智慧助理營養分析，為用戶打造全方位的健康體驗。這個專題讓我實踐 SPA 架構設計與第三方
-                API
-                整合，並將使用者體驗與技術能力充分結合，呈現兼具功能性與互動順暢性的產品。同時，透過撰寫教學文章，深化了技術應用、提升了技術理解與整理能力，為未來在前端領域持續創造價值奠定了基礎。
-              </p>
-            </div>
-
-            <!--  -->
-            <!--  -->
-            <div
-              class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-            >
-              <div class="flex items-center mb-6">
-                <div
-                  class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mr-4"
-                >
-                  <span class="text-purple-600 text-2xl">��</span>
-                </div>
-                <h3 class="text-xl font-bold text-gray-900">轉職過程</h3>
-              </div>
 
               <!-- 轉職過程描述 -->
               <div class="mb-3">
-                <p class="text-gray-600 leading-relaxed text-sm mb-3">
-                  在半年的前端職訓課程中，我獨立開發「JiaNice」智慧生活飲食健康管理平台。
+                <p class="text-gray-600 leading-relaxed text-lg mb-3">
+                  在半年的前端職訓課程中，我獨立規劃開發「JiaNice」智慧生活飲食健康管理平台。
                 </p>
               </div>
 
-              <!-- 專案概覽 -->
-              <div class="mb-6 p-4 bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl">
+             <!-- 專案概覽 -->
+             <div class="mb-6 p-4 bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl">
                 <div class="flex items-center mb-2">
                   <span class="text-purple-600 text-lg mr-2">🏆</span>
                   <h4 class="font-semibold text-gray-900">JiaNice 智慧健康平台</h4>
@@ -485,275 +462,35 @@
                 </div>
               </div>
 
-              <!-- 核心功能 -->
-              <div class="mb-6">
-                <h4 class="font-semibold text-gray-900 mb-3">�� 核心功能</h4>
-                <div class="grid grid-cols-2 gap-3">
-                  <div class="p-3 bg-blue-50 rounded-lg">
-                    <div class="flex items-center mb-1">
-                      <span class="text-blue-600 text-sm mr-1">��</span>
-                      <span class="text-sm font-medium text-gray-900">回憶記錄</span>
-                    </div>
-                    <p class="text-xs text-gray-600">個人健康記錄管理</p>
-                  </div>
-                  <div class="p-3 bg-green-50 rounded-lg">
-                    <div class="flex items-center mb-1">
-                      <span class="text-green-600 text-sm mr-1">🍽️</span>
-                      <span class="text-sm font-medium text-gray-900">餐廳推薦</span>
-                    </div>
-                    <p class="text-xs text-gray-600">隨機推薦健康餐廳</p>
-                  </div>
-                  <div class="p-3 bg-orange-50 rounded-lg">
-                    <div class="flex items-center mb-1">
-                      <span class="text-orange-600 text-sm mr-1">��</span>
-                      <span class="text-sm font-medium text-gray-900">健康新聞</span>
-                    </div>
-                    <p class="text-xs text-gray-600">整合最新健康資訊</p>
-                  </div>
-                  <div class="p-3 bg-purple-50 rounded-lg">
-                    <div class="flex items-center mb-1">
-                      <span class="text-purple-600 text-sm mr-1">��</span>
-                      <span class="text-sm font-medium text-gray-900">AI助理</span>
-                    </div>
-                    <p class="text-xs text-gray-600">智慧營養分析</p>
-                  </div>
-                </div>
-              </div>
-
               <!-- API整合 -->
               <div class="mb-6">
-                <h4 class="font-semibold text-gray-900 mb-3">🔗 API 整合</h4>
+                <h4 class="font-semibold text-gray-900 mb-3 text-base">🔗 API 整合</h4>
                 <div class="flex flex-wrap gap-2">
-                  <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs"
+                  <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm"
                     >健康署 API</span
                   >
-                  <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs"
+                  <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm"
                     >OpenAI API</span
                   >
-                  <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs"
+                  <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm"
                     >政府開放資料</span
                   >
-                  <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs"
+                  <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm"
                     >第三方 API</span
                   >
                 </div>
               </div>
-            </div>
 
-            <!-- 在 About Section 的卡片3中替換現有內容 -->
-            <div
-              class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-            >
-              <div class="flex items-center mb-4">
-                <div
-                  class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mr-4"
-                >
-                  <span class="text-purple-600 text-2xl">��</span>
+              <!-- 心得分享 -->
+              <div class="mt-3 mb-3 ">
+                <div class="flex items-center mb-1">
+                  <span class="text-yellow-600 text-lg mr-2">💭</span>
+                  <h4 class="font-semibold text-gray-900 text-base">學習心得</h4>
                 </div>
-                <h3 class="text-xl font-bold text-gray-900">轉職過程</h3>
-              </div>
-
-              <!-- 轉職過程描述 -->
-              <div class="mb-6">
-                <p class="text-gray-600 leading-relaxed text-sm mb-3">
-                  在半年的前端職訓課程中，我獨立開發「JiaNice」智慧生活飲食健康管理平台，採用 MVC
-                  架構實現前後端分離，成功串接健康署、OpenAI API 以及政府開放資料平台。
-                </p>
-                <p class="text-gray-600 leading-relaxed text-sm">
-                  這個專題讓我實踐 SPA 架構設計與第三方 API
-                  整合，並將使用者體驗與技術能力充分結合，呈現兼具功能性與互動順暢性的產品。同時，透過撰寫教學文章，深化了技術應用、提升了技術理解與整理能力。
-                </p>
-              </div>
-
-              <!-- 核心專案展示 -->
-              <div
-                class="mb-6 p-4 bg-gradient-to-r from-blue-50 to-green-50 rounded-xl border-l-4 border-blue-400"
-              >
-                <div class="flex items-center mb-3">
-                  <span class="text-blue-600 text-xl mr-2">🏆</span>
-                  <h4 class="text-lg font-bold text-gray-900">JiaNice 智慧健康平台</h4>
-                </div>
-                <p class="text-gray-700 font-medium mb-3">
-                  獨立開發的全方位健康管理平台，整合多項 API 與 AI 技術
-                </p>
-
-                <!-- 專案數據 -->
-                <div class="grid grid-cols-2 gap-3">
-                  <div class="text-center p-2 bg-white rounded-lg">
-                    <div class="text-lg font-bold text-purple-600">6個月</div>
-                    <div class="text-xs text-gray-600">開發週期</div>
-                  </div>
-                  <div class="text-center p-2 bg-white rounded-lg">
-                    <div class="text-lg font-bold text-blue-600">4+</div>
-                    <div class="text-xs text-gray-600">API整合</div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- 技術架構 -->
-              <div class="mb-6">
-                <h4 class="font-semibold text-gray-900 mb-3">🏗️ 技術架構</h4>
-                <div class="grid grid-cols-2 gap-3">
-                  <div class="p-3 bg-blue-50 rounded-lg">
-                    <div class="flex items-center mb-1">
-                      <span class="text-blue-600 text-sm mr-1">⚡</span>
-                      <span class="text-sm font-medium text-gray-900">MVC架構</span>
-                    </div>
-                    <p class="text-xs text-gray-600">前後端分離設計</p>
-                  </div>
-                  <div class="p-3 bg-green-50 rounded-lg">
-                    <div class="flex items-center mb-1">
-                      <span class="text-green-600 text-sm mr-1">��</span>
-                      <span class="text-sm font-medium text-gray-900">SPA設計</span>
-                    </div>
-                    <p class="text-xs text-gray-600">單頁應用架構</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- 功能特色 -->
-              <div class="mb-6">
-                <h4 class="font-semibold text-gray-900 mb-3">✨ 核心功能</h4>
-                <div class="space-y-2">
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
-                    <span class="text-gray-600 text-sm">回憶記錄系統</span>
-                  </div>
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
-                    <span class="text-gray-600 text-sm">餐廳隨機推薦</span>
-                  </div>
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-                    <span class="text-gray-600 text-sm">健康新聞整合</span>
-                  </div>
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-orange-500 rounded-full"></span>
-                    <span class="text-gray-600 text-sm">AI 智慧助理營養分析</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- API整合 -->
-              <div class="mb-6">
-                <h4 class="font-semibold text-gray-900 mb-3">🔗 API 整合</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs"
-                    >健康署 API</span
-                  >
-                  <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs"
-                    >OpenAI API</span
-                  >
-                  <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs"
-                    >政府開放資料</span
-                  >
-                  <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs"
-                    >第三方 API</span
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- 在 About Section 的卡片4中替換現有內容 -->
-            <div
-              class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-            >
-              <div class="flex items-center mb-4">
-                <div
-                  class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mr-4"
-                >
-                  <span class="text-orange-600 text-2xl">��</span>
-                </div>
-                <h3 class="text-xl font-bold text-gray-900">未來展望</h3>
-              </div>
-
-              <!-- 核心願景 -->
-              <div
-                class="mb-6 p-4 bg-gradient-to-r from-orange-50 to-yellow-50 rounded-xl border-l-4 border-orange-400"
-              >
-                <h4 class="font-semibold text-gray-900 mb-3">🎯 我的願景</h4>
-                <p class="text-gray-700 font-medium mb-3">
-                  持續精進前端與互動式產品設計能力，將創意思維與技術能力結合
-                </p>
-                <div class="grid grid-cols-2 gap-3">
-                  <div class="text-center p-2 bg-white rounded-lg">
-                    <div class="text-lg font-bold text-orange-600">∞</div>
-                    <div class="text-xs text-gray-600">持續學習</div>
-                  </div>
-                  <div class="text-center p-2 bg-white rounded-lg">
-                    <div class="text-lg font-bold text-yellow-600">��</div>
-                    <div class="text-xs text-gray-600">創意結合</div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Side Projects 規劃 -->
-              <div class="mb-6">
-                <h4 class="font-semibold text-gray-900 mb-3">🛠️ Side Projects 規劃</h4>
-                <div class="space-y-3">
-                  <div class="p-3 bg-blue-50 rounded-lg border-l-4 border-blue-400">
-                    <div class="flex items-center mb-1">
-                      <span class="text-blue-600 text-sm mr-2">��</span>
-                      <span class="text-sm font-medium text-gray-900">AI 互動履歷網站</span>
-                    </div>
-                    <p class="text-xs text-gray-600">結合 AI 技術的創新履歷展示</p>
-                  </div>
-
-                  <div class="p-3 bg-green-50 rounded-lg border-l-4 border-green-400">
-                    <div class="flex items-center mb-1">
-                      <span class="text-green-600 text-sm mr-2">��</span>
-                      <span class="text-sm font-medium text-gray-900">LINEBOT 智能記帳系統</span>
-                    </div>
-                    <p class="text-xs text-gray-600">智能化的個人財務管理工具</p>
-                  </div>
-
-                  <div class="p-3 bg-red-50 rounded-lg border-l-4 border-red-400">
-                    <div class="flex items-center mb-1">
-                      <span class="text-red-600 text-sm mr-2">🛡️</span>
-                      <span class="text-sm font-medium text-gray-900">詐騙防治網站</span>
-                    </div>
-                    <p class="text-xs text-gray-600">結合資安背景的專案</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- 技術能力提升 -->
-              <div class="mb-6">
-                <h4 class="font-semibold text-gray-900 mb-3">⚡ 技術能力提升</h4>
-                <div class="grid grid-cols-2 gap-3">
-                  <div class="p-3 bg-purple-50 rounded-lg">
-                    <div class="flex items-center mb-1">
-                      <span class="text-purple-600 text-sm mr-1">��</span>
-                      <span class="text-sm font-medium text-gray-900">前後端整合</span>
-                    </div>
-                    <p class="text-xs text-gray-600">全端開發能力</p>
-                  </div>
-                  <div class="p-3 bg-indigo-50 rounded-lg">
-                    <div class="flex items-center mb-1">
-                      <span class="text-indigo-600 text-sm mr-1">��</span>
-                      <span class="text-sm font-medium text-gray-900">資料視覺化</span>
-                    </div>
-                    <p class="text-xs text-gray-600">數據呈現與分析</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- 核心價值 -->
-              <div class="mb-6">
-                <h4 class="font-semibold text-gray-900 mb-3">✨ 核心價值</h4>
-                <div class="space-y-2">
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-orange-500 rounded-full"></span>
-                    <span class="text-gray-600 text-sm">兼具實用性與趣味性的產品</span>
-                  </div>
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-yellow-500 rounded-full"></span>
-                    <span class="text-gray-600 text-sm">具有差異化的用戶體驗</span>
-                  </div>
-                  <div class="flex items-center space-x-2">
-                    <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-                    <span class="text-gray-600 text-sm">創新的技術解決方案</span>
-                  </div>
+                <div class="space-y-3 text-base text-gray-700">
+                  <p class="leading-relaxed">
+                    熟悉 Vue.js 生態系與組件化開發，實踐前後端分離架構。過程中強化了 API 整合、錯誤處理與使用者體驗優化能力。從零打造平台，學會將複雜需求拆解成模組化功能，並持續優化程式結構與效能。
+                  </p>
                 </div>
               </div>
             </div>
@@ -770,12 +507,62 @@
                 </div>
                 <h3 class="text-xl font-bold text-gray-900">未來展望</h3>
               </div>
-              <p class="text-gray-600 leading-relaxed text-lg">
-                未來，希望持續精進前端與互動式產品設計能力，透過 SIDE PROJECT 的實作，例如 AI
-                互動履歷網站、LINEBOT 智能記帳系統，以及詐騙防治網站等，累積前、後端整合、API
-                串接與資料視覺化能力。期望將創意思維與技術能力結合，打造兼具實用性與趣味性的產品，並為公司提供具有差異化的用戶體驗與技術解決方案。
-              </p>
+
+              <!-- 核心願景 -->
+              <div class="mb-6">
+                <p class="text-gray-600 leading-relaxed text-lg mb-3">
+                  持續精進前端與互動式產品設計能力，將創意思維與技術能力結合，打造具有影響力的數位產品
+                </p>
+              </div>
+
+              <!-- 技術能力提升 -->
+              <div class="space-y-4">
+                <h4 class="font-semibold text-gray-900 mb-3 text-base">⚡ 技術能力提升</h4>
+
+                <div class="flex items-start space-x-3">
+                  <div
+                    class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1"
+                  >
+                    <span class="text-blue-600 text-sm">🛡️</span>
+                  </div>
+                  <div>
+                    <h5 class="font-semibold text-gray-900 mb-1 text-base">前後端整合</h5>
+                    <p class="text-gray-600 text-base">
+                      掌握前後端技術，打造完整的產品生態系統
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start space-x-3">
+                  <div
+                    class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1"
+                  >
+                    <span class="text-green-600 text-sm">📊</span>
+                  </div>
+                  <div>
+                    <h5 class="font-semibold text-gray-900 mb-1 text-base">資料視覺化</h5>
+                    <p class="text-gray-600 text-base">
+                      將複雜數據轉化為直觀易懂的視覺呈現
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start space-x-3">
+                  <div
+                    class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1"
+                  >
+                    <span class="text-purple-600 text-sm">🎨</span>
+                  </div>
+                  <div>
+                    <h5 class="font-semibold text-gray-900 mb-1 text-base">用戶體驗設計</h5>
+                    <p class="text-gray-600 text-base">
+                      以用戶為中心的設計思維，創造直觀且愉悅的互動體驗
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
+            
           </div>
         </div>
       </div>
