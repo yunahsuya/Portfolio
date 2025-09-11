@@ -161,9 +161,9 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="pt-16 pb-3 sm:pt-20 md:pt-24 lg:pt-2 bg-white pb-20">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
-        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+    <section id="home" class="  sm:pt-20 md:pt-24 lg:pt-2 bg-white pb-20 ">
+      <div class="max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center pt-10">
           <!-- 圖片區域 -->
           <div class="flex justify-center lg:order-1">
             <div class="relative">
