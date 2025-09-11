@@ -161,7 +161,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="pt-16 pb-3 sm:pt-20 md:pt-24 lg:pt-2 bg-white">
+    <section id="home" class="pt-16 pb-3 sm:pt-20 md:pt-24 lg:pt-2 bg-white pb-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <!-- 圖片區域 -->
@@ -274,7 +274,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="pt-20 pb-40 bg-gray-100">
+    <section id="about" class="pt-20 pb-30 bg-gray-100">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-8">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Me</h2>
@@ -791,8 +791,8 @@
       </div>
     </section>
 
-            <!-- Skills Section -->
-            <section id="skills" class="py-20 bg-gray-100">
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-100">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-8">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Skills</h2>
@@ -801,7 +801,9 @@
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Frontend Skills -->
-          <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300">
+          <div
+            class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300"
+          >
             <div class="flex items-center mb-6">
               <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mr-4">
                 <span class="text-blue-600 text-xl">🎨</span>
@@ -812,53 +814,65 @@
               <!-- Vue.js -->
               <div class="p-2 rounded-xl">
                 <h4 class="font-semibold text-gray-900 mb-1">Vue.js</h4>
-                <p class="text-sm text-gray-600">熟悉 Vue 3 Composition API，具備組件化方式開發並管理狀態。</p>
+                <p class="text-sm text-gray-600">
+                  熟悉 Vue 3 Composition API，具備組件化方式開發並管理狀態。
+                </p>
               </div>
-              
+
               <div class="border-t border-gray-200"></div>
-              
+
               <!-- Vite -->
               <div class="p-2 rounded-xl">
                 <h4 class="font-semibold text-gray-900 mb-1">Vite</h4>
                 <p class="text-sm text-gray-600">現代化建構工具，快速開發與熱重載，提升開發效率</p>
               </div>
-              
+
               <div class="border-t border-gray-200"></div>
-              
+
               <!-- Vuetify -->
               <div class="p-2 rounded-xl">
                 <h4 class="font-semibold text-gray-900 mb-1">Vuetify</h4>
-                <p class="text-sm text-gray-600">Material Design 組件庫，快速構建美觀的響應式介面</p>
+                <p class="text-sm text-gray-600">
+                  Material Design 組件庫，快速構建美觀的響應式介面
+                </p>
               </div>
-              
+
               <div class="border-t border-gray-200"></div>
-              
+
               <!-- Pinia -->
               <div class="p-2 rounded-xl">
                 <h4 class="font-semibold text-gray-900 mb-1">Pinia</h4>
-                <p class="text-sm text-gray-600">Vue 3 官方狀態管理，簡化複雜應用程式的資料流管理</p>
+                <p class="text-sm text-gray-600">
+                  Vue 3 官方狀態管理，簡化複雜應用程式的資料流管理
+                </p>
               </div>
-              
+
               <div class="border-t border-gray-200"></div>
-              
+
               <!-- 基礎技術 -->
               <div class="p-2 rounded-xl">
                 <h4 class="font-semibold text-gray-900 mb-1">基礎技術</h4>
-                <p class="text-sm text-gray-600">HTML5、CSS3、JavaScript ES6+，具備 RWD 響應式設計能力</p>
+                <p class="text-sm text-gray-600">
+                  HTML5、CSS3、JavaScript ES6+，具備 RWD 響應式設計能力
+                </p>
               </div>
-              
+
               <div class="border-t border-gray-200"></div>
-              
+
               <!-- 動畫與互動 -->
               <div class="p-2 rounded-xl">
                 <h4 class="font-semibold text-gray-900 mb-1">動畫與互動</h4>
-                <p class="text-sm text-gray-600">使用 Swiper 做輪播效果，並搭配 GSAP 打造更流暢的動畫體驗。</p>
+                <p class="text-sm text-gray-600">
+                  使用 Swiper 做輪播效果，並搭配 GSAP 打造更流暢的動畫體驗。
+                </p>
               </div>
             </div>
           </div>
 
           <!-- Backend Skills -->
-          <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300">
+          <div
+            class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300"
+          >
             <div class="flex items-center mb-6">
               <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mr-4">
                 <span class="text-green-600 text-xl">⚡</span>
@@ -869,37 +883,45 @@
               <!-- Node.js -->
               <div class="p-2 rounded-xl">
                 <h4 class="font-semibold text-gray-900 mb-1">Node.js</h4>
-                <p class="text-sm text-gray-600">JavaScript 後端開發，熟悉 Express 框架與模組化開發</p>
+                <p class="text-sm text-gray-600">
+                  JavaScript 後端開發，熟悉 Express 框架與模組化開發
+                </p>
               </div>
-              
+
               <div class="border-t border-gray-200"></div>
-              
+
               <!-- RESTful API -->
               <div class="p-2 rounded-xl">
                 <h4 class="font-semibold text-gray-900 mb-1">RESTful API</h4>
                 <p class="text-sm text-gray-600">設計與實作 RESTful 架構，支援前、後端分離的架構</p>
               </div>
-              
+
               <div class="border-t border-gray-200"></div>
-              
+
               <!-- API 整合 -->
               <div class="p-2 rounded-xl">
                 <h4 class="font-semibold text-gray-900 mb-1">API 整合</h4>
-                <p class="text-sm text-gray-600">整合第三方 API，包含政府開放資料、健康署 API、OpenAI API 等</p>
+                <p class="text-sm text-gray-600">
+                  整合第三方 API，包含政府開放資料、健康署 API、OpenAI API 等
+                </p>
               </div>
-              
+
               <div class="border-t border-gray-200"></div>
-              
+
               <!-- 資料庫操作 -->
               <div class="p-2 rounded-xl">
                 <h4 class="font-semibold text-gray-900 mb-1">資料庫操作</h4>
-                <p class="text-sm text-gray-600">MongoDB 操作經驗，具備基本的 SQL 查詢與資料分析能力</p>
+                <p class="text-sm text-gray-600">
+                  MongoDB 操作經驗，具備基本的 SQL 查詢與資料分析能力
+                </p>
               </div>
             </div>
           </div>
 
           <!-- Tools & Others -->
-          <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300">
+          <div
+            class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300"
+          >
             <div class="flex items-center mb-6">
               <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mr-4">
                 <span class="text-purple-600 text-xl">🛠️</span>
@@ -912,33 +934,35 @@
                 <h4 class="font-semibold text-gray-900 mb-1">版本控制</h4>
                 <p class="text-sm text-gray-600">Git 版本控制，熟悉分支管理與協作開發流程</p>
               </div>
-              
+
               <div class="border-t border-gray-200"></div>
-              
+
               <!-- 程式碼品質 -->
               <div class="p-2 rounded-xl">
                 <h4 class="font-semibold text-gray-900 mb-1">程式碼品質</h4>
                 <p class="text-sm text-gray-600">ESLint 程式碼檢查，確保程式碼風格一致性與品質</p>
               </div>
-              
+
               <div class="border-t border-gray-200"></div>
-              
+
               <!-- HTTP 請求 -->
               <div class="p-2 rounded-xl">
                 <h4 class="font-semibold text-gray-900 mb-1">HTTP 請求</h4>
-                <p class="text-sm text-gray-600">Axios 處理 API 請求，具備錯誤處理與攔截器設定經驗</p>
+                <p class="text-sm text-gray-600">
+                  Axios 處理 API 請求，具備錯誤處理與攔截器設定經驗
+                </p>
               </div>
-              
+
               <div class="border-t border-gray-200"></div>
-              
+
               <!-- 開發環境 -->
               <div class="p-2 rounded-xl">
                 <h4 class="font-semibold text-gray-900 mb-1">開發環境</h4>
                 <p class="text-sm text-gray-600">熟悉現代開發工具，包含 Cursor、VS Code 等編輯器</p>
               </div>
-              
+
               <div class="border-t border-gray-200"></div>
-              
+
               <!-- 專案管理 -->
               <div class="p-2 rounded-xl">
                 <h4 class="font-semibold text-gray-900 mb-1">專案管理</h4>
@@ -949,12 +973,6 @@
         </div>
       </div>
     </section>
-
-      
-
-    
-
-  
 
     <!-- JiaNice Featured Project Section -->
     <section id="jianice" class="py-20 bg-white">
@@ -1019,7 +1037,7 @@
 
                   <!-- Demo -->
                   <a
-                    class="inline-flex items-center justify-center px-8 py-4  bg-orange-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:bg-orange-600 transform hover:scale-105 transition-all duration-300 ease-in-out"
+                    class="inline-flex items-center justify-center px-8 py-4 bg-orange-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:bg-orange-600 transform hover:scale-105 transition-all duration-300 ease-in-out"
                     href="https://yunahsuya.github.io/JIANICE-vuetify-project/"
                     target="_blank"
                   >
