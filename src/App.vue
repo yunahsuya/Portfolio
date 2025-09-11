@@ -310,7 +310,7 @@
                     <span class="text-blue-600 text-sm">🛡️</span>
                   </div>
                   <div>
-                    <h5 class="font-semibold text-gray-900 mb-1 text-base ">資安背景</h5>
+                    <h5 class="font-semibold text-gray-900 mb-1 text-base">資安背景</h5>
                     <p class="text-gray-600 text-base">
                       大學期間專注資安實習，培養嚴謹的風險分析與問題解決能力
                     </p>
@@ -324,7 +324,7 @@
                     <span class="text-green-600 text-sm">🔄</span>
                   </div>
                   <div>
-                    <h4 class="font-semibold text-gray-900 mb-1 text-base ">前端轉型</h4>
+                    <h4 class="font-semibold text-gray-900 mb-1 text-base">前端轉型</h4>
                     <p class="text-gray-600 text-base">
                       發現對介面設計的熱情，系統性學習前端技術，結合創意與嚴謹思維
                     </p>
@@ -360,8 +360,8 @@
                 <h3 class="text-xl font-bold text-gray-900">工作經驗</h3>
               </div>
 
-               <!-- 核心成就數據 -->
-               <div class="grid grid-cols-2 gap-4 mb-6">
+              <!-- 核心成就數據 -->
+              <div class="grid grid-cols-2 gap-4 mb-6">
                 <div class="text-center p-4 bg-blue-50 rounded-xl">
                   <div class="text-2xl font-bold text-blue-600 mb-1">176</div>
                   <div class="text-sm text-gray-600">系統漏洞處理</div>
@@ -446,14 +446,14 @@
                 </p>
               </div>
 
-             <!-- 專案概覽 -->
-             <div class="mb-6 p-4 bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl">
+              <!-- 專案概覽 -->
+              <div class="mb-6 p-4 bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl">
                 <div class="flex items-center mb-2">
                   <span class="text-purple-600 text-lg mr-2">🏆</span>
                   <h4 class="font-semibold text-gray-900">JiaNice 智慧健康平台</h4>
                 </div>
                 <p class="text-gray-600 text-sm mb-3">
-                  6個月獨立開發，整合多項 API 與 AI 技術的全方位健康管理平台
+                  1個月獨立開發，整合多項 API 與 AI 技術的全方位健康管理平台
                 </p>
                 <div class="flex flex-wrap gap-2">
                   <span class="px-2 py-1 bg-white text-purple-600 rounded text-xs">MVC架構</span>
@@ -482,14 +482,15 @@
               </div>
 
               <!-- 心得分享 -->
-              <div class="mt-3 mb-3 ">
+              <div class="mt-3 mb-3">
                 <div class="flex items-center mb-1">
                   <span class="text-yellow-600 text-lg mr-2">💭</span>
                   <h4 class="font-semibold text-gray-900 text-base">學習心得</h4>
                 </div>
                 <div class="space-y-3 text-base text-gray-700">
                   <p class="leading-relaxed">
-                    熟悉 Vue.js 生態系與組件化開發，實踐前後端分離架構。過程中強化了 API 整合、錯誤處理與使用者體驗優化能力。從零打造平台，學會將複雜需求拆解成模組化功能，並持續優化程式結構與效能。
+                    熟悉 Vue.js 生態系與組件化開發，實踐前後端分離架構。過程中強化了 API
+                    整合、錯誤處理與使用者體驗優化能力。從零打造平台，學會將複雜需求拆解成模組化功能，並持續優化程式結構與效能。
                   </p>
                 </div>
               </div>
@@ -527,9 +528,7 @@
                   </div>
                   <div>
                     <h5 class="font-semibold text-gray-900 mb-1 text-base">前後端整合</h5>
-                    <p class="text-gray-600 text-base">
-                      掌握前後端技術，打造完整的產品生態系統
-                    </p>
+                    <p class="text-gray-600 text-base">掌握前後端技術，打造完整的產品生態系統</p>
                   </div>
                 </div>
 
@@ -541,9 +540,7 @@
                   </div>
                   <div>
                     <h5 class="font-semibold text-gray-900 mb-1 text-base">資料視覺化</h5>
-                    <p class="text-gray-600 text-base">
-                      將複雜數據轉化為直觀易懂的視覺呈現
-                    </p>
+                    <p class="text-gray-600 text-base">將複雜數據轉化為直觀易懂的視覺呈現</p>
                   </div>
                 </div>
 
@@ -562,7 +559,6 @@
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
