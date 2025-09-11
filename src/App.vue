@@ -145,7 +145,7 @@
             ]"
             >作品</a
           >
-          <a
+          <!-- <a
             href="#contact"
             @click="scrollTo('contact')"
             :class="[
@@ -155,7 +155,7 @@
                 : 'text-gray-600 hover:text-yellow-500 hover:bg-gray-50',
             ]"
             >聯絡我</a
-          >
+          > -->
         </div>
       </div>
     </nav>
