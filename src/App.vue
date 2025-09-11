@@ -1303,8 +1303,8 @@
             <div class="p-6 flex flex-col flex-grow">
               <h3 class="text-xl font-bold text-gray-900 mb-2">Yuna's Portfolio 履歷網站</h3>
               <p class="text-gray-600 mb-4 flex-grow">
-                以 Bootstrap 5
-                製作的響應式展示網站。能自動依照螢幕大小調整版面，模擬一般商業網站的基本排版。
+                採用 Vue 3 + Vite 作為核心框架，使用 Tailwind CSS 與 DaisyUI 實現響應式設計，整合
+                ESLint 與 Prettier 確保程式碼品質。
               </p>
               <div class="flex flex-wrap gap-2 mb-6">
                 <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Vue 3</span>
