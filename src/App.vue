@@ -791,6 +791,190 @@
       </div>
     </section>
 
+    <!-- Certifications Section -->
+<section id="certifications" class="py-20 bg-gray-50">
+  <div class="mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Certifications</h2>
+      <p class="text-xl text-gray-400">專業證照與認證</p>
+    </div>
+
+    <div class="max-w-4xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- 專業證照 -->
+        <div
+          class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300"
+        >
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center mr-4">
+              <span class="text-yellow-600 text-xl">🏆</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">專業證照</h3>
+          </div>
+          <div class="space-y-4">
+            <!-- 證照項目 1 -->
+            <div class="p-4 rounded-xl bg-gray-50">
+              <div class="flex items-start justify-between">
+                <div class="flex-1">
+                  <h4 class="font-semibold text-gray-900 mb-1">丙級網頁設計</h4>
+                  <div class="flex items-center text-xs text-gray-500">
+                    <span class="bg-red-100 text-red-800 px-2 py-1 rounded-full mr-2">有效</span>
+                    <span>2025年取得</span>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                    <span class="text-red-600 text-sm">✓</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 證照項目 2 -->
+            <div class="p-4 rounded-xl bg-gray-50">
+              <div class="flex items-start justify-between">
+                <div class="flex-1">
+                  <h4 class="font-semibold text-gray-900 mb-1">丙級電腦軟體應用</h4>
+                  <div class="flex items-center text-xs text-gray-500">
+                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full mr-2">有效</span>
+                    <span>2015年取得</span>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                    <span class="text-green-600 text-sm">✓</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 證照項目 3 -->
+            <div class="p-4 rounded-xl bg-gray-50">
+              <div class="flex items-start justify-between">
+                <div class="flex-1">
+                  <h4 class="font-semibold text-gray-900 mb-1">丙級網路架設</h4>
+                  <div class="flex items-center text-xs text-gray-500">
+                    <span class="bg-yellow-200 text-yellow-800 px-2 py-1 rounded-full mr-2">有效</span>
+                    <span>2016年取得</span>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <div class="w-8 h-8 bg-yellow-200 rounded-full flex items-center justify-center">
+                    <span class="text-yellow-600 text-sm">✓</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 證照項目 4 -->
+            <div class="p-4 rounded-xl bg-gray-50">
+              <div class="flex items-start justify-between">
+                <div class="flex-1">
+                  <h4 class="font-semibold text-gray-900 mb-1">丙級電腦硬體裝修</h4>
+                  <div class="flex items-center text-xs text-gray-500">
+                    <span class="bg-pink-100 text-pink-800 px-2 py-1 rounded-full mr-2">有效</span>
+                    <span>2016年取得</span>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <div class="w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center">
+                    <span class="text-pink-600 text-sm">✓</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 證照項目 5 -->
+            <div class="p-4 rounded-xl bg-gray-50">
+              <div class="flex items-start justify-between">
+                <div class="flex-1">
+                  <h4 class="font-semibold text-gray-900 mb-1">丙級工業電子</h4>
+                  <div class="flex items-center text-xs text-gray-500">
+                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full mr-2">有效</span>
+                    <span>2017年取得</span>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                    <span class="text-blue-600 text-sm">✓</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--  -->
+          </div>
+        </div>
+
+        <!-- 乙級證照 -->
+        <div
+          class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300"
+        >
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mr-4">
+              <span class="text-red-600 text-xl">🌐</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">乙級證照</h3>
+          </div>
+          <div class="space-y-4">
+            <!-- 證照項目 1 -->
+            <div class="p-4 rounded-xl bg-gray-50">
+              <div class="flex items-start justify-between">
+                <div class="flex-1">
+                  <h4 class="font-semibold text-gray-900 mb-1">電腦硬體裝修</h4>
+                  <div class="flex items-center text-xs text-gray-500">
+                    <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full mr-2">有效</span>
+                    <span>2018年取得</span>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
+                    <span class="text-purple-600 text-sm">✓</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 證照項目 2 -->
+            <div class="p-4 rounded-xl bg-gray-50">
+              <div class="flex items-start justify-between">
+                <div class="flex-1">
+                  <h4 class="font-semibold text-gray-900 mb-1">數位電子</h4>
+                  <div class="flex items-center text-xs text-gray-500">
+                    <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded-full mr-2">有效</span>
+                    <span>2018年取得</span>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center">
+                    <span class="text-orange-600 text-sm">✓</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 證照說明 -->
+      <!-- <div class="mt-8 text-center">
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+          <div class="flex items-center justify-center mb-4">
+            <div class="w-10 h-10 bg-indigo-100 rounded-xl flex items-center justify-center mr-3">
+              <span class="text-indigo-600 text-lg">💡</span>
+            </div>
+            <h4 class="text-lg font-semibold text-gray-900">持續學習</h4>
+          </div>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            持續關注技術發展趨勢，定期更新專業技能，並透過實際專案驗證所學知識。
+            目前正在學習更多前端框架與後端技術，以提升全端開發能力。
+          </p>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</section>
+
     <!-- Skills Section -->
     <section id="skills" class="py-20 bg-gray-100">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">
@@ -973,6 +1157,10 @@
         </div>
       </div>
     </section>
+
+
+
+
 
     <!-- JiaNice Featured Project Section -->
     <section id="jianice" class="py-20 bg-white">
