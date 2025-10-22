@@ -1,168 +1,11 @@
 <template>
   <div class="min-h-screen bg-white">
     <!-- 導航欄 -->
-    <nav
-      class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 border-b border-gray-100"
-    >
-      <div class="mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-16">
-          <div class="flex items-center">
-            <span class="text-2xl font-bold text-gray-900">Yuna's Portfolio</span>
-          </div>
-          <div class="hidden md:block">
-            <div
-              class="mr-10 flex items-baseline space-x-4 lg:space-x-6 xl:space-x-8 text-gray-900 font-bold text-lg lg:text-xl"
-            >
-              <a
-                href="#home"
-                @click="scrollTo('home')"
-                :class="[
-                  'relative transition-all duration-300 hover:text-yellow-500 pb-1 whitespace-nowrap',
-                  activeSection === 'home' ? 'text-yellow-500 border-b-2 border-yellow-500' : '',
-                ]"
-                >首頁</a
-              >
-              <a
-                href="#about"
-                @click="scrollTo('about')"
-                :class="[
-                  'relative transition-all duration-300 hover:text-yellow-500 pb-1 whitespace-nowrap',
-                  activeSection === 'about' ? 'text-yellow-500 border-b-2 border-yellow-500' : '',
-                ]"
-                >關於我</a
-              >
-              <a
-                href="#skills"
-                @click="scrollTo('skills')"
-                :class="[
-                  'relative transition-all duration-300 hover:text-yellow-500 pb-1 whitespace-nowrap',
-                  activeSection === 'skills' ? 'text-yellow-500 border-b-2 border-yellow-500' : '',
-                ]"
-                >技能</a
-              >
-              <a
-                href="#experience"
-                @click="scrollTo('experience')"
-                :class="[
-                  'relative transition-all duration-300 hover:text-yellow-500 pb-1 whitespace-nowrap',
-                  activeSection === 'experience'
-                    ? 'text-yellow-500 border-b-2 border-yellow-500'
-                    : '',
-                ]"
-                >工作經驗</a
-              >
-              <a
-                href="#jianice"
-                @click="scrollTo('projects')"
-                :class="[
-                  'relative transition-all duration-300 hover:text-yellow-500 pb-1 whitespace-nowrap',
-                  activeSection === 'projects'
-                    ? 'text-yellow-500 border-b-2 border-yellow-500'
-                    : '',
-                ]"
-                >作品展示</a
-              >
-              <!-- <a
-                href="#contact"
-                @click="scrollTo('contact')"
-                :class="[
-                  'relative transition-all duration-300 hover:text-yellow-500 pb-1 whitespace-nowrap',
-                  activeSection === 'contact' ? 'text-yellow-500 border-b-2 border-yellow-500' : '',
-                ]"
-                >聯絡我</a
-              > -->
-            </div>
-          </div>
-          <div class="md:hidden">
-            <button @click="toggleMobileMenu" class="text-gray-600 hover:text-gray-900">
-              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- 手機版選單 -->
-      <div v-if="mobileMenuOpen" class="md:hidden bg-white border-t border-gray-100">
-        <div class="px-2 pt-2 pb-3 space-y-1">
-          <a
-            href="#home"
-            @click="scrollTo('home')"
-            :class="[
-              'block px-3 py-2 text-base font-medium rounded-md transition-all duration-300',
-              activeSection === 'home'
-                ? 'text-yellow-700 bg-yellow-100 border-l-4 border-yellow-500'
-                : 'text-gray-600 hover:text-yellow-500 hover:bg-gray-50',
-            ]"
-            >首頁</a
-          >
-          <a
-            href="#about"
-            @click="scrollTo('about')"
-            :class="[
-              'block px-3 py-2 text-base font-medium rounded-md transition-all duration-300',
-              activeSection === 'about'
-                ? 'text-yellow-700 bg-yellow-100 border-l-4 border-yellow-500'
-                : 'text-gray-600 hover:text-yellow-500 hover:bg-gray-50',
-            ]"
-            >關於我</a
-          >
-          <a
-            href="#experience"
-            @click="scrollTo('experience')"
-            :class="[
-              'block px-3 py-2 text-base font-medium rounded-md transition-all duration-300',
-              activeSection === 'experience'
-                ? 'text-yellow-700 bg-yellow-100 border-l-4 border-yellow-500'
-                : 'text-gray-600 hover:text-yellow-500 hover:bg-gray-50',
-            ]"
-            >經歷</a
-          >
-          <a
-            href="#skills"
-            @click="scrollTo('skills')"
-            :class="[
-              'block px-3 py-2 text-base font-medium rounded-md transition-all duration-300',
-              activeSection === 'skills'
-                ? 'text-yellow-700 bg-yellow-100 border-l-4 border-yellow-500'
-                : 'text-gray-600 hover:text-yellow-500 hover:bg-gray-50',
-            ]"
-            >技能</a
-          >
-          <a
-            href="#projects"
-            @click="scrollTo('projects')"
-            :class="[
-              'block px-3 py-2 text-base font-medium rounded-md transition-all duration-300',
-              activeSection === 'projects'
-                ? 'text-yellow-700 bg-yellow-100 border-l-4 border-yellow-500'
-                : 'text-gray-600 hover:text-yellow-500 hover:bg-gray-50',
-            ]"
-            >作品</a
-          >
-          <!-- <a
-            href="#contact"
-            @click="scrollTo('contact')"
-            :class="[
-              'block px-3 py-2 text-base font-medium rounded-md transition-all duration-300',
-              activeSection === 'contact'
-                ? 'text-yellow-700 bg-yellow-100 border-l-4 border-yellow-500'
-                : 'text-gray-600 hover:text-yellow-500 hover:bg-gray-50',
-            ]"
-            >聯絡我</a
-          > -->
-        </div>
-      </div>
-    </nav>
+    <Header></Header>
 
     <!-- Hero Section -->
-    <section id="home" class="  sm:pt-20 md:pt-24 lg:pt-2 bg-white pb-20 ">
-      <div class="max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+    <section id="home" class="sm:pt-20 md:pt-24 lg:pt-2 bg-white pb-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center pt-10">
           <!-- 圖片區域 -->
           <div class="flex justify-center lg:order-1">
@@ -565,399 +408,203 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-8">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Experience</h2>
-          <p class="text-xl text-gray-400">工作經歷</p>
-        </div>
-
-        <div class="max-w-5xl mx-auto">
-          <!-- Timeline Container -->
-          <div class="relative">
-            <!-- Timeline Line -->
-            <div
-              class="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 via-orange-500 to-purple-500"
-            ></div>
-
-            <div class="space-y-12">
-              <!-- Experience 1 - 2024 -->
-              <div class="relative flex items-start">
-                <!-- Timeline Node -->
-                <div class="relative z-10 flex-shrink-0">
-                  <!-- 發光效果 - 在背景層 -->
-                  <div
-                    class="absolute inset-0 w-16 h-16 bg-blue-500 rounded-full opacity-20 animate-pulse"
-                  ></div>
-                  <!-- 主圓圈 - 在發光效果之上 -->
-                  <div
-                    class="relative w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center shadow-lg border-4 border-white"
-                  >
-                    <span class="text-white font-bold text-sm relative z-10">2024</span>
-                  </div>
-                </div>
-
-                <!-- Content Card -->
-                <div class="ml-8 flex-1">
-                  <div
-                    class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 relative"
-                  >
-                    <!-- Card Decoration -->
-                    <div
-                      class="absolute -left-4 top-8 w-0 h-0 border-t-8 border-b-8 border-r-8 border-transparent border-r-white"
-                    ></div>
-
-                    <!-- Header -->
-                    <div class="flex items-center justify-between mb-4">
-                      <div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-1">資安暑期實習生</h3>
-                        <p class="text-blue-600 font-semibold text-lg">財團法人資訊工業策進會</p>
-                        <p class="text-gray-500 text-sm">2024年7月 - 2024年8月</p>
-                      </div>
-                      <div class="hidden md:block">
-                        <span
-                          class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium"
-                          >資安實習</span
-                        >
-                      </div>
-                    </div>
-
-                    <!-- Content -->
-                    <div class="space-y-4">
-                      <div class="flex items-start space-x-3">
-                        <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <div>
-                          <h4 class="font-semibold text-gray-900 mb-1">
-                            OAuth 2.0 認證與授權流程演練
-                          </h4>
-                          <p class="text-gray-600">
-                            研究並演練 OAuth 2.0
-                            認證與授權流程，並應用於專案模擬測試，累積實務經驗。
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Experience 2 - 2023 -->
-              <div class="relative flex items-start">
-                <!-- Timeline Node -->
-                <div class="relative z-10 flex-shrink-0">
-                  <!-- 發光效果 - 在背景層 -->
-                  <div
-                    class="absolute inset-0 w-16 h-16 bg-orange-500 rounded-full opacity-20 animate-pulse"
-                  ></div>
-                  <!-- 主圓圈 - 在發光效果之上 -->
-                  <div
-                    class="relative w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center shadow-lg border-4 border-white"
-                  >
-                    <span class="text-white font-bold text-sm relative z-10">2023</span>
-                  </div>
-                </div>
-
-                <!-- Content Card -->
-                <div class="ml-8 flex-1">
-                  <div
-                    class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 relative"
-                  >
-                    <!-- Card Decoration -->
-                    <div
-                      class="absolute -left-4 top-8 w-0 h-0 border-t-8 border-b-8 border-r-8 border-transparent border-r-white"
-                    ></div>
-
-                    <!-- Header -->
-                    <div class="flex items-center justify-between mb-4">
-                      <div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-1">資安管理實習生</h3>
-                        <p class="text-orange-600 font-semibold text-lg">台灣大哥大股份有限公司</p>
-                        <p class="text-gray-500 text-sm">2023年5月 - 2023年9月</p>
-                      </div>
-                      <div class="hidden md:block">
-                        <span
-                          class="px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm font-medium"
-                          >資安管理</span
-                        >
-                      </div>
-                    </div>
-
-                    <!-- Content -->
-                    <div class="space-y-4">
-                      <div class="flex items-start space-x-3">
-                        <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <div>
-                          <h4 class="font-semibold text-gray-900 mb-1">專案協作與使用者體驗改善</h4>
-                          <p class="text-gray-600">
-                            參與專案流程與功能驗證，追蹤 176
-                            項系統漏洞並提出優化建議，提升操作便利性。
-                          </p>
-                        </div>
-                      </div>
-
-                      <div class="flex items-start space-x-3">
-                        <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <div>
-                          <h4 class="font-semibold text-gray-900 mb-1">社交工程模擬協作</h4>
-                          <p class="text-gray-600">
-                            參與大規模模擬（5343 名員工），揭露 242 位受影響人員，強化專案協作能力。
-                          </p>
-                        </div>
-                      </div>
-
-                      <div class="flex items-start space-x-3">
-                        <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <div>
-                          <h4 class="font-semibold text-gray-900 mb-1">產品分析與策略建議</h4>
-                          <p class="text-gray-600">
-                            進行競品分析，提出改善方案，增強產品功能規劃與前端設計思維。
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Experience 3 - 2022 -->
-              <div class="relative flex items-start">
-                <!-- Timeline Node -->
-                <div class="relative z-10 flex-shrink-0">
-                  <!-- 發光效果 - 在背景層 -->
-                  <div
-                    class="absolute inset-0 w-16 h-16 bg-purple-500 rounded-full opacity-20 animate-pulse"
-                  ></div>
-                  <!-- 主圓圈 - 在發光效果之上 -->
-                  <div
-                    class="relative w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center shadow-lg border-4 border-white"
-                  >
-                    <span class="text-white font-bold text-sm relative z-10">2022</span>
-                  </div>
-                </div>
-
-                <!-- Content Card -->
-                <div class="ml-8 flex-1">
-                  <div
-                    class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 relative"
-                  >
-                    <!-- Card Decoration -->
-                    <div
-                      class="absolute -left-4 top-8 w-0 h-0 border-t-8 border-b-8 border-r-8 border-transparent border-r-white"
-                    ></div>
-
-                    <!-- Header -->
-                    <div class="flex items-center justify-between mb-4">
-                      <div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-1">資訊工讀生</h3>
-                        <p class="text-purple-600 font-semibold text-lg">
-                          新光合成纖維股份有限公司
-                        </p>
-                        <p class="text-gray-500 text-sm">2022年7月 - 2022年9月</p>
-                      </div>
-                      <div class="hidden md:block">
-                        <span
-                          class="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-medium"
-                          >資訊工讀</span
-                        >
-                      </div>
-                    </div>
-
-                    <!-- Content -->
-                    <div class="space-y-4">
-                      <div class="flex items-start space-x-3">
-                        <div class="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <div>
-                          <h4 class="font-semibold text-gray-900 mb-1">報表排版與資料整理</h4>
-                          <p class="text-gray-600">
-                            整理 ERP 系統報表，確保格式清晰易讀，提升資料呈現的專業性。
-                          </p>
-                        </div>
-                      </div>
-
-                      <div class="flex items-start space-x-3">
-                        <div class="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <div>
-                          <h4 class="font-semibold text-gray-900 mb-1">基本 SQL 查詢與資料分析</h4>
-                          <p class="text-gray-600">進行簡單資料查詢，累積資料庫操作經驗。</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <Experience></Experience>
 
     <!-- Certifications Section -->
-<section id="certifications" class="py-20 bg-gray-50">
-  <div class="mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Certifications</h2>
-      <p class="text-xl text-gray-400">專業證照與認證</p>
-    </div>
-
-    <div class="max-w-4xl mx-auto">
-      <div class="grid md:grid-cols-2 gap-8">
-        <!-- 專業證照 -->
-        <div
-          class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300"
-        >
-          <div class="flex items-center mb-6">
-            <div class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center mr-4">
-              <span class="text-yellow-600 text-xl">🏆</span>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900">專業證照</h3>
-          </div>
-          <div class="space-y-4">
-            <!-- 證照項目 1 -->
-            <div class="p-4 rounded-xl bg-gray-50">
-              <div class="flex items-start justify-between">
-                <div class="flex-1">
-                  <h4 class="font-semibold text-gray-900 mb-1">丙級網頁設計</h4>
-                  <div class="flex items-center text-xs text-gray-500">
-                    <span class="bg-red-100 text-red-800 px-2 py-1 rounded-full mr-2">有效</span>
-                    <span>2025年取得</span>
-                  </div>
-                </div>
-                <div class="ml-4">
-                  <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
-                    <span class="text-red-600 text-sm">✓</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- 證照項目 2 -->
-            <div class="p-4 rounded-xl bg-gray-50">
-              <div class="flex items-start justify-between">
-                <div class="flex-1">
-                  <h4 class="font-semibold text-gray-900 mb-1">丙級電腦軟體應用</h4>
-                  <div class="flex items-center text-xs text-gray-500">
-                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full mr-2">有效</span>
-                    <span>2015年取得</span>
-                  </div>
-                </div>
-                <div class="ml-4">
-                  <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
-                    <span class="text-green-600 text-sm">✓</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- 證照項目 3 -->
-            <div class="p-4 rounded-xl bg-gray-50">
-              <div class="flex items-start justify-between">
-                <div class="flex-1">
-                  <h4 class="font-semibold text-gray-900 mb-1">丙級網路架設</h4>
-                  <div class="flex items-center text-xs text-gray-500">
-                    <span class="bg-yellow-200 text-yellow-800 px-2 py-1 rounded-full mr-2">有效</span>
-                    <span>2016年取得</span>
-                  </div>
-                </div>
-                <div class="ml-4">
-                  <div class="w-8 h-8 bg-yellow-200 rounded-full flex items-center justify-center">
-                    <span class="text-yellow-600 text-sm">✓</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- 證照項目 4 -->
-            <div class="p-4 rounded-xl bg-gray-50">
-              <div class="flex items-start justify-between">
-                <div class="flex-1">
-                  <h4 class="font-semibold text-gray-900 mb-1">丙級電腦硬體裝修</h4>
-                  <div class="flex items-center text-xs text-gray-500">
-                    <span class="bg-pink-100 text-pink-800 px-2 py-1 rounded-full mr-2">有效</span>
-                    <span>2016年取得</span>
-                  </div>
-                </div>
-                <div class="ml-4">
-                  <div class="w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center">
-                    <span class="text-pink-600 text-sm">✓</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- 證照項目 5 -->
-            <div class="p-4 rounded-xl bg-gray-50">
-              <div class="flex items-start justify-between">
-                <div class="flex-1">
-                  <h4 class="font-semibold text-gray-900 mb-1">丙級工業電子</h4>
-                  <div class="flex items-center text-xs text-gray-500">
-                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full mr-2">有效</span>
-                    <span>2017年取得</span>
-                  </div>
-                </div>
-                <div class="ml-4">
-                  <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
-                    <span class="text-blue-600 text-sm">✓</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!--  -->
-          </div>
+    <section id="certifications" class="py-20 bg-gray-50">
+      <div class="mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Certifications</h2>
+          <p class="text-xl text-gray-400">專業證照與認證</p>
         </div>
 
-        <!-- 乙級證照 -->
-        <div
-          class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300"
-        >
-          <div class="flex items-center mb-6">
-            <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mr-4">
-              <span class="text-red-600 text-xl">🌐</span>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900">乙級證照</h3>
-          </div>
-          <div class="space-y-4">
-            <!-- 證照項目 1 -->
-            <div class="p-4 rounded-xl bg-gray-50">
-              <div class="flex items-start justify-between">
-                <div class="flex-1">
-                  <h4 class="font-semibold text-gray-900 mb-1">電腦硬體裝修</h4>
-                  <div class="flex items-center text-xs text-gray-500">
-                    <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full mr-2">有效</span>
-                    <span>2018年取得</span>
+        <div class="max-w-4xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- 專業證照 -->
+            <div
+              class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300"
+            >
+              <div class="flex items-center mb-6">
+                <div
+                  class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center mr-4"
+                >
+                  <span class="text-yellow-600 text-xl">🏆</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900">專業證照</h3>
+              </div>
+              <div class="space-y-4">
+                <!-- 證照項目 1 -->
+                <div class="p-4 rounded-xl bg-gray-50">
+                  <div class="flex items-start justify-between">
+                    <div class="flex-1">
+                      <h4 class="font-semibold text-gray-900 mb-1">丙級網頁設計</h4>
+                      <div class="flex items-center text-xs text-gray-500">
+                        <span class="bg-red-100 text-red-800 px-2 py-1 rounded-full mr-2"
+                          >有效</span
+                        >
+                        <span>2025年取得</span>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                        <span class="text-red-600 text-sm">✓</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="ml-4">
-                  <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
-                    <span class="text-purple-600 text-sm">✓</span>
+
+                <!-- 證照項目 2 -->
+                <div class="p-4 rounded-xl bg-gray-50">
+                  <div class="flex items-start justify-between">
+                    <div class="flex-1">
+                      <h4 class="font-semibold text-gray-900 mb-1">丙級電腦軟體應用</h4>
+                      <div class="flex items-center text-xs text-gray-500">
+                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full mr-2"
+                          >有效</span
+                        >
+                        <span>2015年取得</span>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <div
+                        class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center"
+                      >
+                        <span class="text-green-600 text-sm">✓</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 證照項目 3 -->
+                <div class="p-4 rounded-xl bg-gray-50">
+                  <div class="flex items-start justify-between">
+                    <div class="flex-1">
+                      <h4 class="font-semibold text-gray-900 mb-1">丙級網路架設</h4>
+                      <div class="flex items-center text-xs text-gray-500">
+                        <span class="bg-yellow-200 text-yellow-800 px-2 py-1 rounded-full mr-2"
+                          >有效</span
+                        >
+                        <span>2016年取得</span>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <div
+                        class="w-8 h-8 bg-yellow-200 rounded-full flex items-center justify-center"
+                      >
+                        <span class="text-yellow-600 text-sm">✓</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 證照項目 4 -->
+                <div class="p-4 rounded-xl bg-gray-50">
+                  <div class="flex items-start justify-between">
+                    <div class="flex-1">
+                      <h4 class="font-semibold text-gray-900 mb-1">丙級電腦硬體裝修</h4>
+                      <div class="flex items-center text-xs text-gray-500">
+                        <span class="bg-pink-100 text-pink-800 px-2 py-1 rounded-full mr-2"
+                          >有效</span
+                        >
+                        <span>2016年取得</span>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <div
+                        class="w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center"
+                      >
+                        <span class="text-pink-600 text-sm">✓</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 證照項目 5 -->
+                <div class="p-4 rounded-xl bg-gray-50">
+                  <div class="flex items-start justify-between">
+                    <div class="flex-1">
+                      <h4 class="font-semibold text-gray-900 mb-1">丙級工業電子</h4>
+                      <div class="flex items-center text-xs text-gray-500">
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full mr-2"
+                          >有效</span
+                        >
+                        <span>2017年取得</span>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <div
+                        class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center"
+                      >
+                        <span class="text-blue-600 text-sm">✓</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+              </div>
+            </div>
+
+            <!-- 乙級證照 -->
+            <div
+              class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300"
+            >
+              <div class="flex items-center mb-6">
+                <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mr-4">
+                  <span class="text-red-600 text-xl">🌐</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900">乙級證照</h3>
+              </div>
+              <div class="space-y-4">
+                <!-- 證照項目 1 -->
+                <div class="p-4 rounded-xl bg-gray-50">
+                  <div class="flex items-start justify-between">
+                    <div class="flex-1">
+                      <h4 class="font-semibold text-gray-900 mb-1">電腦硬體裝修</h4>
+                      <div class="flex items-center text-xs text-gray-500">
+                        <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full mr-2"
+                          >有效</span
+                        >
+                        <span>2018年取得</span>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <div
+                        class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center"
+                      >
+                        <span class="text-purple-600 text-sm">✓</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 證照項目 2 -->
+                <div class="p-4 rounded-xl bg-gray-50">
+                  <div class="flex items-start justify-between">
+                    <div class="flex-1">
+                      <h4 class="font-semibold text-gray-900 mb-1">數位電子</h4>
+                      <div class="flex items-center text-xs text-gray-500">
+                        <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded-full mr-2"
+                          >有效</span
+                        >
+                        <span>2018年取得</span>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <div
+                        class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center"
+                      >
+                        <span class="text-orange-600 text-sm">✓</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-
-            <!-- 證照項目 2 -->
-            <div class="p-4 rounded-xl bg-gray-50">
-              <div class="flex items-start justify-between">
-                <div class="flex-1">
-                  <h4 class="font-semibold text-gray-900 mb-1">數位電子</h4>
-                  <div class="flex items-center text-xs text-gray-500">
-                    <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded-full mr-2">有效</span>
-                    <span>2018年取得</span>
-                  </div>
-                </div>
-                <div class="ml-4">
-                  <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center">
-                    <span class="text-orange-600 text-sm">✓</span>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
-        </div>
-      </div>
 
-      <!-- 證照說明 -->
-      <!-- <div class="mt-8 text-center">
+          <!-- 證照說明 -->
+          <!-- <div class="mt-8 text-center">
         <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
           <div class="flex items-center justify-center mb-4">
             <div class="w-10 h-10 bg-indigo-100 rounded-xl flex items-center justify-center mr-3">
@@ -971,9 +618,9 @@
           </p>
         </div>
       </div> -->
-    </div>
-  </div>
-</section>
+        </div>
+      </div>
+    </section>
 
     <!-- Skills Section -->
     <section id="skills" class="py-20 bg-gray-100">
@@ -1157,10 +804,6 @@
         </div>
       </div>
     </section>
-
-
-
-
 
     <!-- JiaNice Featured Project Section -->
     <section id="jianice" class="py-20 bg-white">
@@ -2132,7 +1775,6 @@
                   />
                 </svg>
               </a>
-
             </div>
 
             <!-- 額外資訊 -->
@@ -2444,11 +2086,11 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import Header from './components/Header.vue'
+import Experience from './components/Experience.vue'
 
 // 響應式數據
-const mobileMenuOpen = ref(false)
 const currentImageIndex = ref(0)
-const activeSection = ref('home') // 追蹤當前選中的區塊
 const showBackToTop = ref(false) // 控制回到頂部按鈕的顯示
 
 // 添加圖片陣列 (使用 Vite 的動態導入)
@@ -2480,21 +2122,6 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
 })
-
-// 切換手機版選單
-const toggleMobileMenu = () => {
-  mobileMenuOpen.value = !mobileMenuOpen.value
-}
-
-// 滾動到指定區塊
-const scrollTo = (elementId) => {
-  const element = document.getElementById(elementId)
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth' })
-    activeSection.value = elementId // 設置當前選中的區塊
-  }
-  mobileMenuOpen.value = false
-}
 
 // 回到最上面
 const scrollToTop = () => {
