@@ -12,61 +12,16 @@
             class="mr-10 flex items-baseline space-x-4 lg:space-x-6 xl:space-x-8 text-gray-900 font-bold text-lg lg:text-xl"
           >
             <a
-              href="#home"
-              @click="scrollTo('home')"
+              v-for="nav in navItems"
+              :key="nav.key"
+              :href="`#${nav.key}`"
+              @click="scrollTo(nav.key)"
               :class="[
                 'relative transition-all duration-300 hover:text-yellow-500 pb-1 whitespace-nowrap',
-                activeSection === 'home' ? 'text-yellow-500 border-b-2 border-yellow-500' : '',
+                activeSection === nav.key ? 'text-yellow-500 border-b-2 border-yellow-500' : '',
               ]"
-              >首頁</a
+              >{{ nav.name }}</a
             >
-            <a
-              href="#about"
-              @click="scrollTo('about')"
-              :class="[
-                'relative transition-all duration-300 hover:text-yellow-500 pb-1 whitespace-nowrap',
-                activeSection === 'about' ? 'text-yellow-500 border-b-2 border-yellow-500' : '',
-              ]"
-              >關於我</a
-            >
-            <a
-              href="#skills"
-              @click="scrollTo('skills')"
-              :class="[
-                'relative transition-all duration-300 hover:text-yellow-500 pb-1 whitespace-nowrap',
-                activeSection === 'skills' ? 'text-yellow-500 border-b-2 border-yellow-500' : '',
-              ]"
-              >技能</a
-            >
-            <a
-              href="#experience"
-              @click="scrollTo('experience')"
-              :class="[
-                'relative transition-all duration-300 hover:text-yellow-500 pb-1 whitespace-nowrap',
-                activeSection === 'experience'
-                  ? 'text-yellow-500 border-b-2 border-yellow-500'
-                  : '',
-              ]"
-              >工作經驗</a
-            >
-            <a
-              href="#jianice"
-              @click="scrollTo('projects')"
-              :class="[
-                'relative transition-all duration-300 hover:text-yellow-500 pb-1 whitespace-nowrap',
-                activeSection === 'projects' ? 'text-yellow-500 border-b-2 border-yellow-500' : '',
-              ]"
-              >作品展示</a
-            >
-            <!-- <a
-                href="#contact"
-                @click="scrollTo('contact')"
-                :class="[
-                  'relative transition-all duration-300 hover:text-yellow-500 pb-1 whitespace-nowrap',
-                  activeSection === 'contact' ? 'text-yellow-500 border-b-2 border-yellow-500' : '',
-                ]"
-                >聯絡我</a
-              > -->
           </div>
         </div>
         <div class="md:hidden">
@@ -87,71 +42,18 @@
     <div v-if="mobileMenuOpen" class="md:hidden bg-white border-t border-gray-100">
       <div class="px-2 pt-2 pb-3 space-y-1">
         <a
-          href="#home"
-          @click="scrollTo('home')"
+          v-for="nav in navItems"
+          :key="nav.key"
+          :href="`#${nav.key}`"
+          @click="scrollTo(nav.key)"
           :class="[
             'block px-3 py-2 text-base font-medium rounded-md transition-all duration-300',
-            activeSection === 'home'
+            activeSection === nav.key
               ? 'text-yellow-700 bg-yellow-100 border-l-4 border-yellow-500'
               : 'text-gray-600 hover:text-yellow-500 hover:bg-gray-50',
           ]"
-          >首頁</a
+          >{{ nav.name }}</a
         >
-        <a
-          href="#about"
-          @click="scrollTo('about')"
-          :class="[
-            'block px-3 py-2 text-base font-medium rounded-md transition-all duration-300',
-            activeSection === 'about'
-              ? 'text-yellow-700 bg-yellow-100 border-l-4 border-yellow-500'
-              : 'text-gray-600 hover:text-yellow-500 hover:bg-gray-50',
-          ]"
-          >關於我</a
-        >
-        <a
-          href="#experience"
-          @click="scrollTo('experience')"
-          :class="[
-            'block px-3 py-2 text-base font-medium rounded-md transition-all duration-300',
-            activeSection === 'experience'
-              ? 'text-yellow-700 bg-yellow-100 border-l-4 border-yellow-500'
-              : 'text-gray-600 hover:text-yellow-500 hover:bg-gray-50',
-          ]"
-          >經歷</a
-        >
-        <a
-          href="#skills"
-          @click="scrollTo('skills')"
-          :class="[
-            'block px-3 py-2 text-base font-medium rounded-md transition-all duration-300',
-            activeSection === 'skills'
-              ? 'text-yellow-700 bg-yellow-100 border-l-4 border-yellow-500'
-              : 'text-gray-600 hover:text-yellow-500 hover:bg-gray-50',
-          ]"
-          >技能</a
-        >
-        <a
-          href="#projects"
-          @click="scrollTo('projects')"
-          :class="[
-            'block px-3 py-2 text-base font-medium rounded-md transition-all duration-300',
-            activeSection === 'projects'
-              ? 'text-yellow-700 bg-yellow-100 border-l-4 border-yellow-500'
-              : 'text-gray-600 hover:text-yellow-500 hover:bg-gray-50',
-          ]"
-          >作品</a
-        >
-        <!-- <a
-            href="#contact"
-            @click="scrollTo('contact')"
-            :class="[
-              'block px-3 py-2 text-base font-medium rounded-md transition-all duration-300',
-              activeSection === 'contact'
-                ? 'text-yellow-700 bg-yellow-100 border-l-4 border-yellow-500'
-                : 'text-gray-600 hover:text-yellow-500 hover:bg-gray-50',
-            ]"
-            >聯絡我</a
-          > -->
       </div>
     </div>
   </nav>
@@ -159,6 +61,15 @@
 
 <script setup>
 import { ref } from 'vue'
+
+const navItems = [
+  { name: '首頁', key: 'home' },
+  { name: '關於我', key: 'about' },
+  { name: '技能', key: 'skills' },
+  { name: '工作經驗', key: 'experience' },
+  { name: '作品展示', key: 'jianice' },
+  // { name: '聯絡我', key: 'contact' },
+]
 
 // 響應式數據
 const mobileMenuOpen = ref(false)
